@@ -64,7 +64,7 @@ a {
 }
 
 a:hover {
-  color: var(--secondary-color);
+  color: inherit;
 }
 
 input,
@@ -312,7 +312,8 @@ header .MobileNavbar > img {
   margin: 0 auto;
   display: flex;
   align-items: center;
-  gap: 5px;
+  min-width: 105px;
+  gap: 7px;
 }
 .HomeSec2 > .CardContainer .MiniCard .MiniCardDescription > section > div p {
   font-size: 18px;
@@ -547,7 +548,7 @@ footer > section > div:nth-of-type(3) ul li:first-child {
   gap: 10px;
 }
 .ListFiltersContainer > button {
-  background-color: var(--primary-color);
+  background-color: #fefae0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -555,7 +556,7 @@ footer > section > div:nth-of-type(3) ul li:first-child {
   border-radius: 12px;
   padding: 6px 10px;
   width: 110px;
-  color: var(--white-color);
+  color: #546546;
   position: relative;
 }
 .ListFiltersContainer > button > ul {
@@ -566,8 +567,8 @@ footer > section > div:nth-of-type(3) ul li:first-child {
   font-size: 1rem;
 }
 .ListFiltersContainer > button > .OptionGBadge {
-  background-color: var(--fourth-color);
-  color: var(--white-color);
+  background-color: #ff984a;
+  color: white;
   display: none;
   justify-content: center;
   align-items: center;
@@ -578,6 +579,12 @@ footer > section > div:nth-of-type(3) ul li:first-child {
   margin-right: auto;
   margin-left: 5px;
 }
+.ListFiltersContainer > button .OptionGIcon {
+  transition: transform 0.3s ease;
+}
+.ListFiltersContainer > button .OptionGIcon.active {
+  transform: rotate(180deg);
+}
 
 .ListFilterDropDown {
   position: absolute;
@@ -586,8 +593,8 @@ footer > section > div:nth-of-type(3) ul li:first-child {
   width: 225px;
   display: none;
   flex-direction: column;
-  background-color: var(--white-color);
-  color: var(--primary-color);
+  background-color: white;
+  color: #546546;
   z-index: 10;
   border-radius: 12px;
   box-shadow: 5px 4px 13.3px 0px rgba(0, 0, 0, 0.368627451);
@@ -598,7 +605,7 @@ footer > section > div:nth-of-type(3) ul li:first-child {
   padding: 0.4rem;
 }
 .ListFilterDropDown > li:hover {
-  color: var(--fourth-color);
+  color: #ff984a;
 }
 .ListFilterDropDown > li > label {
   width: 100%;
@@ -608,7 +615,7 @@ footer > section > div:nth-of-type(3) ul li:first-child {
   gap: 15px;
 }
 .ListFilterDropDown > li > label > span.active {
-  color: var(--fourth-color);
+  color: #ff984a;
 }
 .ListFilterDropDown > li > label > input {
   position: absolute;
@@ -633,4 +640,74 @@ footer > section > div:nth-of-type(3) ul li:first-child {
 input[type=checkbox] {
   margin-right: 10px;
   cursor: pointer;
+}
+
+.CardListContainer {
+  margin-bottom: 5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  row-gap: 8rem;
+}
+.CardListContainer .MiniCard {
+  max-width: 330px;
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+.CardListContainer .MiniCard > img {
+  width: 57px;
+  height: 57px;
+  position: absolute;
+  left: -18px;
+  top: -18px;
+}
+.CardListContainer .MiniCard .MiniCardDescription {
+  background-color: white;
+  position: absolute;
+  bottom: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 15px;
+  width: 274px;
+  border: 1px solid #ff984a;
+}
+.CardListContainer .MiniCard .MiniCardDescription > h4 {
+  font-size: 24px;
+  border-bottom: 1px solid #ff984a;
+  color: #262626;
+  text-align: center;
+}
+.CardListContainer .MiniCard .MiniCardDescription > section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 10px;
+  color: #262626;
+  border-radius: 17px;
+  width: 274px;
+  padding: 12px 9px;
+}
+.CardListContainer .MiniCard .MiniCardDescription > section > div {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  min-width: 105px;
+  gap: 7px;
+}
+.CardListContainer .MiniCard .MiniCardDescription > section > div p {
+  font-size: 18px;
+}
+.CardListContainer .MiniCard .MiniCardDescription > button {
+  border-radius: 34px;
+  border: 1px solid #c4661f;
+  color: #c4661f;
+  padding: 7px 14px;
+  background-color: #fefae0;
+  font-size: 16px;
+  position: absolute;
+  bottom: -27px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0px -2px 27.6px 0px rgba(0, 0, 0, 0.1294117647);
 }/*# sourceMappingURL=app.css.map */

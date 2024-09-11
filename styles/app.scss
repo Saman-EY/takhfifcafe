@@ -76,7 +76,7 @@ a {
 }
 
 a:hover {
-  color: var(--secondary-color);
+  color: inherit;
 }
 
 input,
@@ -370,7 +370,8 @@ header {
             margin: 0 auto;
             display: flex;
             align-items: center;
-            gap: 5px;
+            min-width: 105px;
+            gap: 7px;
             p {
               font-size: 18px;
             }
@@ -649,7 +650,7 @@ footer {
   gap: 10px;
 
   > button {
-    background-color: var(--primary-color);
+    background-color: $secondary-color;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -657,7 +658,7 @@ footer {
     border-radius: 12px;
     padding: 6px 10px;
     width: 110px;
-    color: var(--white-color);
+    color: #546546;
     position: relative;
 
     > ul {
@@ -670,8 +671,8 @@ footer {
     }
 
     > .OptionGBadge {
-      background-color: var(--fourth-color);
-      color: var(--white-color);
+      background-color: $primary-color;
+      color: white;
       display: none;
       justify-content: center;
       align-items: center;
@@ -681,6 +682,14 @@ footer {
       font-size: 0.8rem;
       margin-right: auto;
       margin-left: 5px;
+    }
+
+    .OptionGIcon {
+      transition: transform 0.3s ease;
+    
+      &.active {
+        transform: rotate(180deg); // Rotate the arrow up when the dropdown is open
+      }
     }
   }
 }
@@ -693,8 +702,8 @@ footer {
   // padding: 6px 10px;
   display: none;
   flex-direction: column;
-  background-color: var(--white-color);
-  color: var(--primary-color);
+  background-color: white;
+  color: #546546;
   z-index: 10;
   border-radius: 12px;
   box-shadow: 5px 4px 13.3px 0px #0000005e;
@@ -705,7 +714,7 @@ footer {
     padding: 0.4rem;
 
     &:hover {
-      color: var(--fourth-color);
+      color: $primary-color;
     }
 
     > label {
@@ -716,7 +725,7 @@ footer {
       gap: 15px;
 
       > span.active {
-        color: var(--fourth-color);
+        color: $primary-color;
       }
 
       > input {
@@ -749,3 +758,83 @@ input[type="checkbox"] {
   margin-right: 10px;
   cursor: pointer;
 }
+
+.CardListContainer {
+  margin-bottom: 5rem;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  column-gap: 2rem;
+  row-gap: 8rem;
+
+  .MiniCard {
+    max-width: 330px;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+
+    > img {
+      width: 57px;
+      height: 57px;
+      position: absolute;
+      left: -18px;
+      top: -18px;
+    }
+
+    .MiniCardDescription {
+      background-color: white;
+      position: absolute;
+      bottom: -100px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 15px;
+      width: 274px;
+      border: 1px solid $primary-color;
+      > h4 {
+        font-size: 24px;
+        border-bottom: 1px solid $primary-color;
+        color: $text2-color;
+        text-align: center;
+      }
+
+      > section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 10px;
+        // background-color: red;
+        color: $text2-color;
+        border-radius: 17px;
+        width: 274px;
+        padding: 12px 9px;
+
+        > div {
+          margin: 0 auto;
+          display: flex;
+          align-items: center;
+          min-width: 105px;
+          gap: 7px;
+          p {
+            font-size: 18px;
+          }
+        }
+      }
+
+      > button {
+        border-radius: 34px;
+        border: 1px solid $third-color;
+        color: $third-color;
+        padding: 7px 14px;
+        background-color: $secondary-color;
+        font-size: 16px;
+        position: absolute;
+        bottom: -27px;
+        left: 50%;
+        transform: translateX(-50%);
+        box-shadow: 0px -2px 27.6px 0px #00000021;
+      }
+    }
+  }
+}
+
+// //////////////////////// ROLEEBACK
+// INPUTE KHALI 748
