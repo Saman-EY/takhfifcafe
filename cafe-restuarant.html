@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="assets/imgandIcons/VitrinIcon.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/app.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
+    <title>تخفیف کافه</title>
+  </head>
+  <body>
+    <header>
+      <!-- mobile navbar -->
+      <section
+        class="MobileNavbar d-flex justify-content-between align-items-center px-5 d-md-none"
+      >
+        <button id="OpenMobileOffcanvas">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"
+            />
+          </svg>
+        </button>
+
+        <img src="./assets/img-icons/takhfifcoffe-light.svg" alt="icon" />
+      </section>
+      <!-- mobile navbar end -->
+
+      <!-- desktop navbar -->
+      <section class="DesktopNavbar p-4 mt-3">
+        <!-- logo - navlinks -->
+        <div class="first d-flex align-items-center gap-4">
+          <img src="./assets/img-icons/takhfifcoffe-light.svg" alt="logo" />
+          <ul class="d-flex gap-5 align-items-center">
+            <li class="active">
+              <a href="./home-page.html">صفحه اصلی</a>
+            </li>
+            <li class="active">
+              <a href="./cafe-restuarant.html">کافه، رستوران ها</a>
+            </li>
+            <li>
+              <a href="#">تماس با ما</a>
+            </li>
+            <li>
+              <a href="#">درباره ما</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- search - login -->
+        <div class="second d-flex align-items-center gap-2">
+          <div class="d-flex align-items-end gap-1">
+            <button>
+              <img src="./assets/img-icons/search-normal.svg" alt="icon" />
+            </button>
+            <div>
+              <input type="text" />
+            </div>
+          </div>
+
+          <a href="#">
+            <span>
+              <svg
+                width="25"
+                height="24"
+                viewBox="0 0 25 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.1469 10.87C13.0469 10.86 12.9269 10.86 12.8169 10.87C10.4369 10.79 8.54688 8.84 8.54688 6.44C8.54688 3.99 10.5269 2 12.9869 2C15.4369 2 17.4269 3.99 17.4269 6.44C17.4169 8.84 15.5269 10.79 13.1469 10.87Z"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M8.14703 14.56C5.72703 16.18 5.72703 18.82 8.14703 20.43C10.897 22.27 15.407 22.27 18.157 20.43C20.577 18.81 20.577 16.17 18.157 14.56C15.417 12.73 10.907 12.73 8.14703 14.56Z"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+            ورود / ثبت نام
+          </a>
+        </div>
+      </section>
+      <!-- desktop navbar end -->
+    </header>
+
+    <main class="text-white container">
+      <!-- first sec -->
+      <section
+        class="HomeSec2 d-flex flex-column justify-content-between align-items-center gap-4"
+      >
+        <!-- tabs -->
+        <div class="HomeSec2Tabs mt-3 mb-5">
+          <button>کافه</button>
+          <button class="">رستوران</button>
+          <button class="active">کافه، رستوران</button>
+        </div>
+      </section>
+      <!-- first sec end -->
+
+      <!-- Categories filter -->
+      <section class="CategoriesFilterSec d-flex flex-column gap-3">
+        <!-- titles -->
+        <div class="titles">
+          <h5>دسته بندی کافه و رستوران ها</h5>
+          <p>نتایج رو متناسب با نیازت بچین دوست من</p>
+        </div>
+
+        <!-- filters -->
+        <section class="ListFiltersContainer">
+          <button class="dropdownButton">
+            <span>هزینه</span>
+            <span class="OptionGBadge"></span>
+            <img
+              class="OptionGIcon"
+              src="./assets/imgandIcons/arrow-down.svg"
+              alt="icon"
+            />
+
+            <ul class="ListFilterDropDown">
+              <li>
+                <label>
+                  <img
+                    class="checkImg"
+                    src="./assets/imgandIcons/checked.svg"
+                    alt="checked icon"
+                  />
+                  <img
+                    class="uncheckImg"
+                    src="./assets/imgandIcons/uncheck.svg"
+                    alt="unchecked icon"
+                  />
+                  <input type="checkbox" class="filterCheckbox" />
+                  <span class="CheckboxSpan">همه</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <img
+                    class="checkImg"
+                    src="./assets/imgandIcons/checked.svg"
+                    alt="checked icon"
+                  />
+                  <img
+                    class="uncheckImg"
+                    src="./assets/imgandIcons/uncheck.svg"
+                    alt="unchecked icon"
+                  />
+                  <input type="checkbox" class="filterCheckbox" />
+                  <span class="CheckboxSpan">دارای آفر</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <img
+                    class="checkImg"
+                    src="./assets/imgandIcons/checked.svg"
+                    alt="checked icon"
+                  />
+                  <img
+                    class="uncheckImg"
+                    src="./assets/imgandIcons/uncheck.svg"
+                    alt="unchecked icon"
+                  />
+                  <input type="checkbox" class="filterCheckbox" />
+                  <span class="CheckboxSpan">اقتصادی</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <img
+                    class="checkImg"
+                    src="./assets/imgandIcons/checked.svg"
+                    alt="checked icon"
+                  />
+                  <img
+                    class="uncheckImg"
+                    src="./assets/imgandIcons/uncheck.svg"
+                    alt="unchecked icon"
+                  />
+                  <input type="checkbox" class="filterCheckbox" />
+                  <span class="CheckboxSpan">شگفت انگیز</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <img
+                    class="checkImg"
+                    src="./assets/imgandIcons/checked.svg"
+                    alt="checked icon"
+                  />
+                  <img
+                    class="uncheckImg"
+                    src="./assets/imgandIcons/uncheck.svg"
+                    alt="unchecked icon"
+                  />
+                  <input type="checkbox" class="filterCheckbox" />
+                  <span class="CheckboxSpan">لاکچری</span>
+                </label>
+              </li>
+            </ul>
+          </button>
+
+          <button class="dropdownButton">
+            <span>شهر</span>
+            <span class="OptionGBadge"></span>
+            <img
+              class="OptionGIcon"
+              src="./assets/imgandIcons/arrow-down.svg"
+              alt="icon"
+            />
+
+            <ul class="ListFilterDropDown">
+              <li>
+                <label>
+                  <img
+                    class="checkImg"
+                    src="./assets/imgandIcons/checked.svg"
+                    alt="checked icon"
+                  />
+                  <img
+                    class="uncheckImg"
+                    src="./assets/imgandIcons/uncheck.svg"
+                    alt="unchecked icon"
+                  />
+                  <input type="checkbox" class="filterCheckbox" />
+                  <span class="CheckboxSpan">همه</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <img
+                    class="checkImg"
+                    src="./assets/imgandIcons/checked.svg"
+                    alt="checked icon"
+                  />
+                  <img
+                    class="uncheckImg"
+                    src="./assets/imgandIcons/uncheck.svg"
+                    alt="unchecked icon"
+                  />
+                  <input type="checkbox" class="filterCheckbox" />
+                  <span class="CheckboxSpan">دارای آفر</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <img
+                    class="checkImg"
+                    src="./assets/imgandIcons/checked.svg"
+                    alt="checked icon"
+                  />
+                  <img
+                    class="uncheckImg"
+                    src="./assets/imgandIcons/uncheck.svg"
+                    alt="unchecked icon"
+                  />
+                  <input type="checkbox" class="filterCheckbox" />
+                  <span class="CheckboxSpan">اقتصادی</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <img
+                    class="checkImg"
+                    src="./assets/imgandIcons/checked.svg"
+                    alt="checked icon"
+                  />
+                  <img
+                    class="uncheckImg"
+                    src="./assets/imgandIcons/uncheck.svg"
+                    alt="unchecked icon"
+                  />
+                  <input type="checkbox" class="filterCheckbox" />
+                  <span class="CheckboxSpan">شگفت انگیز</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <img
+                    class="checkImg"
+                    src="./assets/imgandIcons/checked.svg"
+                    alt="checked icon"
+                  />
+                  <img
+                    class="uncheckImg"
+                    src="./assets/imgandIcons/uncheck.svg"
+                    alt="unchecked icon"
+                  />
+                  <input type="checkbox" class="filterCheckbox" />
+                  <span class="CheckboxSpan">لاکچری</span>
+                </label>
+              </li>
+            </ul>
+          </button>
+          <button class="dropdownButton">
+            <span>امکانات</span>
+            <span class="OptionGBadge"></span>
+            <img
+              class="OptionGIcon"
+              src="./assets/imgandIcons/arrow-down.svg"
+              alt="icon"
+            />
+
+            <ul class="ListFilterDropDown">
+              <li>
+                <label>
+                  <img
+                    class="checkImg"
+                    src="./assets/imgandIcons/checked.svg"
+                    alt="checked icon"
+                  />
+                  <img
+                    class="uncheckImg"
+                    src="./assets/imgandIcons/uncheck.svg"
+                    alt="unchecked icon"
+                  />
+                  <input type="checkbox" class="filterCheckbox" />
+                  <span class="CheckboxSpan">همه</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <img
+                    class="checkImg"
+                    src="./assets/imgandIcons/checked.svg"
+                    alt="checked icon"
+                  />
+                  <img
+                    class="uncheckImg"
+                    src="./assets/imgandIcons/uncheck.svg"
+                    alt="unchecked icon"
+                  />
+                  <input type="checkbox" class="filterCheckbox" />
+                  <span class="CheckboxSpan">دارای آفر</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <img
+                    class="checkImg"
+                    src="./assets/imgandIcons/checked.svg"
+                    alt="checked icon"
+                  />
+                  <img
+                    class="uncheckImg"
+                    src="./assets/imgandIcons/uncheck.svg"
+                    alt="unchecked icon"
+                  />
+                  <input type="checkbox" class="filterCheckbox" />
+                  <span class="CheckboxSpan">اقتصادی</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <img
+                    class="checkImg"
+                    src="./assets/imgandIcons/checked.svg"
+                    alt="checked icon"
+                  />
+                  <img
+                    class="uncheckImg"
+                    src="./assets/imgandIcons/uncheck.svg"
+                    alt="unchecked icon"
+                  />
+                  <input type="checkbox" class="filterCheckbox" />
+                  <span class="CheckboxSpan">شگفت انگیز</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <img
+                    class="checkImg"
+                    src="./assets/imgandIcons/checked.svg"
+                    alt="checked icon"
+                  />
+                  <img
+                    class="uncheckImg"
+                    src="./assets/imgandIcons/uncheck.svg"
+                    alt="unchecked icon"
+                  />
+                  <input type="checkbox" class="filterCheckbox" />
+                  <span class="CheckboxSpan">لاکچری</span>
+                </label>
+              </li>
+            </ul>
+          </button>
+          <button class="dropdownButton">
+            <span>ترتیب</span>
+            <span class="OptionGBadge"></span>
+            <img
+              class="OptionGIcon"
+              src="./assets/imgandIcons/arrow-down.svg"
+              alt="icon"
+            />
+
+            <ul class="ListFilterDropDown">
+              <li>
+                <label>
+                  <img
+                    class="checkImg"
+                    src="./assets/imgandIcons/checked.svg"
+                    alt="checked icon"
+                  />
+                  <img
+                    class="uncheckImg"
+                    src="./assets/imgandIcons/uncheck.svg"
+                    alt="unchecked icon"
+                  />
+                  <input type="checkbox" class="filterCheckbox" />
+                  <span class="CheckboxSpan">همه</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <img
+                    class="checkImg"
+                    src="./assets/imgandIcons/checked.svg"
+                    alt="checked icon"
+                  />
+                  <img
+                    class="uncheckImg"
+                    src="./assets/imgandIcons/uncheck.svg"
+                    alt="unchecked icon"
+                  />
+                  <input type="checkbox" class="filterCheckbox" />
+                  <span class="CheckboxSpan">دارای آفر</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <img
+                    class="checkImg"
+                    src="./assets/imgandIcons/checked.svg"
+                    alt="checked icon"
+                  />
+                  <img
+                    class="uncheckImg"
+                    src="./assets/imgandIcons/uncheck.svg"
+                    alt="unchecked icon"
+                  />
+                  <input type="checkbox" class="filterCheckbox" />
+                  <span class="CheckboxSpan">اقتصادی</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <img
+                    class="checkImg"
+                    src="./assets/imgandIcons/checked.svg"
+                    alt="checked icon"
+                  />
+                  <img
+                    class="uncheckImg"
+                    src="./assets/imgandIcons/uncheck.svg"
+                    alt="unchecked icon"
+                  />
+                  <input type="checkbox" class="filterCheckbox" />
+                  <span class="CheckboxSpan">شگفت انگیز</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <img
+                    class="checkImg"
+                    src="./assets/imgandIcons/checked.svg"
+                    alt="checked icon"
+                  />
+                  <img
+                    class="uncheckImg"
+                    src="./assets/imgandIcons/uncheck.svg"
+                    alt="unchecked icon"
+                  />
+                  <input type="checkbox" class="filterCheckbox" />
+                  <span class="CheckboxSpan">لاکچری</span>
+                </label>
+              </li>
+            </ul>
+          </button>
+        </section>
+
+
+
+
+
+        
+      </section>
+      <!-- Categories filter end -->
+    </main>
+
+    <!-- mobile offcanvas -->
+    <div class="offcanvasOverlay"></div>
+    <section class="MobileOffcanvas">
+      <button id="closeMobileOffcanvas">
+        <svg
+          fill="white"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 512 512"
+        >
+          <path
+            d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"
+          />
+        </svg>
+      </button>
+      <ul class="p-3 mt-3 d-flex flex-column gap-3">
+        <li>
+          <a href="./home-page.html">صفحه اصلی</a>
+        </li>
+        <li>
+          <a href="./">کافه رستوران ها</a>
+        </li>
+        <li>
+          <a href="./">تماس با ما</a>
+        </li>
+        <li>
+          <a href="./">درباره ما</a>
+        </li>
+      </ul>
+    </section>
+    <!-- mobile offcanvas end -->
+
+    <!-- FOOTER BEIGN -->
+    <footer class="mt-5">
+      <section
+        class="d-flex flex-wrap justify-content-center align-items-center gap-4"
+      >
+        <div>
+          <img
+            class="mb-4"
+            src="./assets/img-icons/takhfifcoffe-dark.svg"
+            alt="logo"
+          />
+          <ul>
+            <li>
+              <a href="#">
+                <img src="./assets/img-icons/instagram.svg" alt="instagram" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./assets/img-icons/telegram.svg" alt="telegram" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./assets/img-icons/linkdin.svg" alt="linkdin" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./assets/img-icons/youtube.svg" alt="youtube" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./assets/img-icons/x.svg" alt="twitter" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./assets/img-icons/whatsapp.svg" alt="whatsapp" />
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="d-flex flex-column gap-2">
+          <span>دسترسی سریع</span>
+          <ul class="d-flex flex-column gap-2">
+            <li>
+              <a href="#"> کافه ها </a>
+            </li>
+            <li>
+              <a href="#"> رستوران ها </a>
+            </li>
+            <li>
+              <a href="#"> کافه، رستوران ها </a>
+            </li>
+            <li>
+              <a href="#"> ارتباط با ما </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="d-flex flex-column gap-2">
+          <span>ارتباط با ما</span>
+          <ul class="d-flex flex-column gap-2">
+            <li>
+              <img class="mt-1" src="./assets/img-icons/phone.svg" alt="icon" />
+              <div>
+                <a href="#"> ۰۲۱-۲۶۲۳۲۶۲۶ </a> <br />
+                <a href="#"> ۰۹۱۲-۵۸۴۹۸۳۲۱ </a>
+              </div>
+            </li>
+            <li class="my-1">
+              <img src="./assets/img-icons/map.svg" alt="icon" />
+              <a href="#"> تهران - ادامه آدرس اینجا قرار می گیرد</a>
+            </li>
+            <li>
+              <img src="./assets/img-icons/sms.svg" alt="icon" />
+              <a href="#"> info@takhfifcoffe.com </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </footer>
+    <!-- FOOTER END -->
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>

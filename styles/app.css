@@ -180,13 +180,15 @@ header .MobileNavbar > img {
   width: 24px;
   height: 24px;
 }
-.DesktopNavbar > .second > div button {
+.DesktopNavbar > .second > div div {
   width: 100%;
 }
-.DesktopNavbar > .second > div button input {
+.DesktopNavbar > .second > div div input {
   background-color: transparent;
   border-bottom: 1px solid white;
   width: 100%;
+  color: white;
+  font-size: 0.8rem;
 }
 .DesktopNavbar > .second > a:hover {
   color: #ff984a;
@@ -235,4 +237,400 @@ header .MobileNavbar > img {
   border-radius: 14px;
   padding: 9px 14px;
   box-shadow: 0px -1px 9px 0px rgba(0, 0, 0, 0.2509803922);
+}
+
+.HomeSec2 .HomeSec2Title > h3 {
+  color: #ff984a;
+  font-size: 60px;
+}
+.HomeSec2 .HomeSec2Title > p {
+  color: #fefae0;
+  font-size: 1.1rem;
+}
+.HomeSec2 .HomeSec2Tabs {
+  display: flex;
+  gap: 10px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 470px;
+  border-radius: 13px;
+  margin: 0 auto;
+  background-color: #fefae0;
+}
+.HomeSec2 .HomeSec2Tabs button {
+  background-color: transparent;
+  color: #262626;
+  padding: 10px;
+  width: 150px;
+  border-radius: 13px;
+  position: relative;
+  transition: all ease 0.2s;
+  color: #853a04;
+}
+.HomeSec2 .HomeSec2Tabs button.active, .HomeSec2 .HomeSec2Tabs button:hover {
+  background-color: #ff984a;
+  color: #853a04;
+}
+.HomeSec2 > .CardContainer .MiniCard {
+  max-width: 330px;
+  width: 100%;
+  position: relative;
+}
+.HomeSec2 > .CardContainer .MiniCard > img {
+  width: 57px;
+  height: 57px;
+  position: absolute;
+  left: -18px;
+  top: -18px;
+}
+.HomeSec2 > .CardContainer .MiniCard .MiniCardDescription {
+  background-color: white;
+  position: absolute;
+  bottom: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 15px;
+  width: 274px;
+  border: 1px solid #ff984a;
+}
+.HomeSec2 > .CardContainer .MiniCard .MiniCardDescription > h4 {
+  font-size: 24px;
+  border-bottom: 1px solid #ff984a;
+  color: #262626;
+  text-align: center;
+}
+.HomeSec2 > .CardContainer .MiniCard .MiniCardDescription > section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 10px;
+  color: #262626;
+  border-radius: 17px;
+  width: 274px;
+  padding: 12px 9px;
+}
+.HomeSec2 > .CardContainer .MiniCard .MiniCardDescription > section > div {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.HomeSec2 > .CardContainer .MiniCard .MiniCardDescription > section > div p {
+  font-size: 18px;
+}
+.HomeSec2 > .CardContainer .MiniCard .MiniCardDescription > button {
+  border-radius: 34px;
+  border: 1px solid #c4661f;
+  color: #c4661f;
+  padding: 7px 14px;
+  background-color: #fefae0;
+  font-size: 16px;
+  position: absolute;
+  bottom: -27px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0px -2px 27.6px 0px rgba(0, 0, 0, 0.1294117647);
+}
+.HomeSec2 .HomeSec2Paginate {
+  margin-top: 6rem;
+  max-width: 1000px;
+  width: 100%;
+}
+.HomeSec2 .HomeSec2Paginate > div:nth-child(2) {
+  margin-right: 7rem;
+}
+.HomeSec2 .HomeSec2Paginate > div:last-child {
+  color: var(--primary-color);
+}
+
+.HomeSec3 > img {
+  max-width: 400px;
+  width: 100%;
+}
+.HomeSec3 > div {
+  max-width: 525px;
+  margin: 0 auto;
+}
+.HomeSec3 > div h5 {
+  color: #e1c9b2;
+  font-size: 60px;
+}
+.HomeSec3 > div p {
+  color: white;
+  text-align: justify;
+  font-size: 1rem;
+  line-height: 1.9rem;
+}
+
+.HomeSec4 {
+  position: relative;
+  max-width: 940px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #b48d67;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  border-radius: 28px;
+  padding: 15px 12px;
+}
+.HomeSec4 > img {
+  position: absolute;
+  left: -60px;
+  bottom: -80px;
+  max-width: 160px;
+}
+.HomeSec4 > div {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
+.HomeSec4 > div span:nth-of-type(2) {
+  font-size: 1rem;
+  white-space: nowrap;
+  color: #fefae0;
+}
+.HomeSec4 > div img {
+  width: 62px;
+  height: 54px;
+  margin: 0 auto;
+}
+
+.HomeSec5 {
+  width: 100%;
+  max-width: 1100px;
+}
+.HomeSec5 > h5 {
+  text-align: center;
+  font-size: 60px;
+  color: #ff984a;
+}
+.HomeSec5 > p {
+  text-align: center;
+  color: #fefae0;
+}
+.HomeSec5 > div form {
+  width: 100%;
+  max-width: 370px;
+  margin: 0 auto;
+}
+.HomeSec5 > div form div {
+  width: 100%;
+}
+.HomeSec5 > div form label {
+  font-size: 1rem;
+}
+.HomeSec5 > div form input {
+  background-color: transparent;
+  border-bottom: 1px solid #ff984a;
+  color: white;
+  font-size: 1rem;
+}
+
+.HomeSec6 {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1000px;
+}
+.HomeSec6 h5 {
+  color: #fefae0;
+  font-size: 60px;
+  text-align: center;
+}
+.HomeSec6 p {
+  text-align: center;
+  color: #ff984a;
+}
+.HomeSec6 > section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+.HomeSec6 > section div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  color: #fefae0;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  padding: 1rem;
+  position: relative;
+}
+footer > section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1100px;
+  background-color: #bdc89c;
+  color: #1d1d1b;
+  border-radius: 40px;
+  padding: 40px;
+}
+footer > section > div:nth-of-type(1) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer > section > div:nth-of-type(1) > img {
+  margin: 0 auto;
+}
+footer > section > div:nth-of-type(1) ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 20px;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+}
+footer > section > div:nth-of-type(2) span,
+footer > section > div:nth-of-type(3) span {
+  font-size: 1.4rem;
+  position: relative;
+  margin-right: 10px;
+}
+footer > section > div:nth-of-type(2) span::before,
+footer > section > div:nth-of-type(3) span::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 18px;
+  bottom: 50%;
+  right: -10px;
+  transform: translateY(50%);
+  border-radius: 12px;
+  background-color: #581c00;
+}
+footer > section > div:nth-of-type(2) ul li a,
+footer > section > div:nth-of-type(3) ul li a {
+  font-size: 1.1rem;
+}
+footer > section > div:nth-of-type(2) ul li:not(:first-child),
+footer > section > div:nth-of-type(3) ul li:not(:first-child) {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+footer > section > div:nth-of-type(2) ul li:first-child,
+footer > section > div:nth-of-type(3) ul li:first-child {
+  display: flex;
+  align-items: start;
+  gap: 12px;
+}
+
+.CategoriesFilterSec > .titles {
+  text-align: center;
+}
+.CategoriesFilterSec > .titles h5 {
+  font-size: 50px;
+  color: #ff984a;
+}
+.CategoriesFilterSec > .titles p {
+  color: #fefae0;
+}
+
+.ListFiltersContainer {
+  margin: 4rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.ListFiltersContainer > button {
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  border-radius: 12px;
+  padding: 6px 10px;
+  width: 110px;
+  color: var(--white-color);
+  position: relative;
+}
+.ListFiltersContainer > button > ul {
+  cursor: default;
+}
+.ListFiltersContainer > button > span {
+  font-weight: 400;
+  font-size: 1rem;
+}
+.ListFiltersContainer > button > .OptionGBadge {
+  background-color: var(--fourth-color);
+  color: var(--white-color);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 23px;
+  height: 23px;
+  font-size: 0.8rem;
+  margin-right: auto;
+  margin-left: 5px;
+}
+
+.ListFilterDropDown {
+  position: absolute;
+  top: 120%;
+  right: 0;
+  width: 225px;
+  display: none;
+  flex-direction: column;
+  background-color: var(--white-color);
+  color: var(--primary-color);
+  z-index: 10;
+  border-radius: 12px;
+  box-shadow: 5px 4px 13.3px 0px rgba(0, 0, 0, 0.368627451);
+  overflow: hidden;
+}
+.ListFilterDropDown > li {
+  text-align: start;
+  padding: 0.4rem;
+}
+.ListFilterDropDown > li:hover {
+  color: var(--fourth-color);
+}
+.ListFilterDropDown > li > label {
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.ListFilterDropDown > li > label > span.active {
+  color: var(--fourth-color);
+}
+.ListFilterDropDown > li > label > input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+}
+.ListFilterDropDown > li > label > .checkImg,
+.ListFilterDropDown > li > label > .uncheckImg {
+  width: 20px;
+  height: 20px;
+}
+.ListFilterDropDown > li > label > .checkImg {
+  display: none;
+}
+.ListFilterDropDown > li:not(:last-child) {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+input[type=checkbox] {
+  margin-right: 10px;
+  cursor: pointer;
 }/*# sourceMappingURL=app.css.map */
