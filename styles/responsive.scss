@@ -1,3 +1,16 @@
+@media (max-width: 385px) {
+  .CardListContainer {
+    .MiniCard {
+      > img {
+        width: 57px;
+        height: 57px;
+        position: absolute;
+        left: 0px;
+        top: -18px;
+      }
+    }
+  }
+}
 @media (max-width: 450px) {
   .ListFiltersContainer {
     display: grid;
@@ -43,6 +56,14 @@
     > div:nth-child(2) {
       margin-right: 0 !important;
       margin-bottom: 2rem;
+    }
+  }
+
+  .ReserveInfoSec {
+    .ReserveInfoBody {
+      > section {
+        grid-template-columns: repeat(1, 1fr);
+      }
     }
   }
 }

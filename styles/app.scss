@@ -7,6 +7,7 @@ $sixth-color: #ebc17d;
 $seventh-color: #bdc89c;
 $text-color: #373f32;
 $text2-color: #262626;
+$text3-color: #1c1c1d;
 $title-color: #e1c9b2;
 
 @font-face {
@@ -631,7 +632,6 @@ footer {
 
 .CategoriesFilterSec {
   > .titles {
-    text-align: center;
     h5 {
       font-size: 50px;
       color: $primary-color;
@@ -686,9 +686,11 @@ footer {
 
     .OptionGIcon {
       transition: transform 0.3s ease;
-    
+
       &.active {
-        transform: rotate(180deg); // Rotate the arrow up when the dropdown is open
+        transform: rotate(
+          180deg
+        ); // Rotate the arrow up when the dropdown is open
       }
     }
   }
@@ -754,14 +756,8 @@ footer {
   }
 }
 
-input[type="checkbox"] {
-  margin-right: 10px;
-  cursor: pointer;
-}
-
 .CardListContainer {
-  margin-bottom: 5rem;
-
+  margin-bottom: 8rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   column-gap: 2rem;
@@ -790,6 +786,7 @@ input[type="checkbox"] {
       border-radius: 15px;
       width: 274px;
       border: 1px solid $primary-color;
+
       > h4 {
         font-size: 24px;
         border-bottom: 1px solid $primary-color;
@@ -836,5 +833,63 @@ input[type="checkbox"] {
   }
 }
 
+.ReserveInfoSec {
+  max-width: 1000px;
+  // height: 400px;
+  background-color: #ffffff33;
+  border-radius: 18px;
+  border: 1px solid white;
+  margin: 0 auto;
+
+  .ReserveInfoBody {
+    > section {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      margin-top: 2rem;
+
+      div {
+        // margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2px;
+
+        span {
+          border-radius: 8px;
+          background-color: $seventh-color;
+          color: $text3-color;
+          padding: 8px 14px;
+        }
+      }
+    }
+
+    > div {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      p {
+        width: fit-content;
+        white-space: nowrap;
+      }
+      span {
+        border-radius: 8px;
+        background-color: $seventh-color;
+        color: $text3-color;
+        padding: 8px 14px;
+        width: 100%;
+      }
+    }
+  }
+
+  .QrcodeSec {
+
+    img {
+      max-width: 265px;
+      width: 100%;
+    }
+  }
+}
+
 // //////////////////////// ROLEEBACK
-// INPUTE KHALI 748
