@@ -834,12 +834,43 @@ footer {
 }
 
 .ReserveInfoSec {
-  max-width: 1000px;
+  max-width: 880px;
   // height: 400px;
   background-color: #ffffff33;
   border-radius: 18px;
   border: 1px solid white;
   margin: 0 auto;
+
+  .ReserveInfo {
+    > div {
+      max-width: 481px;
+      width: 100%;
+    }
+
+    .header-divider {
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 10px;
+        background-color: #c0c0c0;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -10px;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 10px;
+        background-color: #c0c0c0;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -10px;
+      }
+    }
+  }
 
   .ReserveInfoBody {
     > section {
@@ -854,12 +885,24 @@ footer {
         align-items: center;
         justify-content: space-between;
         gap: 2px;
+        width: 100%;
+
+        p {
+          font-size: 1rem;
+        }
 
         span {
           border-radius: 8px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
           background-color: $seventh-color;
           color: $text3-color;
           padding: 8px 14px;
+          max-width: 105px;
+          width: 100%;
+          font-size: 0.8rem;
+          font-weight: 600;
         }
       }
     }
@@ -872,6 +915,7 @@ footer {
       p {
         width: fit-content;
         white-space: nowrap;
+        font-size: 1rem;
       }
       span {
         border-radius: 8px;
@@ -879,15 +923,36 @@ footer {
         color: $text3-color;
         padding: 8px 14px;
         width: 100%;
+        font-size: 0.9rem;
       }
     }
   }
 
   .QrcodeSec {
-
     img {
-      max-width: 265px;
+      max-width: 295px;
       width: 100%;
+    }
+  }
+
+  .BottomLineContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    p {
+      max-width: 490px;
+      font-size: 1rem;
+    }
+
+    > .Line {
+      width: 100%;
+      max-width: 640px;
+      margin: 0 auto 1rem auto;
+      border-radius: 10px;
+      height: 5px;
+      background-color: $primary-color;
     }
   }
 }

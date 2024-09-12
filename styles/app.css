@@ -705,11 +705,38 @@ footer > section > div:nth-of-type(3) ul li:first-child {
 }
 
 .ReserveInfoSec {
-  max-width: 1000px;
+  max-width: 880px;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 18px;
   border: 1px solid white;
   margin: 0 auto;
+}
+.ReserveInfoSec .ReserveInfo > div {
+  max-width: 481px;
+  width: 100%;
+}
+.ReserveInfoSec .ReserveInfo .header-divider {
+  position: relative;
+}
+.ReserveInfoSec .ReserveInfo .header-divider::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 10px;
+  background-color: #c0c0c0;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -10px;
+}
+.ReserveInfoSec .ReserveInfo .header-divider::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 10px;
+  background-color: #c0c0c0;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -10px;
 }
 .ReserveInfoSec .ReserveInfoBody > section {
   display: grid;
@@ -722,12 +749,23 @@ footer > section > div:nth-of-type(3) ul li:first-child {
   align-items: center;
   justify-content: space-between;
   gap: 2px;
+  width: 100%;
+}
+.ReserveInfoSec .ReserveInfoBody > section div p {
+  font-size: 1rem;
 }
 .ReserveInfoSec .ReserveInfoBody > section div span {
   border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #bdc89c;
   color: #1c1c1d;
   padding: 8px 14px;
+  max-width: 105px;
+  width: 100%;
+  font-size: 0.8rem;
+  font-weight: 600;
 }
 .ReserveInfoSec .ReserveInfoBody > div {
   display: flex;
@@ -739,6 +777,7 @@ footer > section > div:nth-of-type(3) ul li:first-child {
   width: -moz-fit-content;
   width: fit-content;
   white-space: nowrap;
+  font-size: 1rem;
 }
 .ReserveInfoSec .ReserveInfoBody > div span {
   border-radius: 8px;
@@ -746,8 +785,28 @@ footer > section > div:nth-of-type(3) ul li:first-child {
   color: #1c1c1d;
   padding: 8px 14px;
   width: 100%;
+  font-size: 0.9rem;
 }
 .ReserveInfoSec .QrcodeSec img {
-  max-width: 265px;
+  max-width: 295px;
   width: 100%;
+}
+.ReserveInfoSec .BottomLineContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.ReserveInfoSec .BottomLineContainer p {
+  max-width: 490px;
+  font-size: 1rem;
+}
+.ReserveInfoSec .BottomLineContainer > .Line {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto 1rem auto;
+  border-radius: 10px;
+  height: 5px;
+  background-color: #ff984a;
 }/*# sourceMappingURL=app.css.map */
