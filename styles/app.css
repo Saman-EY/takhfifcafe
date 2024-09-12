@@ -809,4 +809,133 @@ footer > section > div:nth-of-type(3) ul li:first-child {
   border-radius: 10px;
   height: 5px;
   background-color: #ff984a;
+}
+
+.AboutusSec1 {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.AboutusSec1 .text {
+  width: 100%;
+  max-width: 480px;
+}
+.AboutusSec1 .text h5 {
+  color: #ff984a;
+  font-size: 55px;
+}
+.AboutusSec1 .text p {
+  line-height: 30px;
+  text-align: justify;
+  font-size: 1.1rem;
+}
+.AboutusSec1 .imgSec {
+  position: relative;
+}
+.AboutusSec1 .imgSec img:nth-of-type(1) {
+  width: 100%;
+  max-width: 394px;
+  width: 390px;
+}
+.AboutusSec1 .imgSec img:nth-of-type(2) {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-width: 170px;
+}
+
+.AboutusSec3 {
+  max-width: 1122px;
+  width: 100%;
+  margin: 5rem auto 0 auto;
+  background-color: #eac07d;
+  background-image: url("../assets/img-icons/aboutus-backdropimg.svg");
+  border-radius: 18px;
+  min-height: 367px;
+}
+.AboutusSec3 > div {
+  max-width: 540px;
+  width: 100%;
+}
+.AboutusSec3 > div h5 {
+  color: #1c1c1d;
+  font-size: 55px;
+}
+.AboutusSec3 > div p {
+  color: #1c1c1d;
+}
+.AboutusSec3 > div > div {
+  background-color: #fefae0;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 500px;
+}
+.AboutusSec3 > div > div input {
+  background-color: transparent;
+  width: 100%;
+}
+.AboutusSec3 > div > div input::-moz-placeholder {
+  font-size: 1rem;
+}
+.AboutusSec3 > div > div input::placeholder {
+  font-size: 1rem;
+}
+.AboutusSec3 > div > div button {
+  background-color: #ff984a;
+  color: white;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  padding: 8px 14px;
+}
+.AboutusSec3 > div > div button img {
+  width: 24px;
+  height: 24px;
+}
+.AboutusSec3 img {
+  width: 100%;
+  max-width: 328px;
+}
+
+.AboutusSec4 {
+  width: 100%;
+  max-width: 1000px;
+  margin: 2rem auto 0 auto;
+}
+.AboutusSec4 h5 {
+  color: #fefae0;
+  font-size: 55px;
+}
+.AboutusSec4 p {
+  color: #ff984a;
+}
+.AboutusSec4 .list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  width: 100%;
+  row-gap: 4rem;
+}
+.AboutusSec4 .list > div {
+  border: 1px solid #ff984a;
+  border-radius: 23px;
+  width: 198px;
+  height: 247px;
+  padding: 1rem;
+  position: relative;
+  margin: 0 auto;
+}
+.AboutusSec4 .list > div > div h6 {
+  color: #ff984a;
+  font-size: 1.3rem;
+}
+.AboutusSec4 .list > div > div span {
+  font-size: 1rem;
+}
+.AboutusSec4 .list > div > img {
+  position: absolute;
+  top: -50px;
 }/*# sourceMappingURL=app.css.map */
