@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="assets/imgandIcons/VitrinIcon.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/app.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
+    <title>تخفیف کافه</title>
+  </head>
+  <body class="d-flex flex-column justify-content-between">
+    <header>
+      <!-- mobile navbar -->
+      <section
+        class="MobileNavbar d-flex justify-content-between align-items-center px-5 d-md-none"
+      >
+        <button id="OpenMobileOffcanvas">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"
+            />
+          </svg>
+        </button>
+
+        <img src="./assets/img-icons/takhfifcoffe-light.svg" alt="icon" />
+      </section>
+      <!-- mobile navbar end -->
+
+      <!-- desktop navbar -->
+      <section class="DesktopNavbar p-4 mt-3">
+        <!-- logo - navlinks -->
+        <div class="first d-flex align-items-center gap-4">
+          <img src="./assets/img-icons/takhfifcoffe-light.svg" alt="logo" />
+          <ul class="d-flex gap-5 align-items-center">
+            <li>
+              <a href="./home-page.html">صفحه اصلی</a>
+            </li>
+            <li>
+              <a href="./cafe-restuarant.html">کافه، رستوران ها</a>
+            </li>
+            <li>
+              <a href="#">تماس با ما</a>
+            </li>
+            <li class="active">
+              <a href="./about-us.html">درباره ما</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- search - login -->
+        <div class="second d-flex align-items-center gap-2">
+          <div class="d-flex align-items-end gap-1">
+            <button>
+              <img src="./assets/img-icons/search-normal.svg" alt="icon" />
+            </button>
+            <div>
+              <input type="text" />
+            </div>
+          </div>
+
+          <a href="#">
+            <span>
+              <svg
+                width="25"
+                height="24"
+                viewBox="0 0 25 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.1469 10.87C13.0469 10.86 12.9269 10.86 12.8169 10.87C10.4369 10.79 8.54688 8.84 8.54688 6.44C8.54688 3.99 10.5269 2 12.9869 2C15.4369 2 17.4269 3.99 17.4269 6.44C17.4169 8.84 15.5269 10.79 13.1469 10.87Z"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M8.14703 14.56C5.72703 16.18 5.72703 18.82 8.14703 20.43C10.897 22.27 15.407 22.27 18.157 20.43C20.577 18.81 20.577 16.17 18.157 14.56C15.417 12.73 10.907 12.73 8.14703 14.56Z"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+            ورود / ثبت نام
+          </a>
+        </div>
+      </section>
+      <!-- desktop navbar end -->
+    </header>
+
+    <main class="container text-white">
+      <!-- section 1 -->
+      <section class="ContactUsSec1 d-flex flex-column gap-3">
+        <h5 class="">ارتباط با ما</h5>
+
+        <!-- contents -->
+        <div
+          class="contents d-flex flex-column justify-content-between align-items-center flex-md-row gap-5"
+        >
+          <!-- form -->
+          <form class="d-flex flex-column gap-3" action="#">
+            <div class="d-flex flex-column gap-2">
+              <label for="fullName"
+                >نام و نام خانوادگی
+                <span>(اختیاری)</span>
+              </label>
+              <input type="text" placeholder="نام خود را وارد کنید" />
+            </div>
+
+            <div class="d-flex flex-column gap-2">
+              <label for="fullName">ایمیل</label>
+              <input type="text" placeholder="ایمیل خود را وارد کنید" />
+            </div>
+
+            <div class="d-flex flex-column gap-2">
+              <label for="fullName">دیدگاه</label>
+              <textarea
+                name="comment"
+                id="comment"
+                rows="5"
+                placeholder="دیدگاه خود را بنویس"
+              ></textarea>
+            </div>
+
+            <button class="mt-2">ارسال</button>
+          </form>
+
+          <!-- address and links -->
+          <section class="w-100">
+            <div class="info">
+              <section>
+                <div class="d-flex flex-column gap-2">
+                  <div class="d-flex align-items-center gap-2">
+                    <img src="./assets/img-icons/mailbox2.svg" alt="icon" />
+                    <span>کد پستی</span>
+                  </div>
+                  <p>6521354-6813</p>
+                </div>
+                <div class="d-flex flex-column gap-2">
+                  <div class="d-flex align-items-center gap-2">
+                    <img src="./assets/img-icons/map2.svg" alt="icon" />
+                    <span>آدرس</span>
+                  </div>
+                  <p>
+                    چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+                    روزنامه و مجله در ستون و سطرآنچنان که لازم است،
+                  </p>
+                </div>
+                <div class="d-flex flex-column gap-2">
+                  <div class="d-flex align-items-center gap-2">
+                    <img src="./assets/img-icons/phone2.svg" alt="icon" />
+                    <span>تماس با ما</span>
+                  </div>
+                  <p
+                    class="d-flex justify-content-around align-items-center fs-6"
+                  >
+                    021-6655235000
+                    <span class="divider-circle"></span>
+                    021-6655235000
+                  </p>
+                </div>
+                <div class="d-flex flex-column gap-2">
+                  <div class="d-flex align-items-center gap-2">
+                    <img src="./assets/img-icons/mail-primary.svg" alt="icon" />
+                    <span>ایمیل</span>
+                  </div>
+                  <p>info@mail.com</p>
+                </div>
+              </section>
+
+              <!-- social Links -->
+              <section class="pb-5">
+                <a href="#"
+                  ><img src="./assets/img-icons/instagram2.svg" alt="icon"
+                /></a>
+                <a href="#"
+                  ><img src="./assets/img-icons/telegram2.svg" alt="icon"
+                /></a>
+                <a href="#"
+                  ><img src="./assets/img-icons/linkdin2.svg" alt="icon"
+                /></a>
+                <a href="#"
+                  ><img src="./assets/img-icons/youtube2.svg" alt="icon"
+                /></a>
+                <a href="#"
+                  ><img src="./assets/img-icons/x2.svg" alt="icon"
+                /></a>
+                <a href="#"
+                  ><img src="./assets/img-icons/whatsapp2.svg" alt="icon"
+                /></a>
+              </section>
+            </div>
+          </section>
+        </div>
+      </section>
+      <!-- section 1 end -->
+
+      <!-- COMMON Q SEC BEGIN -->
+      <section class="CommonQSec px-2 px-md-0">
+        <div class="mb-5 text-center">
+          <h5>سوالات متداول</h5>
+          <p>جواب خیلی از سوال های شما اینجاست</p>
+        </div>
+
+        <!-- accordions container  -->
+        <div class="AccordionsContainer">
+          <section class="AccordionSec">
+            <div
+              class="d-flex align-items-center justify-content-between gap-5 AccordionHeader"
+            >
+              لورم ایپسوم متن ساختگفی با تولید سادگی نامفهوم از صنعت چاپ
+              <span class="openAccordion">
+                <img src="./assets/img-icons/open-accordion.svg" alt="icon" />
+              </span>
+              <span class="closeAccordion">
+                <img src="./assets/img-icons/close-accordion.svg" alt="icon" />
+              </span>
+            </div>
+            <p class="AccordionBody">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+              استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+              در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
+              نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
+              کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان
+              جامعه و متخصصان را می طلبد، تا با نرم افزارها شن لورم ایپسوم متن
+              ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
+              گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان
+              که لازم است، و برای شرایط فعلی افزارها شن
+            </p>
+          </section>
+          <section class="AccordionSec">
+            <div
+              class="d-flex align-items-center justify-content-between AccordionHeader"
+            >
+              لورم ایپسوم متن ساختگفی با تولید سادگی نامفهوم از صنعت چاپ
+              <span class="openAccordion">
+                <img src="./assets/img-icons/open-accordion.svg" alt="icon" />
+              </span>
+              <span class="closeAccordion">
+                <img src="./assets/img-icons/close-accordion.svg" alt="icon" />
+              </span>
+            </div>
+            <p class="AccordionBody">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+              استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+              در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
+              نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
+              کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان
+              جامعه و متخصصان را می طلبد، تا با نرم افصصان را می طلبد، تا با نرم
+              افزارها شن
+            </p>
+          </section>
+          <section class="AccordionSec">
+            <div
+              class="d-flex align-items-center justify-content-between AccordionHeader"
+            >
+              لورم ایپسوم متن ساختگفی با تولید سادگی نامفهوم از صنعت چاپ
+              <span class="openAccordion">
+                <img src="./assets/img-icons/open-accordion.svg" alt="icon" />
+              </span>
+              <span class="closeAccordion">
+                <img src="./assets/img-icons/close-accordion.svg" alt="icon" />
+              </span>
+            </div>
+            <p class="AccordionBody">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+              استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+              در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
+              نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
+              کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان
+              جامعه و متخصصان را می طلبد، تا با نرم افزارها شن لورم ایپسوم متن
+              ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
+              گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان
+              که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای
+              متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت
+              و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می
+              طلبد، تا با نرم افزارها شن لورم ایپسوم متن ساختگی با تولید سادگی
+              نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و
+              متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای
+              شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود
+              ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال
+              و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم
+              افزارها شن
+            </p>
+          </section>
+          <section class="AccordionSec">
+            <div
+              class="d-flex align-items-center justify-content-between AccordionHeader"
+            >
+              لورم ایپسوم متن ساختگفی با تولید سادگی نامفهوم از صنعت چاپ
+              <span class="openAccordion">
+                <img src="./assets/img-icons/open-accordion.svg" alt="icon" />
+              </span>
+              <span class="closeAccordion">
+                <img src="./assets/img-icons/close-accordion.svg" alt="icon" />
+              </span>
+            </div>
+            <p class="AccordionBody">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+              استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+              در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
+              نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
+              کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان
+              جامعه و متخصصان را می طلبد، تا با نرم افزارها شن لورم ایپسوم متن
+              ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
+              گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان
+              که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای
+              متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت
+              و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می
+              طلبد، تا با نرم افزارها شن لورم ایپسوم متن ساختگی با تولید سادگی
+              نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و
+              متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای
+              شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود
+              ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال
+              و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم
+              افزارها شن
+            </p>
+          </section>
+        </div>
+      </section>
+      <!-- COMMON Q SEC END -->
+
+      <!-- section 3 -->
+      <!-- home sec5 -->
+      <section class="HomeSec5 d-flex flex-column gap-3 my-5">
+        <h5>به تخفیف کافه بپیوند</h5>
+        <p>کافه یا رستورانتو به تخفیف کافه اضافه کن</p>
+
+        <div
+          class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-4 gap-md-2"
+        >
+          <!-- form -->
+          <form
+            class="d-flex flex-column justify-content-center align-items-center gap-3"
+            action="#"
+          >
+            <div class="d-flex flex-column">
+              <label for="name">اسم شما :</label>
+              <input type="text" />
+            </div>
+            <div class="d-flex flex-column">
+              <label for="name">آدرس :</label>
+              <input type="text" />
+            </div>
+            <div class="d-flex flex-column">
+              <label for="name">شماره تماس :</label>
+              <input type="text" />
+            </div>
+          </form>
+
+          <!-- img -->
+
+          <img src="./assets/img-icons/burger.svg" alt="" />
+        </div>
+      </section>
+      <!-- home sec5 end -->
+      <!-- section 3 end -->
+    </main>
+
+    <!-- mobile offcanvas -->
+    <div class="offcanvasOverlay"></div>
+    <section class="MobileOffcanvas">
+      <button id="closeMobileOffcanvas">
+        <svg
+          fill="white"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 512 512"
+        >
+          <path
+            d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"
+          />
+        </svg>
+      </button>
+      <ul class="p-3 mt-3 d-flex flex-column gap-3">
+        <li>
+          <a href="./home-page.html">صفحه اصلی</a>
+        </li>
+        <li>
+          <a href="./">کافه رستوران ها</a>
+        </li>
+        <li>
+          <a href="./">تماس با ما</a>
+        </li>
+        <li>
+          <a href="./">درباره ما</a>
+        </li>
+      </ul>
+    </section>
+    <!-- mobile offcanvas end -->
+
+    <!-- FOOTER BEIGN -->
+    <footer class="mt-5">
+      <section
+        class="d-flex flex-wrap justify-content-center justify-content-md-around align-items-center gap-4"
+      >
+        <div>
+          <img
+            class="mb-4"
+            src="./assets/img-icons/takhfifcoffe-dark.svg"
+            alt="logo"
+          />
+          <ul>
+            <li>
+              <a href="#">
+                <img src="./assets/img-icons/instagram.svg" alt="instagram" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./assets/img-icons/telegram.svg" alt="telegram" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./assets/img-icons/linkdin.svg" alt="linkdin" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./assets/img-icons/youtube.svg" alt="youtube" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./assets/img-icons/x.svg" alt="twitter" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./assets/img-icons/whatsapp.svg" alt="whatsapp" />
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="d-flex flex-column gap-2">
+          <span>دسترسی سریع</span>
+          <ul class="d-flex flex-column gap-2">
+            <li>
+              <a href="#"> کافه ها </a>
+            </li>
+            <li>
+              <a href="#"> رستوران ها </a>
+            </li>
+            <li>
+              <a href="#"> کافه، رستوران ها </a>
+            </li>
+            <li>
+              <a href="#"> ارتباط با ما </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="d-flex flex-column gap-2">
+          <span>ارتباط با ما</span>
+          <ul class="d-flex flex-column gap-2">
+            <li>
+              <img class="mt-1" src="./assets/img-icons/phone.svg" alt="icon" />
+              <div>
+                <a href="#"> ۰۲۱-۲۶۲۳۲۶۲۶ </a> <br />
+                <a href="#"> ۰۹۱۲-۵۸۴۹۸۳۲۱ </a>
+              </div>
+            </li>
+            <li class="my-1">
+              <img src="./assets/img-icons/map.svg" alt="icon" />
+              <a href="#"> تهران - ادامه آدرس اینجا قرار می گیرد</a>
+            </li>
+            <li>
+              <img src="./assets/img-icons/sms.svg" alt="icon" />
+              <a href="#"> info@takhfifcoffe.com </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </footer>
+    <!-- FOOTER END -->
+
+    <script src="./js/app.js"></script>
+    <script src="./js/accordion.js"></script>
+  </body>
+</html>
