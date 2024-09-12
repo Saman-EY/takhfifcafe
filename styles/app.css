@@ -1019,7 +1019,6 @@ footer > section > div:nth-of-type(3) ul li:first-child {
 }
 
 .CommonQSec {
-  background-color: var(--seventh-color);
   width: 100%;
   max-width: 1822px;
   margin: 0 auto;
@@ -1033,13 +1032,12 @@ footer > section > div:nth-of-type(3) ul li:first-child {
   margin-left: 2rem;
 }
 .CommonQSec > div:nth-of-type(1) > h5 {
-  color: var(--primary-color);
+  color: #ff984a;
   font-weight: 400;
   font-size: 50px;
-  font-family: "Hudhund";
 }
 .CommonQSec > div:nth-of-type(1) > p {
-  color: var(--secondary-color);
+  color: #fefae0;
   font-weight: 400;
 }
 
@@ -1059,17 +1057,17 @@ footer > section > div:nth-of-type(3) ul li:first-child {
 }
 .AccordionsContainer::-webkit-scrollbar-track {
   background: transparent;
-  box-shadow: inset 0 0 5px var(--primary-color);
+  box-shadow: inset 0 0 5px #fefae0;
   border-radius: 4px;
   border-left: 2px solid transparent;
   border-right: 2px solid transparent;
 }
 .AccordionsContainer::-webkit-scrollbar-thumb {
-  background: var(--primary-color);
+  background: #ff984a;
   border-radius: 4px;
 }
 .AccordionsContainer > section {
-  background-color: var(--white-color);
+  background-color: white;
   box-shadow: 0px 5px 16px 0px rgba(8, 15, 52, 0.0588235294);
   border-radius: 20px;
   padding: 1rem 2rem;
@@ -1079,11 +1077,11 @@ footer > section > div:nth-of-type(3) ul li:first-child {
   border: 1px solid transparent;
 }
 .AccordionsContainer > section.open {
-  border-color: var(--primary-color);
+  border-color: #ff984a;
 }
 .AccordionsContainer > section > p {
   text-align: justify;
-  color: var(--text-color);
+  color: #1c1c1d;
   font-size: 1rem;
   max-height: 0;
   overflow: hidden;
@@ -1091,28 +1089,45 @@ footer > section > div:nth-of-type(3) ul li:first-child {
 }
 .AccordionsContainer > section > div {
   height: 50px;
-  color: var(--primary-color);
+  color: #ff984a;
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+  margin-bottom: 0.8rem;
 }
-.AccordionsContainer > section > div > span {
-  width: 45px;
-  height: 45px;
+.AccordionsContainer > section > div > img {
+  width: 40px;
+  height: 40px;
+}
+.AccordionsContainer > section .openAccordion {
+  height: 50px;
+  background-color: white;
+  width: 50px;
   border-radius: 50%;
+  color: #ba5d16;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0px 5px 16px 0px rgba(8, 15, 52, 0.0588235294);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
-.AccordionsContainer > section > div > span > img {
-  width: 22px;
-  height: 22px;
+.AccordionsContainer > section .openAccordion > svg {
+  width: 30px;
+  height: 30px;
 }
 .AccordionsContainer > section .closeAccordion {
-  background-color: var(--primary-color);
+  background-color: #ba5d16;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: white;
+  justify-content: center;
+  align-items: center;
   display: none;
+}
+.AccordionsContainer > section .closeAccordion > svg {
+  width: 30px;
+  height: 30px;
 }
 
 .AccordionSec.open .AccordionBody {

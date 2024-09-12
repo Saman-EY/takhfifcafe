@@ -26,6 +26,12 @@
   .ListFiltersContainer > button {
     margin: 0 auto;
   }
+  .AccordionsContainer .openAccordion {
+    display: none !important;
+  }
+  .AccordionsContainer .closeAccordion {
+    display: none !important;
+  }
 }
 @media (max-width: 500px) {
   .AboutusSec3 > div h5 {
@@ -44,6 +50,17 @@
     height: 130px;
     left: 0px;
     bottom: -80px;
+  }
+  .AccordionsContainer {
+    padding-left: 20px;
+  }
+  .AccordionsContainer .openAccordion {
+    width: 25px !important;
+    height: 25px !important;
+  }
+  .AccordionsContainer .closeAccordion {
+    width: 25px !important;
+    height: 25px !important;
   }
 }
 @media (max-width: 668px) {

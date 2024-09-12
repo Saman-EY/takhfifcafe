@@ -34,6 +34,24 @@
       margin: 0 auto;
     }
   }
+
+
+
+  .AccordionsContainer {
+
+
+
+    .openAccordion {
+     display: none !important;
+
+    }
+
+    .closeAccordion{
+      display: none !important;
+    }
+  }
+
+
 }
 @media (max-width: 500px) {
   .AboutusSec3 {
@@ -43,6 +61,8 @@
       }
     }
   }
+
+
 }
 
 @media (min-width: 500px) {
@@ -61,6 +81,25 @@
       bottom: -80px;
     }
   }
+
+
+  .AccordionsContainer {
+
+  padding-left: 20px;
+
+
+    .openAccordion {
+      width: 25px !important;
+      height: 25px !important;
+
+    }
+
+    .closeAccordion{
+      width: 25px !important;
+      height: 25px !important;
+    }
+  }
+
 }
 @media (max-width: 668px) {
   footer {
