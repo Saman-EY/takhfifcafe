@@ -271,6 +271,18 @@ header .MobileNavbar > img {
   background-color: #ff984a;
   color: #853a04;
 }
+.HomeSec2 > .CardContainer .swiper-wrapper {
+  background-color: #04b360;
+  height: 500px;
+}
+.HomeSec2 > .CardContainer .swiper-slide {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  background-color: red;
+  padding-top: 2rem;
+  align-items: center;
+}
 .HomeSec2 > .CardContainer .MiniCard {
   max-width: 330px;
   width: 100%;
@@ -1325,4 +1337,251 @@ input[type=checkbox]:checked + .RegisterPage .RegisterCard .formContainer form >
 }
 .RegisterPage .RegisterCard .formContainer .LoginLink a {
   color: #ff984a;
+}
+
+.SliderSec > h5 {
+  color: #ff984a;
+  font-size: 60px;
+  text-align: center;
+}
+.SliderSec .SliderContainer {
+  width: 100%;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+.SliderSec .SliderContainer .swiper {
+  border-radius: 39px;
+  border: Mixed solid #ffffff;
+  overflow: hidden;
+}
+.SliderSec .SliderContainer .swiper .swiper-slide {
+  width: 100%;
+  height: 100%;
+  max-height: 570px;
+}
+
+.menu-reserve-sec2 > h5 {
+  color: #fefae0;
+  font-size: 50px;
+}
+.menu-reserve-sec2 > p {
+  color: #ff984a;
+}
+.menu-reserve-sec2 > section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2rem;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  width: 100%;
+  max-width: 860px;
+  margin-top: 1rem;
+}
+
+.MapSection {
+  width: 100%;
+  max-width: 1122px;
+  height: 567px;
+  border: 1px solid #ff984a;
+  margin: 0 auto;
+  margin-top: 10rem;
+  margin-bottom: 6rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  border-radius: 25px;
+  position: relative;
+}
+.MapSection > div {
+  width: 253px;
+  background-color: white;
+  border: 1px solid #c4661f;
+  border-radius: 13px;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  color: #c4661f;
+  position: absolute;
+  top: 20%;
+  right: 30px;
+}
+.MapSection > div span {
+  font-size: 0.9rem;
+}
+.MapSection > div p {
+  font-size: 1rem;
+}
+.MapSection > div > h5 {
+  font-weight: 400;
+  border-bottom: 1px solid #c4661f;
+  padding-bottom: 1rem;
+  font-size: 32px;
+}
+
+.menuSecHeader h3 {
+  font-size: 50px;
+  color: #fefae0;
+}
+.menuSecHeader p {
+  color: #ff984a;
+}
+
+.menuSecTabs {
+  border-radius: 13px;
+  background-color: #fefae0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 414px;
+}
+.menuSecTabs button {
+  width: 100%;
+  border-radius: 13px;
+  color: #853a04;
+  padding: 8px 12px;
+  transition: all ease 0.2s;
+}
+.menuSecTabs button:hover, .menuSecTabs button.active {
+  background-color: #ff984a;
+  color: #262626;
+}
+
+.MainCafeMenuContainer {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  color: var(--primary-color);
+}
+.MainCafeMenuContainer .MenuListsSec {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  row-gap: 30px;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+}
+.MainCafeMenuContainer .MenuListsSec > div {
+  background-color: transparent;
+  border-radius: 20px;
+  padding: 8px 12px;
+}
+.MainCafeMenuContainer .MenuListsSec > div .header {
+  border-bottom: 1px solid #edd089;
+  padding-bottom: 0.8rem;
+}
+.MainCafeMenuContainer .MenuListsSec > div .header > span img {
+  width: 55px;
+  height: 55px;
+}
+.MainCafeMenuContainer .MenuListsSec > div .content > li > div:nth-of-type(1) {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.MainCafeMenuContainer .MenuListsSec > div .content > li > div:nth-of-type(1) .dashedDiv {
+  border-bottom: 2px dotted white;
+  flex: 1;
+}
+.MainCafeMenuContainer .MenuListsSec > div .content > li .menuItemQty {
+  font-size: 1rem;
+}
+.MainCafeMenuContainer .MenuListsSec > div .content > li .plusBtn,
+.MainCafeMenuContainer .MenuListsSec > div .content > li .minusBtn {
+  background-color: #ebc17d;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  border: 1px solid white;
+}
+.MainCafeMenuContainer .MenuListsSec > div .content > li .plusBtn:hover,
+.MainCafeMenuContainer .MenuListsSec > div .content > li .minusBtn:hover {
+  background-color: #b48d67;
+}
+.MainCafeMenuContainer .MenuListsSec > div .content > li .item-div {
+  display: flex;
+  align-items: center;
+  width: 120px;
+  gap: 5px;
+}
+.MainCafeMenuContainer .MenuListsSec > div .content > li .item-div > span {
+  font-size: 1rem;
+}
+.MainCafeMenuContainer .MenuListsSec > div .content > li .price-div {
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  width: 90px;
+  gap: 5px;
+}
+.MainCafeMenuContainer .MenuTotalContainer {
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  padding: 10px;
+  gap: 40px;
+  border-radius: 14px;
+}
+.MainCafeMenuContainer .MenuTotalContainer > span {
+  background-color: var(--fourth-color);
+  border-radius: 9px;
+  padding: 15px 20px;
+}
+
+.SliderContainer.menu-reserve .swiper-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+.SliderContainer.menu-reserve .swiper-pagination-bullet {
+  background: white;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  opacity: 1;
+}
+.SliderContainer.menu-reserve .swiper-pagination-bullet-active {
+  background-color: transparent;
+  width: 11px;
+  height: 11px;
+  border: 1px solid #ff984a;
+  border-radius: 50%;
+}
+.SliderContainer.menu-reserve .custom-prev-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: transparent;
+  position: absolute;
+  z-index: 10;
+  bottom: 25px;
+  left: calc(50% - 80px);
+  transform: translateX(-50%);
+}
+.SliderContainer.menu-reserve .custom-prev-btn img {
+  width: 14px;
+  height: 14px;
+}
+.SliderContainer.menu-reserve .custom-next-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: transparent;
+  position: absolute;
+  z-index: 10;
+  bottom: 25px;
+  left: calc(50% + 80px);
+  transform: translateX(-50%);
+}
+.SliderContainer.menu-reserve .custom-next-btn img {
+  width: 14px;
+  height: 14px;
 }/*# sourceMappingURL=app.css.map */

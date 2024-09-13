@@ -328,6 +328,21 @@ header {
   }
 
   > .CardContainer {
+
+    .swiper-wrapper {
+      background-color: #04b360;
+      height: 500px;
+    }
+
+    .swiper-slide {
+      height: 400px;
+      display: flex; flex-direction: column;
+      // justify-content: center;
+      background-color: red;
+      padding-top: 2rem;
+      align-items: center;
+    }
+
     .MiniCard {
       max-width: 330px;
       width: 100%;
@@ -1546,6 +1561,300 @@ footer {
           color: $primary-color;
         }
       }
+    }
+  }
+}
+
+.SliderSec {
+  > h5 {
+    color: $primary-color;
+    font-size: 60px;
+    text-align: center;
+  }
+
+  .SliderContainer {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+
+    .swiper {
+      border-radius: 39px;
+      border: Mixed solid #ffffff;
+      overflow: hidden;
+      .swiper-slide {
+        width: 100%;
+        height: 100%;
+        max-height: 570px;
+      }
+    }
+  }
+}
+
+.menu-reserve-sec2 {
+  > h5 {
+    color: $secondary-color;
+    font-size: 50px;
+  }
+
+  > p {
+    color: $primary-color;
+  }
+
+  > section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+    column-gap: 2rem;
+    width: 100%;
+    max-width: 860px;
+    margin-top: 1rem;
+  }
+}
+
+.MapSection {
+  width: 100%;
+  max-width: 1122px;
+  height: 567px;
+  border: 1px solid $primary-color;
+  margin: 0 auto;
+  margin-top: 10rem;
+  margin-bottom: 6rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  border-radius: 25px;
+  position: relative;
+
+  > div {
+    width: 253px;
+    // height: 283px;
+    background-color: white;
+    border: 1px solid $third-color;
+    border-radius: 13px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    color: $third-color;
+    position: absolute;
+    top: 20%;
+    right: 30px;
+
+    span {
+      font-size: 0.9rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+
+    > h5 {
+      font-weight: 400;
+      border-bottom: 1px solid $third-color;
+      padding-bottom: 1rem;
+      font-size: 32px;
+    }
+  }
+}
+
+.menuSecHeader {
+  h3 {
+    font-size: 50px;
+    color: $secondary-color;
+  }
+
+  p {
+    color: $primary-color;
+  }
+}
+
+.menuSecTabs {
+  border-radius: 13px;
+  background-color: $secondary-color;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 414px;
+
+  button {
+    width: 100%;
+    border-radius: 13px;
+    color: #853a04;
+    padding: 8px 12px;
+    transition: all ease 0.2s;
+
+    &:hover,
+    &.active {
+      background-color: $primary-color;
+      color: $text2-color;
+    }
+  }
+}
+
+.MainCafeMenuContainer {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  color: var(--primary-color);
+
+  .MenuListsSec {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    // gap: 50px;
+    row-gap: 30px;
+    column-gap: 50px;
+
+    > div {
+      background-color: transparent;
+      border-radius: 20px;
+      padding: 8px 12px;
+
+      .header {
+        border-bottom: 1px solid #edd089;
+        padding-bottom: 0.8rem;
+
+        > span {
+          img {
+            width: 55px;
+            height: 55px;
+          }
+        }
+      }
+
+      .content {
+        > li {
+          > div:nth-of-type(1) {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            .dashedDiv {
+              border-bottom: 2px dotted white;
+              flex: 1;
+            }
+          }
+
+          .menuItemQty {
+            font-size: 1rem;
+          }
+
+          .plusBtn,
+          .minusBtn {
+            background-color: $sixth-color;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 7px;
+            border: 1px solid white;
+
+            &:hover {
+              background-color: $fourth-color;
+            }
+          }
+
+          .item-div {
+            display: flex;
+            align-items: center;
+            width: 120px;
+            gap: 5px;
+
+            > span {
+              font-size: 1rem;
+            }
+          }
+
+          .price-div {
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            width: 90px;
+            gap: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  .MenuTotalContainer {
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 10px;
+    gap: 40px;
+    border-radius: 14px;
+
+    > span {
+      background-color: var(--fourth-color);
+      border-radius: 9px;
+      padding: 15px 20px;
+    }
+  }
+}
+
+.SliderContainer.menu-reserve {
+  // display: none;
+
+  .swiper-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 1rem;
+  }
+
+  .swiper-pagination-bullet {
+    background: white;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    opacity: 1;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: transparent;
+    width: 11px;
+    height: 11px;
+    border: 1px solid $primary-color;
+    border-radius: 50%;
+    // margin-top: 4rem;
+  }
+
+  .custom-prev-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: transparent;
+    position: absolute;
+    z-index: 10;
+    bottom: 25px;
+    left: calc(50% - 80px);
+    transform: translateX(-50%);
+
+    img {
+      width: 14px;
+      height: 14px;
+    }
+  }
+  .custom-next-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: transparent;
+    position: absolute;
+    z-index: 10;
+    bottom: 25px;
+    left: calc(50% + 80px);
+    transform: translateX(-50%);
+
+    img {
+      width: 14px;
+      height: 14px;
     }
   }
 }

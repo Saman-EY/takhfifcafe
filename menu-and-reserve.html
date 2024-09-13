@@ -1,0 +1,1323 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="assets/imgandIcons/VitrinIcon.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="./assets/swiper/swiper.css" />
+
+    <link rel="stylesheet" href="styles/app.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
+    <title>تخفیف کافه</title>
+  </head>
+  <body>
+    <header>
+      <!-- mobile navbar -->
+      <section
+        class="MobileNavbar d-flex justify-content-between align-items-center px-5 d-md-none"
+      >
+        <button id="OpenMobileOffcanvas">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"
+            />
+          </svg>
+        </button>
+
+        <img src="./assets/img-icons/takhfifcoffe-light.svg" alt="icon" />
+      </section>
+      <!-- mobile navbar end -->
+
+      <!-- desktop navbar -->
+      <section class="DesktopNavbar p-4 mt-3">
+        <!-- logo - navlinks -->
+        <div class="first d-flex align-items-center gap-4">
+          <img src="./assets/img-icons/takhfifcoffe-light.svg" alt="logo" />
+          <ul class="d-flex gap-5 align-items-center">
+            <li>
+              <a href="./home-page.html">صفحه اصلی</a>
+            </li>
+            <li class="active">
+              <a href="./cafe-restuarant.html">کافه، رستوران ها</a>
+            </li>
+            <li>
+              <a href="#">تماس با ما</a>
+            </li>
+            <li>
+              <a href="#">درباره ما</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- search - login -->
+        <div class="second d-flex align-items-center gap-2">
+          <div class="d-flex align-items-end gap-1">
+            <button>
+              <img src="./assets/img-icons/search-normal.svg" alt="icon" />
+            </button>
+            <div>
+              <input type="text" />
+            </div>
+          </div>
+
+          <a href="#">
+            <span>
+              <svg
+                width="25"
+                height="24"
+                viewBox="0 0 25 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.1469 10.87C13.0469 10.86 12.9269 10.86 12.8169 10.87C10.4369 10.79 8.54688 8.84 8.54688 6.44C8.54688 3.99 10.5269 2 12.9869 2C15.4369 2 17.4269 3.99 17.4269 6.44C17.4169 8.84 15.5269 10.79 13.1469 10.87Z"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M8.14703 14.56C5.72703 16.18 5.72703 18.82 8.14703 20.43C10.897 22.27 15.407 22.27 18.157 20.43C20.577 18.81 20.577 16.17 18.157 14.56C15.417 12.73 10.907 12.73 8.14703 14.56Z"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+            ورود / ثبت نام
+          </a>
+        </div>
+      </section>
+      <!-- desktop navbar end -->
+    </header>
+
+    <main class="text-white container">
+      <!-- main slider -->
+      <section class="SliderSec">
+        <h5 class="mb-4">جزییات و رزرو</h5>
+
+        <section class="SliderContainer menu-reserve">
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+
+              <div class="swiper-slide">
+                <img
+                  class="w-100 h-100"
+                  src="./assets/img-icons/slide2.png"
+                  alt="slide-imge"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="w-100 h-100"
+                  src="./assets/img-icons/slide3.png"
+                  alt="slide-imge"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="w-100 h-100"
+                  src="./assets/img-icons/slide4.png"
+                  alt="slide-imge"
+                />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+
+            <!-- <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
+            <!-- Custom Navigation Buttons -->
+            <button id="mainsliderprev" class="custom-prev-btn"> <img src="./assets/img-icons/left-arrow-orange.svg" alt="svg"> </button>
+            <button id="mainslidernext" class="custom-next-btn"> <img src="./assets/img-icons/right-arrow-orange.svg" alt="svg"> </button>
+          </div>
+        </section>
+      </section>
+      <!-- main slider end -->
+
+      <!-- section 2 -->
+      <section
+        class="menu-reserve-sec2 mt-5 d-flex flex-column align-items-center justify-content-center gap-3"
+      >
+        <h5>امکانات کافه، رستوران لیتالو</h5>
+        <p>همه جزییات در نظر گرفته شده است</p>
+
+        <section>
+          <div class="d-flex flex-column gap-2 align-items-center">
+            <img src="./assets/img-icons/tv.svg" alt="img" />
+            <span>تلویزیون</span>
+          </div>
+          <div class="d-flex flex-column gap-2 align-items-center">
+            <img src="./assets/img-icons/cake.svg" alt="img" />
+            <span>مراسم تولد</span>
+          </div>
+          <div class="d-flex flex-column gap-2 align-items-center">
+            <img src="./assets/img-icons/book.svg" alt="img" />
+            <span>کافه کتاب</span>
+          </div>
+          <div class="d-flex flex-column gap-2 align-items-center">
+            <img src="./assets/img-icons/tower2.svg" alt="img" />
+            <span>فرانسوی</span>
+          </div>
+          <div class="d-flex flex-column gap-2 align-items-center">
+            <img src="./assets/img-icons/horse.svg" alt="img" />
+            <span>فضای کودک</span>
+          </div>
+          <div class="d-flex flex-column gap-2 align-items-center">
+            <img src="./assets/img-icons/pizza2.svg" alt="img" />
+            <span>پیتزا</span>
+          </div>
+          <div class="d-flex flex-column gap-2 align-items-center">
+            <img src="./assets/img-icons/italy-tower.svg" alt="img" />
+            <span>ایتالیایی</span>
+          </div>
+          <div class="d-flex flex-column gap-2 align-items-center">
+            <img src="./assets/img-icons/guitar2.svg" alt="img" />
+            <span>موزیک زنده</span>
+          </div>
+          <div class="d-flex flex-column gap-2 align-items-center">
+            <img src="./assets/img-icons/controller.svg" alt="img" />
+            <span>اتاق بازی</span>
+          </div>
+          <div class="d-flex flex-column gap-2 align-items-center">
+            <img src="./assets/img-icons/glass-drink.svg" alt="img" />
+            <span>کوکتل</span>
+          </div>
+          <div class="d-flex flex-column gap-2 align-items-center">
+            <img src="./assets/img-icons/pipe2.svg" alt="img" />
+            <span>اسموک روم</span>
+          </div>
+          <div class="d-flex flex-column gap-2 align-items-center">
+            <img src="./assets/img-icons/palace.svg" alt="img" />
+            <span>چینی</span>
+          </div>
+          <div class="d-flex flex-column gap-2 align-items-center">
+            <img src="./assets/img-icons/sofa.svg" alt="img" />
+            <span>مبلمان</span>
+          </div>
+          <div class="d-flex flex-column gap-2 align-items-center">
+            <img src="./assets/img-icons/food3.svg" alt="img" />
+            <span>سلف سرویس</span>
+          </div>
+          <div class="d-flex flex-column gap-2 align-items-center">
+            <img src="./assets/img-icons/smoke2.svg" alt="img" />
+            <span>قلیان</span>
+          </div>
+        </section>
+      </section>
+      <!-- section 2 end -->
+
+      <!-- MAP SEC BAGIN -->
+      <section class="px-2 px-md-0">
+        <section class="MapSection">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d25909.759955952068!2d51.33222457145884!3d35.73310428374431!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1725867089078!5m2!1sen!2sus"
+            width="100%"
+            height="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <div class="flex-column gap-3 d-none d-md-flex">
+            <h5>کافه، رستوران لیتالو</h5>
+            <div class="d-flex align-items-start gap-2">
+              <img src="./assets/img-icons/phone3.svg" alt="icon" />
+              <div class="d-flex flex-column">
+                <span>021-35326598</span>
+                <span>0912-5654332</span>
+              </div>
+            </div>
+            <div class="d-flex align-items-start gap-2">
+              <img src="./assets/img-icons/location.svg" alt="icon" />
+              <p>تهران - ادامه آدرس اینجا قرار می گیرد</p>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <img src="./assets/img-icons/instagram3.svg" alt="icon" />
+              <p>litalo_restaurant</p>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- MAP SEC END -->
+
+      <!-- Cafe menu begin -->
+      <section
+        class="mt-5 d-flex flex-column justify-content-center align-items-center"
+      >
+        <div class="menuSecHeader text-center">
+          <h3>منو کافه، رستوران</h3>
+          <p class="mb-2">همه قیمت ها به همراه تخفیف</p>
+        </div>
+
+        <div class="menuSecTabs mt-3 mb-5">
+          <button>انتخاب در کافه</button>
+          <button class="active">انتخاب به صورت آنلاین</button>
+        </div>
+
+        <!-- MAIN MENU CONTAINER -->
+        <section class="MainCafeMenuContainer">
+          <!-- MENU LISTS -->
+          <section class="MenuListsSec">
+            <div>
+              <!-- header -->
+              <div
+                class="header d-flex align-items-center justify-content-between"
+              >
+                <div class="d-flex align-items-center gap-3">
+                  <img src="./assets/img-icons/drink-burger.svg" alt="icon" />
+                  <p class="align-self-end mt-1">فست فود</p>
+                </div>
+                <span>
+                  <img src="./assets/img-icons/20dis.svg" alt="icon" />
+                </span>
+              </div>
+              <!-- content -->
+              <ul class="content d-flex flex-column gap-3 pt-3">
+                <li class="d-flex align-items-center">
+                  <div>
+                    <!-- item div -->
+                    <div class="item-div">
+                      <span class="mb-1"> پیتزا پپرونی </span>
+                      <div class="dashedDiv mx-1"></div>
+                    </div>
+                    <!-- price div -->
+                    <div class="price-div">
+                      350T
+                      <div class="dashedDiv"></div>
+                    </div>
+                  </div>
+                  <!-- btns -->
+                  <div
+                    style="margin-right: 5px"
+                    class="d-flex align-items-center gap-2"
+                  >
+                    <button class="plusBtn">
+                      <img
+                        style="width: 15px; height: 15px"
+                        src="./assets/img-icons/plus.svg"
+                        alt="plus"
+                      />
+                    </button>
+                    <span class="menuItemQty">0</span>
+                    <button class="minusBtn">
+                      <img
+                        style="width: 15px; height: 15px"
+                        src="./assets/img-icons/minus.svg"
+                        alt="minus"
+                      />
+                    </button>
+                  </div>
+                </li>
+                <li class="d-flex align-items-center">
+                  <div>
+                    <!-- item div -->
+                    <div class="item-div">
+                      <span class="mb-1"> پیتزا آمریکانو </span>
+                      <div class="dashedDiv mx-1"></div>
+                    </div>
+                    <!-- price div -->
+                    <div class="price-div">
+                      350T
+                      <div class="dashedDiv"></div>
+                    </div>
+                  </div>
+                  <!-- btns -->
+                  <div
+                    style="margin-right: 5px"
+                    class="d-flex align-items-center gap-2"
+                  >
+                    <button class="plusBtn">
+                      <img
+                        style="width: 15px; height: 15px"
+                        src="./assets/img-icons/plus.svg"
+                        alt="plus"
+                      />
+                    </button>
+                    <span class="menuItemQty">0</span>
+                    <button class="minusBtn">
+                      <img
+                        style="width: 15px; height: 15px"
+                        src="./assets/img-icons/minus.svg"
+                        alt="minus"
+                      />
+                    </button>
+                  </div>
+                </li>
+                <li class="d-flex align-items-center">
+                  <div>
+                    <!-- item div -->
+                    <div class="item-div">
+                      <span class="mb-1"> پیتزا پپرونی </span>
+                      <div class="dashedDiv mx-1"></div>
+                    </div>
+                    <!-- price div -->
+                    <div class="price-div">
+                      350T
+                      <div class="dashedDiv"></div>
+                    </div>
+                  </div>
+                  <!-- btns -->
+                  <div
+                    style="margin-right: 5px"
+                    class="d-flex align-items-center gap-2"
+                  >
+                    <button class="plusBtn">
+                      <img
+                        style="width: 15px; height: 15px"
+                        src="./assets/img-icons/plus.svg"
+                        alt="plus"
+                      />
+                    </button>
+                    <span class="menuItemQty">0</span>
+                    <button class="minusBtn">
+                      <img
+                        style="width: 15px; height: 15px"
+                        src="./assets/img-icons/minus.svg"
+                        alt="minus"
+                      />
+                    </button>
+                  </div>
+                </li>
+                <li class="d-flex align-items-center">
+                  <div>
+                    <!-- item div -->
+                    <div class="item-div">
+                      <span class="mb-1"> پیتزا پپرونی </span>
+                      <div class="dashedDiv mx-1"></div>
+                    </div>
+                    <!-- price div -->
+                    <div class="price-div">
+                      350T
+                      <div class="dashedDiv"></div>
+                    </div>
+                  </div>
+                  <!-- btns -->
+                  <div
+                    style="margin-right: 5px"
+                    class="d-flex align-items-center gap-2"
+                  >
+                    <button class="plusBtn">
+                      <img
+                        style="width: 15px; height: 15px"
+                        src="./assets/img-icons/plus.svg"
+                        alt="plus"
+                      />
+                    </button>
+                    <span class="menuItemQty">0</span>
+                    <button class="minusBtn">
+                      <img
+                        style="width: 15px; height: 15px"
+                        src="./assets/img-icons/minus.svg"
+                        alt="minus"
+                      />
+                    </button>
+                  </div>
+                </li>
+                <li class="d-flex align-items-center">
+                  <div>
+                    <!-- item div -->
+                    <div class="item-div">
+                      <span class="mb-1"> پیتزا پپرونی </span>
+                      <div class="dashedDiv mx-1"></div>
+                    </div>
+                    <!-- price div -->
+                    <div class="price-div">
+                      350T
+                      <div class="dashedDiv"></div>
+                    </div>
+                  </div>
+                  <!-- btns -->
+                  <div
+                    style="margin-right: 5px"
+                    class="d-flex align-items-center gap-2"
+                  >
+                    <button class="plusBtn">
+                      <img
+                        style="width: 15px; height: 15px"
+                        src="./assets/img-icons/plus.svg"
+                        alt="plus"
+                      />
+                    </button>
+                    <span class="menuItemQty">0</span>
+                    <button class="minusBtn">
+                      <img
+                        style="width: 15px; height: 15px"
+                        src="./assets/img-icons/minus.svg"
+                        alt="minus"
+                      />
+                    </button>
+                  </div>
+                </li>
+                <li class="d-flex align-items-center">
+                  <div>
+                    <!-- item div -->
+                    <div class="item-div">
+                      <span class="mb-1"> پیتزا پپرونی </span>
+                      <div class="dashedDiv mx-1"></div>
+                    </div>
+                    <!-- price div -->
+                    <div class="price-div">
+                      350T
+                      <div class="dashedDiv"></div>
+                    </div>
+                  </div>
+                  <!-- btns -->
+                  <div
+                    style="margin-right: 5px"
+                    class="d-flex align-items-center gap-2"
+                  >
+                    <button class="plusBtn">
+                      <img
+                        style="width: 15px; height: 15px"
+                        src="./assets/img-icons/plus.svg"
+                        alt="plus"
+                      />
+                    </button>
+                    <span class="menuItemQty">0</span>
+                    <button class="minusBtn">
+                      <img
+                        style="width: 15px; height: 15px"
+                        src="./assets/img-icons/minus.svg"
+                        alt="minus"
+                      />
+                    </button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <!-- header -->
+              <div
+                class="header d-flex align-items-center justify-content-between"
+              >
+                <div class="d-flex align-items-center gap-3">
+                  <img src="./assets/img-icons/plate-spoon.svg" alt="icon" />
+                  <p class="align-self-end mt-1">غذای ایرانی</p>
+                </div>
+                <span class="mt-1"
+                  ><img src="./assets/img-icons/10dis.svg" alt="icon"
+                /></span>
+              </div>
+
+              <!-- content -->
+              <ul class="content d-flex flex-column gap-3 pt-3">
+                <li class="d-flex align-items-center">
+                  <div>
+                    <!-- item div -->
+                    <div class="item-div">
+                      <span class="mb-1"> باقالی پلو با ماهیچه</span>
+                      <div class="dashedDiv mx-1"></div>
+                    </div>
+                    <!-- price div -->
+                    <div class="price-div">
+                      350T
+                      <div class="dashedDiv"></div>
+                    </div>
+                  </div>
+                  <!-- btns -->
+                  <div
+                    style="margin-right: 5px"
+                    class="d-flex align-items-center gap-2"
+                  >
+                    <button class="plusBtn">
+                      <img
+                        style="width: 15px; height: 15px"
+                        src="./assets/img-icons/plus.svg"
+                        alt="plus"
+                      />
+                    </button>
+                    <span class="menuItemQty">0</span>
+                    <button class="minusBtn">
+                      <img
+                        style="width: 15px; height: 15px"
+                        src="./assets/img-icons/minus.svg"
+                        alt="minus"
+                      />
+                    </button>
+                  </div>
+                </li>
+                <li class="d-flex align-items-center">
+                  <div>
+                    <!-- item div -->
+                    <div class="item-div">
+                      <span class="mb-1"> زرشک پلو</span>
+                      <div class="dashedDiv mx-1"></div>
+                    </div>
+                    <!-- price div -->
+                    <div class="price-div">
+                      350T
+                      <div class="dashedDiv"></div>
+                    </div>
+                  </div>
+                  <!-- btns -->
+                  <div
+                    style="margin-right: 5px"
+                    class="d-flex align-items-center gap-2"
+                  >
+                    <button class="plusBtn">
+                      <img
+                        style="width: 15px; height: 15px"
+                        src="./assets/img-icons/plus.svg"
+                        alt="plus"
+                      />
+                    </button>
+                    <span class="menuItemQty">0</span>
+                    <button class="minusBtn">
+                      <img
+                        style="width: 15px; height: 15px"
+                        src="./assets/img-icons/minus.svg"
+                        alt="minus"
+                      />
+                    </button>
+                  </div>
+                </li>
+                <li class="d-flex align-items-center">
+                  <div>
+                    <!-- item div -->
+                    <div class="item-div">
+                      <span class="mb-1"> تهچین </span>
+                      <div class="dashedDiv mx-1"></div>
+                    </div>
+                    <!-- price div -->
+                    <div class="price-div">
+                      350T
+                      <div class="dashedDiv"></div>
+                    </div>
+                  </div>
+                  <!-- btns -->
+                  <div
+                    style="margin-right: 5px"
+                    class="d-flex align-items-center gap-2"
+                  >
+                    <button class="plusBtn">
+                      <img
+                        style="width: 15px; height: 15px"
+                        src="./assets/img-icons/plus.svg"
+                        alt="plus"
+                      />
+                    </button>
+                    <span class="menuItemQty">0</span>
+                    <button class="minusBtn">
+                      <img
+                        style="width: 15px; height: 15px"
+                        src="./assets/img-icons/minus.svg"
+                        alt="minus"
+                      />
+                    </button>
+                  </div>
+                </li>
+                <li class="d-flex align-items-center">
+                  <div>
+                    <!-- item div -->
+                    <div class="item-div">
+                      <span class="mb-1"> زرشک پلو </span>
+                      <div class="dashedDiv mx-1"></div>
+                    </div>
+                    <!-- price div -->
+                    <div class="price-div">
+                      350T
+                      <div class="dashedDiv"></div>
+                    </div>
+                  </div>
+                  <!-- btns -->
+                  <div
+                    style="margin-right: 5px"
+                    class="d-flex align-items-center gap-2"
+                  >
+                    <button class="plusBtn">
+                      <img
+                        style="width: 15px; height: 15px"
+                        src="./assets/img-icons/plus.svg"
+                        alt="plus"
+                      />
+                    </button>
+                    <span class="menuItemQty">0</span>
+                    <button class="minusBtn">
+                      <img
+                        style="width: 15px; height: 15px"
+                        src="./assets/img-icons/minus.svg"
+                        alt="minus"
+                      />
+                    </button>
+                  </div>
+                </li>
+                <li class="d-flex align-items-center">
+                  <div>
+                    <!-- item div -->
+                    <div class="item-div">
+                      <span class="mb-1"> زرشک پلو </span>
+                      <div class="dashedDiv mx-1"></div>
+                    </div>
+                    <!-- price div -->
+                    <div class="price-div">
+                      350T
+                      <div class="dashedDiv"></div>
+                    </div>
+                  </div>
+                  <!-- btns -->
+                  <div
+                    style="margin-right: 5px"
+                    class="d-flex align-items-center gap-2"
+                  >
+                    <button class="plusBtn">
+                      <img
+                        style="width: 15px; height: 15px"
+                        src="./assets/img-icons/plus.svg"
+                        alt="plus"
+                      />
+                    </button>
+                    <span class="menuItemQty">0</span>
+                    <button class="minusBtn">
+                      <img
+                        style="width: 15px; height: 15px"
+                        src="./assets/img-icons/minus.svg"
+                        alt="minus"
+                      />
+                    </button>
+                  </div>
+                </li>
+                <li class="d-flex align-items-center">
+                  <div>
+                    <!-- item div -->
+                    <div class="item-div">
+                      <span class="mb-1"> زرشک پلو </span>
+                      <div class="dashedDiv mx-1"></div>
+                    </div>
+                    <!-- price div -->
+                    <div class="price-div">
+                      350T
+                      <div class="dashedDiv"></div>
+                    </div>
+                  </div>
+                  <!-- btns -->
+                  <div
+                    style="margin-right: 5px"
+                    class="d-flex align-items-center gap-2"
+                  >
+                    <button class="plusBtn">
+                      <img
+                        style="width: 15px; height: 15px"
+                        src="./assets/img-icons/plus.svg"
+                        alt="plus"
+                      />
+                    </button>
+                    <span class="menuItemQty">0</span>
+                    <button class="minusBtn">
+                      <img
+                        style="width: 15px; height: 15px"
+                        src="./assets/img-icons/minus.svg"
+                        alt="minus"
+                      />
+                    </button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <!-- header -->
+              <div
+                class="header d-flex align-items-center justify-content-between"
+              >
+                <div class="d-flex align-items-center gap-3">
+                  <img src="./assets/img-icons/hot-coffe2.svg" alt="icon" />
+                  <p class="align-self-end mt-1">نوشیدنی گرم</p>
+                </div>
+                <span class="mt-1"></span>
+              </div>
+
+              <!-- content -->
+              <ul class="content d-flex flex-column gap-3 pt-3">
+                <li class="d-flex align-items-center">
+                  <div>
+                    <!-- item div -->
+                    <div class="item-div">
+                      <span class="mb-1"> اسپرسو </span>
+                      <div class="dashedDiv mx-1"></div>
+                    </div>
+                    <!-- price div -->
+                    <div class="price-div">
+                      350T
+                      <div class="dashedDiv"></div>
+                    </div>
+                  </div>
+                  <!-- btns -->
+                  <div
+                    style="margin-right: 5px"
+                    class="d-flex align-items-center gap-2"
+                  >
+                    <button class="plusBtn">
+                      <img
+                        style="width: 15px; height: 15px"
+                        src="./assets/img-icons/plus.svg"
+                        alt="plus"
+                      />
+                    </button>
+                    <span class="menuItemQty">0</span>
+                    <button class="minusBtn">
+                      <img
+                        style="width: 15px; height: 15px"
+                        src="./assets/img-icons/minus.svg"
+                        alt="minus"
+                      />
+                    </button>
+                  </div>
+                </li>
+                <li class="d-flex align-items-center">
+                  <div>
+                    <!-- item div -->
+                    <div class="item-div">
+                      <span class="mb-1"> آمریکانو </span>
+                      <div class="dashedDiv mx-1"></div>
+                    </div>
+                    <!-- price div -->
+                    <div class="price-div">
+                      350T
+                      <div class="dashedDiv"></div>
+                    </div>
+                  </div>
+                  <!-- btns -->
+                  <div
+                    style="margin-right: 5px"
+                    class="d-flex align-items-center gap-2"
+                  >
+                    <button class="plusBtn">
+                      <img
+                        style="width: 15px; height: 15px"
+                        src="./assets/img-icons/plus.svg"
+                        alt="plus"
+                      />
+                    </button>
+                    <span class="menuItemQty">0</span>
+                    <button class="minusBtn">
+                      <img
+                        style="width: 15px; height: 15px"
+                        src="./assets/img-icons/minus.svg"
+                        alt="minus"
+                      />
+                    </button>
+                  </div>
+                </li>
+                <li class="d-flex align-items-center">
+                  <div>
+                    <!-- item div -->
+                    <div class="item-div">
+                      <span class="mb-1"> موکا </span>
+                      <div class="dashedDiv mx-1"></div>
+                    </div>
+                    <!-- price div -->
+                    <div class="price-div">
+                      350T
+                      <div class="dashedDiv"></div>
+                    </div>
+                  </div>
+                  <!-- btns -->
+                  <div
+                    style="margin-right: 5px"
+                    class="d-flex align-items-center gap-2"
+                  >
+                    <button class="plusBtn">
+                      <img
+                        style="width: 15px; height: 15px"
+                        src="./assets/img-icons/plus.svg"
+                        alt="plus"
+                      />
+                    </button>
+                    <span class="menuItemQty">0</span>
+                    <button class="minusBtn">
+                      <img
+                        style="width: 15px; height: 15px"
+                        src="./assets/img-icons/minus.svg"
+                        alt="minus"
+                      />
+                    </button>
+                  </div>
+                </li>
+                <li class="d-flex align-items-center">
+                  <div>
+                    <!-- item div -->
+                    <div class="item-div">
+                      <span class="mb-1"> لاته </span>
+                      <div class="dashedDiv mx-1"></div>
+                    </div>
+                    <!-- price div -->
+                    <div class="price-div">
+                      350T
+                      <div class="dashedDiv"></div>
+                    </div>
+                  </div>
+                  <!-- btns -->
+                  <div
+                    style="margin-right: 5px"
+                    class="d-flex align-items-center gap-2"
+                  >
+                    <button class="plusBtn">
+                      <img
+                        style="width: 15px; height: 15px"
+                        src="./assets/img-icons/plus.svg"
+                        alt="plus"
+                      />
+                    </button>
+                    <span class="menuItemQty">0</span>
+                    <button class="minusBtn">
+                      <img
+                        style="width: 15px; height: 15px"
+                        src="./assets/img-icons/minus.svg"
+                        alt="minus"
+                      />
+                    </button>
+                  </div>
+                </li>
+                <li class="d-flex align-items-center">
+                  <div>
+                    <!-- item div -->
+                    <div class="item-div">
+                      <span class="mb-1"> موکا </span>
+                      <div class="dashedDiv mx-1"></div>
+                    </div>
+                    <!-- price div -->
+                    <div class="price-div">
+                      350T
+                      <div class="dashedDiv"></div>
+                    </div>
+                  </div>
+                  <!-- btns -->
+                  <div
+                    style="margin-right: 5px"
+                    class="d-flex align-items-center gap-2"
+                  >
+                    <button class="plusBtn">
+                      <img
+                        style="width: 15px; height: 15px"
+                        src="./assets/img-icons/plus.svg"
+                        alt="plus"
+                      />
+                    </button>
+                    <span class="menuItemQty">0</span>
+                    <button class="minusBtn">
+                      <img
+                        style="width: 15px; height: 15px"
+                        src="./assets/img-icons/minus.svg"
+                        alt="minus"
+                      />
+                    </button>
+                  </div>
+                </li>
+                <li class="d-flex align-items-center">
+                  <div>
+                    <!-- item div -->
+                    <div class="item-div">
+                      <span class="mb-1"> کاپوچینو </span>
+                      <div class="dashedDiv mx-1"></div>
+                    </div>
+                    <!-- price div -->
+                    <div class="price-div">
+                      350T
+                      <div class="dashedDiv"></div>
+                    </div>
+                  </div>
+                  <!-- btns -->
+                  <div
+                    style="margin-right: 5px"
+                    class="d-flex align-items-center gap-2"
+                  >
+                    <button class="plusBtn">
+                      <img
+                        style="width: 15px; height: 15px"
+                        src="./assets/img-icons/plus.svg"
+                        alt="plus"
+                      />
+                    </button>
+                    <span class="menuItemQty">0</span>
+                    <button class="minusBtn">
+                      <img
+                        style="width: 15px; height: 15px"
+                        src="./assets/img-icons/minus.svg"
+                        alt="minus"
+                      />
+                    </button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <!-- header -->
+              <div
+                class="header d-flex align-items-center justify-content-between"
+              >
+                <div class="d-flex align-items-center gap-3">
+                  <img src="./assets/img-icons/can.svg" alt="icon" />
+                  <p class="align-self-end mt-1">نوشیدنی</p>
+                </div>
+                <span></span>
+              </div>
+
+              <!-- content -->
+              <ul class="content d-flex flex-column gap-3 pt-3">
+                <li class="d-flex align-items-center">
+                  <div>
+                    <!-- item div -->
+                    <div class="item-div">
+                      <span class="mb-1"> نوشابه </span>
+                      <div class="dashedDiv mx-1"></div>
+                    </div>
+                    <!-- price div -->
+                    <div class="price-div">
+                      350T
+                      <div class="dashedDiv"></div>
+                    </div>
+                  </div>
+                  <!-- btns -->
+                  <div
+                    style="margin-right: 5px"
+                    class="d-flex align-items-center gap-2"
+                  >
+                    <button class="plusBtn">
+                      <img
+                        style="width: 15px; height: 15px"
+                        src="./assets/img-icons/plus.svg"
+                        alt="plus"
+                      />
+                    </button>
+                    <span class="menuItemQty">0</span>
+                    <button class="minusBtn">
+                      <img
+                        style="width: 15px; height: 15px"
+                        src="./assets/img-icons/minus.svg"
+                        alt="minus"
+                      />
+                    </button>
+                  </div>
+                </li>
+                <li class="d-flex align-items-center">
+                  <div>
+                    <!-- item div -->
+                    <div class="item-div">
+                      <span class="mb-1"> آب </span>
+                      <div class="dashedDiv mx-1"></div>
+                    </div>
+                    <!-- price div -->
+                    <div class="price-div">
+                      350T
+                      <div class="dashedDiv"></div>
+                    </div>
+                  </div>
+                  <!-- btns -->
+                  <div
+                    style="margin-right: 5px"
+                    class="d-flex align-items-center gap-2"
+                  >
+                    <button class="plusBtn">
+                      <img
+                        style="width: 15px; height: 15px"
+                        src="./assets/img-icons/plus.svg"
+                        alt="plus"
+                      />
+                    </button>
+                    <span class="menuItemQty">0</span>
+                    <button class="minusBtn">
+                      <img
+                        style="width: 15px; height: 15px"
+                        src="./assets/img-icons/minus.svg"
+                        alt="minus"
+                      />
+                    </button>
+                  </div>
+                </li>
+                <li class="d-flex align-items-center">
+                  <div>
+                    <!-- item div -->
+                    <div class="item-div">
+                      <span class="mb-1"> دوغ </span>
+                      <div class="dashedDiv mx-1"></div>
+                    </div>
+                    <!-- price div -->
+                    <div class="price-div">
+                      350T
+                      <div class="dashedDiv"></div>
+                    </div>
+                  </div>
+                  <!-- btns -->
+                  <div
+                    style="margin-right: 5px"
+                    class="d-flex align-items-center gap-2"
+                  >
+                    <button class="plusBtn">
+                      <img
+                        style="width: 15px; height: 15px"
+                        src="./assets/img-icons/plus.svg"
+                        alt="plus"
+                      />
+                    </button>
+                    <span class="menuItemQty">0</span>
+                    <button class="minusBtn">
+                      <img
+                        style="width: 15px; height: 15px"
+                        src="./assets/img-icons/minus.svg"
+                        alt="minus"
+                      />
+                    </button>
+                  </div>
+                </li>
+                <li class="d-flex align-items-center">
+                  <div>
+                    <!-- item div -->
+                    <div class="item-div">
+                      <span class="mb-1"> دلتسر </span>
+                      <div class="dashedDiv mx-1"></div>
+                    </div>
+                    <!-- price div -->
+                    <div class="price-div">
+                      350T
+                      <div class="dashedDiv"></div>
+                    </div>
+                  </div>
+                  <!-- btns -->
+                  <div
+                    style="margin-right: 5px"
+                    class="d-flex align-items-center gap-2"
+                  >
+                    <button class="plusBtn">
+                      <img
+                        style="width: 15px; height: 15px"
+                        src="./assets/img-icons/plus.svg"
+                        alt="plus"
+                      />
+                    </button>
+                    <span class="menuItemQty">0</span>
+                    <button class="minusBtn">
+                      <img
+                        style="width: 15px; height: 15px"
+                        src="./assets/img-icons/minus.svg"
+                        alt="minus"
+                      />
+                    </button>
+                  </div>
+                </li>
+                <li class="d-flex align-items-center">
+                  <div>
+                    <!-- item div -->
+                    <div class="item-div">
+                      <span class="mb-1"> دلتسر </span>
+                      <div class="dashedDiv mx-1"></div>
+                    </div>
+                    <!-- price div -->
+                    <div class="price-div">
+                      350T
+                      <div class="dashedDiv"></div>
+                    </div>
+                  </div>
+                  <!-- btns -->
+                  <div
+                    style="margin-right: 5px"
+                    class="d-flex align-items-center gap-2"
+                  >
+                    <button class="plusBtn">
+                      <img
+                        style="width: 15px; height: 15px"
+                        src="./assets/img-icons/plus.svg"
+                        alt="plus"
+                      />
+                    </button>
+                    <span class="menuItemQty">0</span>
+                    <button class="minusBtn">
+                      <img
+                        style="width: 15px; height: 15px"
+                        src="./assets/img-icons/minus.svg"
+                        alt="minus"
+                      />
+                    </button>
+                  </div>
+                </li>
+                <li class="d-flex align-items-center">
+                  <div>
+                    <!-- item div -->
+                    <div class="item-div">
+                      <span class="mb-1"> آب </span>
+                      <div class="dashedDiv mx-1"></div>
+                    </div>
+                    <!-- price div -->
+                    <div class="price-div">
+                      350T
+                      <div class="dashedDiv"></div>
+                    </div>
+                  </div>
+                  <!-- btns -->
+                  <div
+                    style="margin-right: 5px"
+                    class="d-flex align-items-center gap-2"
+                  >
+                    <button class="plusBtn">
+                      <img
+                        style="width: 15px; height: 15px"
+                        src="./assets/img-icons/plus.svg"
+                        alt="plus"
+                      />
+                    </button>
+                    <span class="menuItemQty">0</span>
+                    <button class="minusBtn">
+                      <img
+                        style="width: 15px; height: 15px"
+                        src="./assets/img-icons/minus.svg"
+                        alt="minus"
+                      />
+                    </button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <!-- MENU LISTS END -->
+        </section>
+        <!-- MAIN MENU CONTAINER END -->
+      </section>
+      <!-- Cafe menu end -->
+
+      <!-- Reserve Section -->
+
+      <!-- Reserve Section end -->
+    </main>
+
+    <!-- mobile offcanvas -->
+    <div class="offcanvasOverlay"></div>
+    <section class="MobileOffcanvas">
+      <button id="closeMobileOffcanvas">
+        <svg
+          fill="white"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 512 512"
+        >
+          <path
+            d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"
+          />
+        </svg>
+      </button>
+      <ul class="p-3 mt-3 d-flex flex-column gap-3">
+        <li>
+          <a href="./home-page.html">صفحه اصلی</a>
+        </li>
+        <li>
+          <a href="./">کافه رستوران ها</a>
+        </li>
+        <li>
+          <a href="./">تماس با ما</a>
+        </li>
+        <li>
+          <a href="./">درباره ما</a>
+        </li>
+      </ul>
+    </section>
+    <!-- mobile offcanvas end -->
+
+    <!-- FOOTER BEIGN -->
+    <footer class="mt-5">
+      <section
+        class="d-flex flex-wrap justify-content-center justify-content-md-around align-items-center gap-4"
+      >
+        <div>
+          <img
+            class="mb-4"
+            src="./assets/img-icons/takhfifcoffe-dark.svg"
+            alt="logo"
+          />
+          <ul>
+            <li>
+              <a href="#">
+                <img src="./assets/img-icons/instagram.svg" alt="instagram" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./assets/img-icons/telegram.svg" alt="telegram" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./assets/img-icons/linkdin.svg" alt="linkdin" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./assets/img-icons/youtube.svg" alt="youtube" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./assets/img-icons/x.svg" alt="twitter" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./assets/img-icons/whatsapp.svg" alt="whatsapp" />
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="d-flex flex-column gap-2">
+          <span>دسترسی سریع</span>
+          <ul class="d-flex flex-column gap-2">
+            <li>
+              <a href="#"> کافه ها </a>
+            </li>
+            <li>
+              <a href="#"> رستوران ها </a>
+            </li>
+            <li>
+              <a href="#"> کافه، رستوران ها </a>
+            </li>
+            <li>
+              <a href="#"> ارتباط با ما </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="d-flex flex-column gap-2">
+          <span>ارتباط با ما</span>
+          <ul class="d-flex flex-column gap-2">
+            <li>
+              <img class="mt-1" src="./assets/img-icons/phone.svg" alt="icon" />
+              <div>
+                <a href="#"> ۰۲۱-۲۶۲۳۲۶۲۶ </a> <br />
+                <a href="#"> ۰۹۱۲-۵۸۴۹۸۳۲۱ </a>
+              </div>
+            </li>
+            <li class="my-1">
+              <img src="./assets/img-icons/map.svg" alt="icon" />
+              <a href="#"> تهران - ادامه آدرس اینجا قرار می گیرد</a>
+            </li>
+            <li>
+              <img src="./assets/img-icons/sms.svg" alt="icon" />
+              <a href="#"> info@takhfifcoffe.com </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </footer>
+    <!-- FOOTER END -->
+
+    <script src="./assets/swiper/swiper-effect-utils.mjs"></script>
+    <script src="./assets/swiper/swiper-bundle.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/menu-and-reserve.js"></script>
+  </body>
+</html>

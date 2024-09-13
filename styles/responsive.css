@@ -71,6 +71,11 @@
     padding: 10px;
   }
 }
+@media (min-width: 680px) {
+  .MenuListsSec {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
 @media (max-width: 767.5px) {
   .DesktopNavbar {
     display: none;

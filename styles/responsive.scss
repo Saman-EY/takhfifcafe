@@ -35,23 +35,15 @@
     }
   }
 
-
-
   .AccordionsContainer {
-
-
-
     .openAccordion {
-     display: none !important;
-
+      display: none !important;
     }
 
-    .closeAccordion{
+    .closeAccordion {
       display: none !important;
     }
   }
-
-
 }
 @media (max-width: 500px) {
   .AboutusSec3 {
@@ -61,8 +53,6 @@
       }
     }
   }
-
-
 }
 
 @media (min-width: 500px) {
@@ -82,24 +72,19 @@
     }
   }
 
-
   .AccordionsContainer {
-
-  padding-left: 20px;
-
+    padding-left: 20px;
 
     .openAccordion {
       width: 25px !important;
       height: 25px !important;
-
     }
 
-    .closeAccordion{
+    .closeAccordion {
       width: 25px !important;
       height: 25px !important;
     }
   }
-
 }
 @media (max-width: 668px) {
   footer {
@@ -108,6 +93,11 @@
     > section {
       padding: 10px;
     }
+  }
+}
+@media (min-width: 680px) {
+  .MenuListsSec {
+    grid-template-columns: repeat(2, 1fr) !important;
   }
 }
 
