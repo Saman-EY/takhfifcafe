@@ -141,16 +141,23 @@
                 />
               </div>
             </div>
-            <div class="swiper-pagination"></div>
 
-            <!-- <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div> -->
-            <!-- Custom Navigation Buttons -->
-            <button id="mainsliderprev" class="custom-prev-btn"> <img src="./assets/img-icons/left-arrow-orange.svg" alt="svg"> </button>
-            <button id="mainslidernext" class="custom-next-btn"> <img src="./assets/img-icons/right-arrow-orange.svg" alt="svg"> </button>
+            <div class="swiperUtilContainer">
+              <button id="mainslidernext" class="custom-next-btn">
+                <img
+                  src="./assets/img-icons/right-arrow-orange.svg"
+                  alt="svg"
+                />
+              </button>
+              <div class="swiper-pagination"></div>
+              <button id="mainsliderprev" class="custom-prev-btn">
+                <img src="./assets/img-icons/left-arrow-orange.svg" alt="svg" />
+              </button>
+            </div>
           </div>
         </section>
       </section>
+
       <!-- main slider end -->
 
       <!-- section 2 -->
@@ -1192,9 +1199,58 @@
       </section>
       <!-- Cafe menu end -->
 
-      <!-- Reserve Section -->
+      <!-- Reserve Sec -->
 
-      <!-- Reserve Section end -->
+      <h5 class="ReserveSecHeader">رزروتو نهایی کن</h5>
+
+      <section
+        class="ReserveSec d-flex align-items-center justify-content-center"
+      >
+        <div>
+          <form class="" action="#">
+            <div class="mb-2">
+              <input type="text" placeholder="نام" />
+              <input type="text" placeholder="شماره تماس" />
+            </div>
+
+            <div>
+              <select id="dino-select">
+                <option>تعداد نفرات</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+              <div class="position-relative secondDiv">
+                <input
+                  type="text"
+                  data-jdp
+                  data-jdp-min-date="today"
+                  placeholder="تاریخ"
+                  data-jdp-only-date
+                />
+                <img
+                  style="left: 10px"
+                  class="position-absolute"
+                  src="./assets/img-icons/calendar.svg"
+                  alt="item"
+                />
+              </div>
+            </div>
+            <textarea
+              name="reserveDescription"
+              id="reserveDescription"
+              placeholder="توضیحات"
+              class="mt-2"
+            ></textarea>
+            <button>دریافت کد رزرو</button>
+          </form>
+        </div>
+
+        <img class="mt-5" src="./assets/img-icons/coffe-leaf.svg" alt="image" />
+      </section>
+      <!-- Reserve sec end -->
     </main>
 
     <!-- mobile offcanvas -->

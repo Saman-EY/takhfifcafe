@@ -62,6 +62,9 @@
     width: 25px !important;
     height: 25px !important;
   }
+  .HomeSec2 .btn-under-slider span {
+    left: 0px;
+  }
 }
 @media (max-width: 668px) {
   footer {

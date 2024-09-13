@@ -328,19 +328,71 @@ header {
   }
 
   > .CardContainer {
-
     .swiper-wrapper {
-      background-color: #04b360;
-      height: 500px;
+      height: 420px;
     }
 
     .swiper-slide {
       height: 400px;
-      display: flex; flex-direction: column;
-      // justify-content: center;
-      background-color: red;
+      display: flex;
+      flex-direction: column;
       padding-top: 2rem;
       align-items: center;
+    }
+
+    .swiperUtilContainer {
+      position: relative;
+    }
+
+    .swiper-pagination {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      // margin-bottom: 1rem;
+      position: static;
+      width: fit-content;
+    }
+
+    .swiper-pagination-bullet {
+      background: white;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      opacity: 1;
+    }
+    .swiper-pagination-bullet-active {
+      background-color: transparent;
+      width: 11px;
+      height: 11px;
+      border: 1px solid $primary-color;
+      border-radius: 50%;
+      // margin-top: 4rem;
+    }
+
+    .custom-prev-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: transparent;
+
+      img {
+        width: 14px;
+        height: 14px;
+      }
+    }
+    .custom-next-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      color: transparent;
+
+      img {
+        width: 14px;
+        height: 14px;
+      }
     }
 
     .MiniCard {
@@ -421,6 +473,20 @@ header {
     }
     > div:last-child {
       color: var(--primary-color);
+    }
+  }
+
+  .btn-under-slider {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    span {
+      position: absolute;
+      bottom: -16px;
+      left: -20px;
     }
   }
 }
@@ -1586,6 +1652,17 @@ footer {
         height: 100%;
         max-height: 570px;
       }
+
+      .swiperUtilContainer {
+        position: relative;
+        width: fit-content;
+        margin: 0 auto;
+        display: flex;
+        margin-bottom: 1rem;
+        align-items: center;
+        gap: 20px;
+        z-index: 40;
+      }
     }
   }
 }
@@ -1803,8 +1880,8 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: static;
     gap: 10px;
-    margin-bottom: 1rem;
   }
 
   .swiper-pagination-bullet {
@@ -1827,13 +1904,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    text-align: center;
     color: transparent;
-    position: absolute;
-    z-index: 10;
-    bottom: 25px;
-    left: calc(50% - 80px);
-    transform: translateX(-50%);
 
     img {
       width: 14px;
@@ -1844,17 +1916,88 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-
     color: transparent;
-    position: absolute;
-    z-index: 10;
-    bottom: 25px;
-    left: calc(50% + 80px);
-    transform: translateX(-50%);
 
     img {
       width: 14px;
       height: 14px;
+    }
+  }
+}
+
+.ReserveSecHeader {
+  text-align: center;
+  color: $primary-color;
+  font-size: 40px;
+  margin-top: 4rem;
+}
+
+.ReserveSec {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 92px;
+  color: $text3-color;
+  > h5 {
+    font-weight: 400;
+    font-size: 45px;
+    color: $primary-color;
+  }
+
+  > div {
+    > form {
+      > div:nth-of-type(1) {
+        input {
+          padding: 0 12px;
+          &::placeholder {
+            color: gray;
+            padding: 0;
+          }
+        }
+      }
+
+      div {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        select {
+          border-radius: 10px;
+          width: 216px;
+          height: 54px;
+          padding: 0 8px;
+        }
+
+        input {
+          border-radius: 10px;
+          height: 54px;
+          width: 216px;
+
+          &::placeholder {
+            color: $text2-color;
+            padding-right: 1rem;
+          }
+        }
+      }
+
+      textarea {
+        height: 160px;
+        width: 100%;
+        resize: none;
+        border-radius: 10px;
+        border: 1px solid $primary-color;
+        padding: 5px 10px;
+      }
+
+      button {
+        background-color: $primary-color;
+        color: $text2-color;
+        font-size: 1rem;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        padding: 10px 15px;
+      }
     }
   }
 }

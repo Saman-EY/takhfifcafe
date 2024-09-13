@@ -272,16 +272,61 @@ header .MobileNavbar > img {
   color: #853a04;
 }
 .HomeSec2 > .CardContainer .swiper-wrapper {
-  background-color: #04b360;
-  height: 500px;
+  height: 420px;
 }
 .HomeSec2 > .CardContainer .swiper-slide {
   height: 400px;
   display: flex;
   flex-direction: column;
-  background-color: red;
   padding-top: 2rem;
   align-items: center;
+}
+.HomeSec2 > .CardContainer .swiperUtilContainer {
+  position: relative;
+}
+.HomeSec2 > .CardContainer .swiper-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: static;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.HomeSec2 > .CardContainer .swiper-pagination-bullet {
+  background: white;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  opacity: 1;
+}
+.HomeSec2 > .CardContainer .swiper-pagination-bullet-active {
+  background-color: transparent;
+  width: 11px;
+  height: 11px;
+  border: 1px solid #ff984a;
+  border-radius: 50%;
+}
+.HomeSec2 > .CardContainer .custom-prev-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: transparent;
+}
+.HomeSec2 > .CardContainer .custom-prev-btn img {
+  width: 14px;
+  height: 14px;
+}
+.HomeSec2 > .CardContainer .custom-next-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: transparent;
+}
+.HomeSec2 > .CardContainer .custom-next-btn img {
+  width: 14px;
+  height: 14px;
 }
 .HomeSec2 > .CardContainer .MiniCard {
   max-width: 330px;
@@ -353,6 +398,19 @@ header .MobileNavbar > img {
 }
 .HomeSec2 .HomeSec2Paginate > div:last-child {
   color: var(--primary-color);
+}
+.HomeSec2 .btn-under-slider {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+.HomeSec2 .btn-under-slider span {
+  position: absolute;
+  bottom: -16px;
+  left: -20px;
 }
 
 .HomeSec3 > img {
@@ -1359,6 +1417,17 @@ input[type=checkbox]:checked + .RegisterPage .RegisterCard .formContainer form >
   height: 100%;
   max-height: 570px;
 }
+.SliderSec .SliderContainer .swiper .swiperUtilContainer {
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  display: flex;
+  margin-bottom: 1rem;
+  align-items: center;
+  gap: 20px;
+  z-index: 40;
+}
 
 .menu-reserve-sec2 > h5 {
   color: #fefae0;
@@ -1538,8 +1607,8 @@ input[type=checkbox]:checked + .RegisterPage .RegisterCard .formContainer form >
   display: flex;
   align-items: center;
   justify-content: center;
+  position: static;
   gap: 10px;
-  margin-bottom: 1rem;
 }
 .SliderContainer.menu-reserve .swiper-pagination-bullet {
   background: white;
@@ -1559,12 +1628,8 @@ input[type=checkbox]:checked + .RegisterPage .RegisterCard .formContainer form >
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   color: transparent;
-  position: absolute;
-  z-index: 10;
-  bottom: 25px;
-  left: calc(50% - 80px);
-  transform: translateX(-50%);
 }
 .SliderContainer.menu-reserve .custom-prev-btn img {
   width: 14px;
@@ -1575,13 +1640,80 @@ input[type=checkbox]:checked + .RegisterPage .RegisterCard .formContainer form >
   justify-content: center;
   align-items: center;
   color: transparent;
-  position: absolute;
-  z-index: 10;
-  bottom: 25px;
-  left: calc(50% + 80px);
-  transform: translateX(-50%);
 }
 .SliderContainer.menu-reserve .custom-next-btn img {
   width: 14px;
   height: 14px;
+}
+
+.ReserveSecHeader {
+  text-align: center;
+  color: #ff984a;
+  font-size: 40px;
+  margin-top: 4rem;
+}
+
+.ReserveSec {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 92px;
+  color: #1c1c1d;
+}
+.ReserveSec > h5 {
+  font-weight: 400;
+  font-size: 45px;
+  color: #ff984a;
+}
+.ReserveSec > div > form > div:nth-of-type(1) input {
+  padding: 0 12px;
+}
+.ReserveSec > div > form > div:nth-of-type(1) input::-moz-placeholder {
+  color: gray;
+  padding: 0;
+}
+.ReserveSec > div > form > div:nth-of-type(1) input::placeholder {
+  color: gray;
+  padding: 0;
+}
+.ReserveSec > div > form div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.ReserveSec > div > form div select {
+  border-radius: 10px;
+  width: 216px;
+  height: 54px;
+  padding: 0 8px;
+}
+.ReserveSec > div > form div input {
+  border-radius: 10px;
+  height: 54px;
+  width: 216px;
+}
+.ReserveSec > div > form div input::-moz-placeholder {
+  color: #262626;
+  padding-right: 1rem;
+}
+.ReserveSec > div > form div input::placeholder {
+  color: #262626;
+  padding-right: 1rem;
+}
+.ReserveSec > div > form textarea {
+  height: 160px;
+  width: 100%;
+  resize: none;
+  border-radius: 10px;
+  border: 1px solid #ff984a;
+  padding: 5px 10px;
+}
+.ReserveSec > div > form button {
+  background-color: #ff984a;
+  color: #262626;
+  font-size: 1rem;
+  width: 100%;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px 15px;
 }/*# sourceMappingURL=app.css.map */
