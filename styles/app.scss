@@ -1944,9 +1944,20 @@ footer {
     color: $primary-color;
   }
 
-  > div {
+  img {
+    max-width: 455px;
+    margin: 0 auto;
+  }
+
+  > div {  
+
+
     > form {
       > div:nth-of-type(1) {
+
+        margin-bottom: 15px;
+
+
         input {
           padding: 0 12px;
           &::placeholder {
@@ -1954,6 +1965,7 @@ footer {
             padding: 0;
           }
         }
+
       }
 
       div {

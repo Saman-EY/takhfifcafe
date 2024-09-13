@@ -1665,6 +1665,13 @@ input[type=checkbox]:checked + .RegisterPage .RegisterCard .formContainer form >
   font-size: 45px;
   color: #ff984a;
 }
+.ReserveSec img {
+  max-width: 455px;
+  margin: 0 auto;
+}
+.ReserveSec > div > form > div:nth-of-type(1) {
+  margin-bottom: 15px;
+}
 .ReserveSec > div > form > div:nth-of-type(1) input {
   padding: 0 12px;
 }

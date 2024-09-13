@@ -27,25 +27,7 @@ customNextBtn.addEventListener("click", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  //   // Function to update the total price
-  //   function updateTotalPrice() {
-  //     let total = 0;
-
-  //     document.querySelectorAll(".content li").forEach((item) => {
-  //       const priceElement = item.querySelector(".price-div");
-  //       const qtyElement = item.querySelector(".menuItemQty");
-
-  //       const price =
-  //         parseInt(priceElement.textContent.trim().replace("T", "")) * 1000;
-  //       const qty = parseInt(qtyElement.textContent.trim());
-
-  //       total += price * qty;
-  //     });
-
-  //     const totalPriceElement = document.getElementById("TotalPrice");
-  //     totalPriceElement.textContent = total.toLocaleString() + " تومان";
-  //   }
-
+ 
   // Add click event listeners for plus and minus buttons
   document.querySelectorAll(".plusBtn").forEach((button) => {
     button.addEventListener("click", function () {
@@ -66,4 +48,15 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+});
+
+jalaliDatepicker.startWatch({
+  minDate: "attr",
+  maxDate: "attr",
+  time: true,
+  persianDigits: true,
+  showTodayBtn: false,
+  showEmptyBtn: false,
+  plusHtml: "<div/>",
+  minusHtml: "<div/>",
 });

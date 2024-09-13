@@ -88,15 +88,11 @@
 
   .HomeSec2 {
     .btn-under-slider {
-      
       span {
         left: 0px;
       }
-  
-  
     }
   }
-
 }
 @media (max-width: 668px) {
   footer {
@@ -129,6 +125,30 @@
     .ReserveInfoBody {
       > section {
         grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  }
+
+  .ReserveSec {
+    form {
+      > div:nth-of-type(1) {
+        input {
+          width: 100%;
+        }
+      }
+      > div:nth-of-type(2) {
+        select {
+          width: 100%;
+        }
+
+        > div {
+          width: 100%;
+          input {
+            width: 100%;
+          }
+        }
+
+
       }
     }
   }
