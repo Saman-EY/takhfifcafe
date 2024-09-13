@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="assets/imgandIcons/VitrinIcon.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/app.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
+    <title>تخفیف کافه</title>
+  </head>
+  <body class="d-flex flex-column justify-content-between">
+    <main class="RegisterPageContainer">
+      <section class="RegisterPage w-100 text-white">
+        <section
+          class="RegisterCard d-flex flex-column align-items-center gap-5 p-3 pt-5"
+        >
+          <!-- header -->
+          <div
+            class="header d-flex flex-column justify-content-center align-items-center"
+          >
+            <img src="./assets/img-icons/takhfifcoffe-light.svg" alt="logo" />
+            <h5>به تخفیف کافه خوش اومدی</h5>
+            <p>مشخصاتتو وارد کن</p>
+          </div>
+
+          <div class="formContainer">
+            <form
+              class="d-flex flex-column justify-content-center align-items-center gap-3 mb-4"
+              action="#"
+            >
+              <div>
+                <label for="name">اسم شما :</label>
+                <input type="text" />
+              </div>
+              <div>
+                <label for="phone">شماره تماس :</label>
+                <input type="text" />
+              </div>
+              <div>
+                <label for="password">رمز عبور :</label>
+                <input type="text" />
+              </div>
+              <div class="d-flex flex-row align-items-center gap-2 mt-3">
+                <label class="toggle-switch">
+                  <input type="checkbox" />
+                  <div class="toggle-switch-background">
+                    <div class="toggle-switch-handle"></div>
+                  </div>
+                </label>
+                <span style="font-size: .9rem;" >به خاطر بسپار</span>
+              </div>
+
+              <button class="mt-3">
+                ثبت نام
+              </button>
+            </form>
+
+            <div class="d-flex gap-2 align-items-center LoginLink">
+              <span>اکانت دارید ؟</span>
+              <a href="#">وارد شوید</a>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>

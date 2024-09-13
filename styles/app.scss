@@ -1271,7 +1271,7 @@ footer {
       color: $primary-color;
       cursor: pointer;
       user-select: none;
-      margin-bottom: .8rem;
+      margin-bottom: 0.8rem;
       > img {
         width: 40px;
         height: 40px;
@@ -1314,6 +1314,240 @@ footer {
 .AccordionSec.open .AccordionBody {
   max-height: 500px;
   transition: max-height 1s ease-out;
+}
+
+.RegisterPageContainer {
+  background-image: url("../assets/img-icons/register-background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  min-height: 100vh;
+}
+
+.RegisterPage {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+
+  .RegisterCard {
+    border: 1px solid $secondary-color;
+    box-shadow: -122px 0px 95.8px -101px #00000040;
+    background-color: #1d1d1bb2;
+    border-radius: 40px;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    max-width: 750px;
+    height: 900px;
+
+    .header {
+      img {
+        width: 95px;
+        height: 95px;
+      }
+
+      h5 {
+        font-size: 55px;
+        color: $primary-color;
+      }
+    }
+
+    .formContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      form {
+        > div {
+          display: flex;
+          flex-direction: column;
+          gap: 0px;
+
+          label {
+            font-size: 20px;
+          }
+          input:not([type="checkbox"]) {
+            background-color: transparent;
+            border-bottom: 1px solid $primary-color;
+            color: white;
+            padding: 0 10px;
+            height: 30px;
+          }
+
+          input[type="checkbox"] {
+            cursor: pointer;
+            background-color: $primary-color;
+            color: white;
+          }
+
+          .toggle-switch {
+            position: relative;
+            display: inline-block;
+            width: 80px;
+            height: 40px;
+            cursor: pointer;
+
+            input[type="checkbox"] {
+              display: none;
+            }
+
+            &-background {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background-color: #ddd;
+              border-radius: 20px;
+              box-shadow: inset 0 0 0 2px #ccc;
+              transition: background-color 0.3s ease-in-out;
+            }
+
+            &-handle {
+              position: absolute;
+              top: 5px;
+              left: 5px;
+              width: 30px;
+              height: 30px;
+              background-color: #fff;
+              border-radius: 50%;
+              box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+              transition: transform 0.3s ease-in-out;
+            }
+
+            &::before {
+              content: "";
+              position: absolute;
+              top: -25px;
+              right: -35px;
+              font-size: 12px;
+              font-weight: bold;
+              color: #aaa;
+              text-shadow: 1px 1px #fff;
+              transition: color 0.3s ease-in-out;
+            }
+
+            input[type="checkbox"]:checked + .toggle-switch-handle {
+              transform: translateX(45px);
+              box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 0 0 3px #05c46b;
+            }
+
+            input[type="checkbox"]:checked + .toggle-switch-background {
+              background-color: #05c46b;
+              box-shadow: inset 0 0 0 2px #04b360;
+            }
+
+            input[type="checkbox"]:checked + &::before {
+              content: "On";
+              color: #05c46b;
+              right: -15px;
+            }
+
+            input[type="checkbox"]:checked
+              + &-background
+              .toggle-switch-handle {
+              transform: translateX(40px);
+            }
+          }
+          /* From Uiverse.io by ErzenXz */
+          .toggle-switch {
+            position: relative;
+            display: inline-block;
+            width: 36px;
+            height: 18px;
+            cursor: pointer;
+          }
+
+          .toggle-switch input[type="checkbox"] {
+            display: none;
+          }
+
+          .toggle-switch-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #ddd;
+            border-radius: 20px;
+            box-shadow: inset 0 0 0 2px #ccc;
+            transition: background-color 0.3s ease-in-out;
+          }
+
+          .toggle-switch-handle {
+            position: absolute;
+            top: 13%;
+            left: 3px;
+            width: 13px;
+            height: 13px;
+            background-color: #fff;
+            border-radius: 50%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+          }
+
+          .toggle-switch::before {
+            content: "";
+            position: absolute;
+            top: -25px;
+            right: -35px;
+            font-size: 12px;
+            font-weight: bold;
+            color: #aaa;
+            text-shadow: 1px 1px #fff;
+            transition: color 0.3s ease-in-out;
+          }
+
+          .toggle-switch
+            input[type="checkbox"]:checked
+            + .toggle-switch-handle {
+            transform: translateX(50px);
+            box-shadow: 0 2px 5px rgba(255, 2, 2, 0.2), 0 0 0 3px $primary-color;
+          }
+
+          .toggle-switch
+            input[type="checkbox"]:checked
+            + .toggle-switch-background {
+            background-color: $primary-color;
+            box-shadow: inset 0 0 0 2px $primary-color;
+          }
+
+          .toggle-switch
+            input[type="checkbox"]:checked
+            + .toggle-switch:before {
+            content: "On";
+            color: $primary-color;
+            right: 5px;
+          }
+
+          .toggle-switch
+            input[type="checkbox"]:checked
+            + .toggle-switch-background
+            .toggle-switch-handle {
+            transform: translateX(17px);
+          }
+        }
+
+        button {
+          background-color: $secondary-color;
+          font-size: 1rem;
+          width: 100%;
+          padding: 8px 10px;
+          box-shadow: 0px -1px 9px 0px #00000040;
+          border-radius: 14px;
+        }
+      }
+
+      .LoginLink {
+        span {
+          font-size: 0.9rem;
+        }
+        a {
+          color: $primary-color;
+        }
+      }
+    }
+  }
 }
 
 // //////////////////////// ROLEEBACK
