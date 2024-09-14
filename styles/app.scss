@@ -327,7 +327,23 @@ header {
     }
   }
 
-  > .CardContainer {
+  .tab-container {
+    opacity: 0;
+    transform: translateX(100%); // Start off-screen to the left
+    position: absolute; // Position absolutely within the tab container
+    transition: opacity 0.4s ease, transform 0.4s ease; // Slide and fade in/out simultaneously
+    width: 100%; // Full width to cover the parent container
+    top: 0;
+    right: 0;
+
+    &.show {
+      opacity: 1;
+      transform: translateX(0); // Move into view
+      position: relative; // Position in flow
+    }
+  }
+
+  .CardContainer {
     .swiper-wrapper {
       height: 420px;
     }
@@ -1778,6 +1794,22 @@ footer {
   gap: 2rem;
   color: var(--primary-color);
 
+  .tab-container {
+    opacity: 0;
+    transform: translateX(100%); // Start off-screen to the left
+    position: absolute; // Position absolutely within the tab container
+    transition: opacity 0.4s ease, transform 0.4s ease; // Slide and fade in/out simultaneously
+    width: 100%; // Full width to cover the parent container
+    top: 0;
+    right: 0;
+
+    &.show {
+      opacity: 1;
+      transform: translateX(0); // Move into view
+      position: relative; // Position in flow
+    }
+  }
+
   .MenuListsSec {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -1949,14 +1981,10 @@ footer {
     margin: 0 auto;
   }
 
-  > div {  
-
-
+  > div {
     > form {
       > div:nth-of-type(1) {
-
         margin-bottom: 15px;
-
 
         input {
           padding: 0 12px;
@@ -1965,7 +1993,6 @@ footer {
             padding: 0;
           }
         }
-
       }
 
       div {
@@ -2014,4 +2041,18 @@ footer {
   }
 }
 
-// //////////////////////// ROLEEBACK
+.cafeRestuarant-tab-container {
+  opacity: 0;
+  transform: translateX(100%); // Start off-screen to the left
+  position: absolute; // Position absolutely within the tab container
+  transition: opacity 0.4s ease, transform 0.4s ease; // Slide and fade in/out simultaneously
+  width: 100%; // Full width to cover the parent container
+  top: 0;
+  right: 0;
+
+  &.show {
+    opacity: 1;
+    transform: translateX(0); // Move into view
+    position: relative; // Position in flow
+  }
+}

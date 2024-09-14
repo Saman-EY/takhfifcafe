@@ -271,20 +271,34 @@ header .MobileNavbar > img {
   background-color: #ff984a;
   color: #853a04;
 }
-.HomeSec2 > .CardContainer .swiper-wrapper {
+.HomeSec2 .tab-container {
+  opacity: 0;
+  transform: translateX(100%);
+  position: absolute;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  width: 100%;
+  top: 0;
+  right: 0;
+}
+.HomeSec2 .tab-container.show {
+  opacity: 1;
+  transform: translateX(0);
+  position: relative;
+}
+.HomeSec2 .CardContainer .swiper-wrapper {
   height: 420px;
 }
-.HomeSec2 > .CardContainer .swiper-slide {
+.HomeSec2 .CardContainer .swiper-slide {
   height: 400px;
   display: flex;
   flex-direction: column;
   padding-top: 2rem;
   align-items: center;
 }
-.HomeSec2 > .CardContainer .swiperUtilContainer {
+.HomeSec2 .CardContainer .swiperUtilContainer {
   position: relative;
 }
-.HomeSec2 > .CardContainer .swiper-pagination {
+.HomeSec2 .CardContainer .swiper-pagination {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -293,54 +307,54 @@ header .MobileNavbar > img {
   width: -moz-fit-content;
   width: fit-content;
 }
-.HomeSec2 > .CardContainer .swiper-pagination-bullet {
+.HomeSec2 .CardContainer .swiper-pagination-bullet {
   background: white;
   width: 5px;
   height: 5px;
   border-radius: 50%;
   opacity: 1;
 }
-.HomeSec2 > .CardContainer .swiper-pagination-bullet-active {
+.HomeSec2 .CardContainer .swiper-pagination-bullet-active {
   background-color: transparent;
   width: 11px;
   height: 11px;
   border: 1px solid #ff984a;
   border-radius: 50%;
 }
-.HomeSec2 > .CardContainer .custom-prev-btn {
+.HomeSec2 .CardContainer .custom-prev-btn {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: transparent;
 }
-.HomeSec2 > .CardContainer .custom-prev-btn img {
+.HomeSec2 .CardContainer .custom-prev-btn img {
   width: 14px;
   height: 14px;
 }
-.HomeSec2 > .CardContainer .custom-next-btn {
+.HomeSec2 .CardContainer .custom-next-btn {
   display: flex;
   justify-content: center;
   align-items: center;
   color: transparent;
 }
-.HomeSec2 > .CardContainer .custom-next-btn img {
+.HomeSec2 .CardContainer .custom-next-btn img {
   width: 14px;
   height: 14px;
 }
-.HomeSec2 > .CardContainer .MiniCard {
+.HomeSec2 .CardContainer .MiniCard {
   max-width: 330px;
   width: 100%;
   position: relative;
 }
-.HomeSec2 > .CardContainer .MiniCard > img {
+.HomeSec2 .CardContainer .MiniCard > img {
   width: 57px;
   height: 57px;
   position: absolute;
   left: -18px;
   top: -18px;
 }
-.HomeSec2 > .CardContainer .MiniCard .MiniCardDescription {
+.HomeSec2 .CardContainer .MiniCard .MiniCardDescription {
   background-color: white;
   position: absolute;
   bottom: -100px;
@@ -350,13 +364,13 @@ header .MobileNavbar > img {
   width: 274px;
   border: 1px solid #ff984a;
 }
-.HomeSec2 > .CardContainer .MiniCard .MiniCardDescription > h4 {
+.HomeSec2 .CardContainer .MiniCard .MiniCardDescription > h4 {
   font-size: 24px;
   border-bottom: 1px solid #ff984a;
   color: #262626;
   text-align: center;
 }
-.HomeSec2 > .CardContainer .MiniCard .MiniCardDescription > section {
+.HomeSec2 .CardContainer .MiniCard .MiniCardDescription > section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   row-gap: 10px;
@@ -365,17 +379,17 @@ header .MobileNavbar > img {
   width: 274px;
   padding: 12px 9px;
 }
-.HomeSec2 > .CardContainer .MiniCard .MiniCardDescription > section > div {
+.HomeSec2 .CardContainer .MiniCard .MiniCardDescription > section > div {
   margin: 0 auto;
   display: flex;
   align-items: center;
   min-width: 105px;
   gap: 7px;
 }
-.HomeSec2 > .CardContainer .MiniCard .MiniCardDescription > section > div p {
+.HomeSec2 .CardContainer .MiniCard .MiniCardDescription > section > div p {
   font-size: 18px;
 }
-.HomeSec2 > .CardContainer .MiniCard .MiniCardDescription > button {
+.HomeSec2 .CardContainer .MiniCard .MiniCardDescription > button {
   border-radius: 34px;
   border: 1px solid #c4661f;
   color: #c4661f;
@@ -1527,6 +1541,20 @@ input[type=checkbox]:checked + .RegisterPage .RegisterCard .formContainer form >
   gap: 2rem;
   color: var(--primary-color);
 }
+.MainCafeMenuContainer .tab-container {
+  opacity: 0;
+  transform: translateX(100%);
+  position: absolute;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  width: 100%;
+  top: 0;
+  right: 0;
+}
+.MainCafeMenuContainer .tab-container.show {
+  opacity: 1;
+  transform: translateX(0);
+  position: relative;
+}
 .MainCafeMenuContainer .MenuListsSec {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -1723,4 +1751,19 @@ input[type=checkbox]:checked + .RegisterPage .RegisterCard .formContainer form >
   border-radius: 10px;
   text-align: center;
   padding: 10px 15px;
+}
+
+.cafeRestuarant-tab-container {
+  opacity: 0;
+  transform: translateX(100%);
+  position: absolute;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  width: 100%;
+  top: 0;
+  right: 0;
+}
+.cafeRestuarant-tab-container.show {
+  opacity: 1;
+  transform: translateX(0);
+  position: relative;
 }/*# sourceMappingURL=app.css.map */

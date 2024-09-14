@@ -57,10 +57,10 @@
               <a href="./cafe-restuarant.html">کافه، رستوران ها</a>
             </li>
             <li>
-              <a href="#">تماس با ما</a>
+              <a href="./contact-us.html">تماس با ما</a>
             </li>
             <li>
-              <a href="#">درباره ما</a>
+              <a href="./about-us.html">درباره ما</a>
             </li>
           </ul>
         </div>
@@ -277,922 +277,1846 @@
         </div>
 
         <div class="menuSecTabs mt-3 mb-5">
-          <button>انتخاب در کافه</button>
-          <button class="active">انتخاب به صورت آنلاین</button>
+          <button data-tab="in-person" class="tab">انتخاب در کافه</button>
+          <button data-tab="online" class="tab active">
+            انتخاب به صورت آنلاین
+          </button>
         </div>
 
         <!-- MAIN MENU CONTAINER -->
-        <section class="MainCafeMenuContainer">
+        <section
+          class="MainCafeMenuContainer position-relative overflow-hidden"
+        >
           <!-- MENU LISTS -->
-          <section class="MenuListsSec">
-            <div>
-              <!-- header -->
-              <div
-                class="header d-flex align-items-center justify-content-between"
-              >
-                <div class="d-flex align-items-center gap-3">
-                  <img src="./assets/img-icons/drink-burger.svg" alt="icon" />
-                  <p class="align-self-end mt-1">فست فود</p>
+          <div
+            data-content="in-person"
+            class="tab-container d-flex justify-content-center align-items-center"
+          >
+            <section class="MenuListsSec">
+              <div>
+                <!-- header -->
+                <div
+                  class="header d-flex align-items-center justify-content-between"
+                >
+                  <div class="d-flex align-items-center gap-3">
+                    <img src="./assets/img-icons/drink-burger.svg" alt="icon" />
+                    <p class="align-self-end mt-1">فست فود</p>
+                  </div>
+                  <span>
+                    <img src="./assets/img-icons/20dis.svg" alt="icon" />
+                  </span>
                 </div>
-                <span>
-                  <img src="./assets/img-icons/20dis.svg" alt="icon" />
-                </span>
+                <!-- content -->
+                <ul class="content d-flex flex-column gap-3 pt-3">
+                  <li class="d-flex align-items-center">
+                    <div>
+                      <!-- item div -->
+                      <div class="item-div">
+                        <span class="mb-1"> پیتزا پپرونی </span>
+                        <div class="dashedDiv mx-1"></div>
+                      </div>
+                      <!-- price div -->
+                      <div class="price-div">
+                        350T
+                        <div class="dashedDiv"></div>
+                      </div>
+                    </div>
+                    <!-- btns -->
+                    <div
+                      style="margin-right: 5px"
+                      class="d-flex align-items-center gap-2"
+                    >
+                      <button class="plusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/plus.svg"
+                          alt="plus"
+                        />
+                      </button>
+                      <span class="menuItemQty">0</span>
+                      <button class="minusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/minus.svg"
+                          alt="minus"
+                        />
+                      </button>
+                    </div>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <div>
+                      <!-- item div -->
+                      <div class="item-div">
+                        <span class="mb-1"> پیتزا آمریکانو </span>
+                        <div class="dashedDiv mx-1"></div>
+                      </div>
+                      <!-- price div -->
+                      <div class="price-div">
+                        350T
+                        <div class="dashedDiv"></div>
+                      </div>
+                    </div>
+                    <!-- btns -->
+                    <div
+                      style="margin-right: 5px"
+                      class="d-flex align-items-center gap-2"
+                    >
+                      <button class="plusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/plus.svg"
+                          alt="plus"
+                        />
+                      </button>
+                      <span class="menuItemQty">0</span>
+                      <button class="minusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/minus.svg"
+                          alt="minus"
+                        />
+                      </button>
+                    </div>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <div>
+                      <!-- item div -->
+                      <div class="item-div">
+                        <span class="mb-1"> پیتزا پپرونی </span>
+                        <div class="dashedDiv mx-1"></div>
+                      </div>
+                      <!-- price div -->
+                      <div class="price-div">
+                        350T
+                        <div class="dashedDiv"></div>
+                      </div>
+                    </div>
+                    <!-- btns -->
+                    <div
+                      style="margin-right: 5px"
+                      class="d-flex align-items-center gap-2"
+                    >
+                      <button class="plusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/plus.svg"
+                          alt="plus"
+                        />
+                      </button>
+                      <span class="menuItemQty">0</span>
+                      <button class="minusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/minus.svg"
+                          alt="minus"
+                        />
+                      </button>
+                    </div>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <div>
+                      <!-- item div -->
+                      <div class="item-div">
+                        <span class="mb-1"> پیتزا پپرونی </span>
+                        <div class="dashedDiv mx-1"></div>
+                      </div>
+                      <!-- price div -->
+                      <div class="price-div">
+                        350T
+                        <div class="dashedDiv"></div>
+                      </div>
+                    </div>
+                    <!-- btns -->
+                    <div
+                      style="margin-right: 5px"
+                      class="d-flex align-items-center gap-2"
+                    >
+                      <button class="plusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/plus.svg"
+                          alt="plus"
+                        />
+                      </button>
+                      <span class="menuItemQty">0</span>
+                      <button class="minusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/minus.svg"
+                          alt="minus"
+                        />
+                      </button>
+                    </div>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <div>
+                      <!-- item div -->
+                      <div class="item-div">
+                        <span class="mb-1"> پیتزا پپرونی </span>
+                        <div class="dashedDiv mx-1"></div>
+                      </div>
+                      <!-- price div -->
+                      <div class="price-div">
+                        350T
+                        <div class="dashedDiv"></div>
+                      </div>
+                    </div>
+                    <!-- btns -->
+                    <div
+                      style="margin-right: 5px"
+                      class="d-flex align-items-center gap-2"
+                    >
+                      <button class="plusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/plus.svg"
+                          alt="plus"
+                        />
+                      </button>
+                      <span class="menuItemQty">0</span>
+                      <button class="minusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/minus.svg"
+                          alt="minus"
+                        />
+                      </button>
+                    </div>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <div>
+                      <!-- item div -->
+                      <div class="item-div">
+                        <span class="mb-1"> پیتزا پپرونی </span>
+                        <div class="dashedDiv mx-1"></div>
+                      </div>
+                      <!-- price div -->
+                      <div class="price-div">
+                        350T
+                        <div class="dashedDiv"></div>
+                      </div>
+                    </div>
+                    <!-- btns -->
+                    <div
+                      style="margin-right: 5px"
+                      class="d-flex align-items-center gap-2"
+                    >
+                      <button class="plusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/plus.svg"
+                          alt="plus"
+                        />
+                      </button>
+                      <span class="menuItemQty">0</span>
+                      <button class="minusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/minus.svg"
+                          alt="minus"
+                        />
+                      </button>
+                    </div>
+                  </li>
+                </ul>
               </div>
-              <!-- content -->
-              <ul class="content d-flex flex-column gap-3 pt-3">
-                <li class="d-flex align-items-center">
-                  <div>
-                    <!-- item div -->
-                    <div class="item-div">
-                      <span class="mb-1"> پیتزا پپرونی </span>
-                      <div class="dashedDiv mx-1"></div>
-                    </div>
-                    <!-- price div -->
-                    <div class="price-div">
-                      350T
-                      <div class="dashedDiv"></div>
-                    </div>
+              <div>
+                <!-- header -->
+                <div
+                  class="header d-flex align-items-center justify-content-between"
+                >
+                  <div class="d-flex align-items-center gap-3">
+                    <img src="./assets/img-icons/plate-spoon.svg" alt="icon" />
+                    <p class="align-self-end mt-1">غذای ایرانی</p>
                   </div>
-                  <!-- btns -->
-                  <div
-                    style="margin-right: 5px"
-                    class="d-flex align-items-center gap-2"
-                  >
-                    <button class="plusBtn">
-                      <img
-                        style="width: 15px; height: 15px"
-                        src="./assets/img-icons/plus.svg"
-                        alt="plus"
-                      />
-                    </button>
-                    <span class="menuItemQty">0</span>
-                    <button class="minusBtn">
-                      <img
-                        style="width: 15px; height: 15px"
-                        src="./assets/img-icons/minus.svg"
-                        alt="minus"
-                      />
-                    </button>
-                  </div>
-                </li>
-                <li class="d-flex align-items-center">
-                  <div>
-                    <!-- item div -->
-                    <div class="item-div">
-                      <span class="mb-1"> پیتزا آمریکانو </span>
-                      <div class="dashedDiv mx-1"></div>
-                    </div>
-                    <!-- price div -->
-                    <div class="price-div">
-                      350T
-                      <div class="dashedDiv"></div>
-                    </div>
-                  </div>
-                  <!-- btns -->
-                  <div
-                    style="margin-right: 5px"
-                    class="d-flex align-items-center gap-2"
-                  >
-                    <button class="plusBtn">
-                      <img
-                        style="width: 15px; height: 15px"
-                        src="./assets/img-icons/plus.svg"
-                        alt="plus"
-                      />
-                    </button>
-                    <span class="menuItemQty">0</span>
-                    <button class="minusBtn">
-                      <img
-                        style="width: 15px; height: 15px"
-                        src="./assets/img-icons/minus.svg"
-                        alt="minus"
-                      />
-                    </button>
-                  </div>
-                </li>
-                <li class="d-flex align-items-center">
-                  <div>
-                    <!-- item div -->
-                    <div class="item-div">
-                      <span class="mb-1"> پیتزا پپرونی </span>
-                      <div class="dashedDiv mx-1"></div>
-                    </div>
-                    <!-- price div -->
-                    <div class="price-div">
-                      350T
-                      <div class="dashedDiv"></div>
-                    </div>
-                  </div>
-                  <!-- btns -->
-                  <div
-                    style="margin-right: 5px"
-                    class="d-flex align-items-center gap-2"
-                  >
-                    <button class="plusBtn">
-                      <img
-                        style="width: 15px; height: 15px"
-                        src="./assets/img-icons/plus.svg"
-                        alt="plus"
-                      />
-                    </button>
-                    <span class="menuItemQty">0</span>
-                    <button class="minusBtn">
-                      <img
-                        style="width: 15px; height: 15px"
-                        src="./assets/img-icons/minus.svg"
-                        alt="minus"
-                      />
-                    </button>
-                  </div>
-                </li>
-                <li class="d-flex align-items-center">
-                  <div>
-                    <!-- item div -->
-                    <div class="item-div">
-                      <span class="mb-1"> پیتزا پپرونی </span>
-                      <div class="dashedDiv mx-1"></div>
-                    </div>
-                    <!-- price div -->
-                    <div class="price-div">
-                      350T
-                      <div class="dashedDiv"></div>
-                    </div>
-                  </div>
-                  <!-- btns -->
-                  <div
-                    style="margin-right: 5px"
-                    class="d-flex align-items-center gap-2"
-                  >
-                    <button class="plusBtn">
-                      <img
-                        style="width: 15px; height: 15px"
-                        src="./assets/img-icons/plus.svg"
-                        alt="plus"
-                      />
-                    </button>
-                    <span class="menuItemQty">0</span>
-                    <button class="minusBtn">
-                      <img
-                        style="width: 15px; height: 15px"
-                        src="./assets/img-icons/minus.svg"
-                        alt="minus"
-                      />
-                    </button>
-                  </div>
-                </li>
-                <li class="d-flex align-items-center">
-                  <div>
-                    <!-- item div -->
-                    <div class="item-div">
-                      <span class="mb-1"> پیتزا پپرونی </span>
-                      <div class="dashedDiv mx-1"></div>
-                    </div>
-                    <!-- price div -->
-                    <div class="price-div">
-                      350T
-                      <div class="dashedDiv"></div>
-                    </div>
-                  </div>
-                  <!-- btns -->
-                  <div
-                    style="margin-right: 5px"
-                    class="d-flex align-items-center gap-2"
-                  >
-                    <button class="plusBtn">
-                      <img
-                        style="width: 15px; height: 15px"
-                        src="./assets/img-icons/plus.svg"
-                        alt="plus"
-                      />
-                    </button>
-                    <span class="menuItemQty">0</span>
-                    <button class="minusBtn">
-                      <img
-                        style="width: 15px; height: 15px"
-                        src="./assets/img-icons/minus.svg"
-                        alt="minus"
-                      />
-                    </button>
-                  </div>
-                </li>
-                <li class="d-flex align-items-center">
-                  <div>
-                    <!-- item div -->
-                    <div class="item-div">
-                      <span class="mb-1"> پیتزا پپرونی </span>
-                      <div class="dashedDiv mx-1"></div>
-                    </div>
-                    <!-- price div -->
-                    <div class="price-div">
-                      350T
-                      <div class="dashedDiv"></div>
-                    </div>
-                  </div>
-                  <!-- btns -->
-                  <div
-                    style="margin-right: 5px"
-                    class="d-flex align-items-center gap-2"
-                  >
-                    <button class="plusBtn">
-                      <img
-                        style="width: 15px; height: 15px"
-                        src="./assets/img-icons/plus.svg"
-                        alt="plus"
-                      />
-                    </button>
-                    <span class="menuItemQty">0</span>
-                    <button class="minusBtn">
-                      <img
-                        style="width: 15px; height: 15px"
-                        src="./assets/img-icons/minus.svg"
-                        alt="minus"
-                      />
-                    </button>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <!-- header -->
-              <div
-                class="header d-flex align-items-center justify-content-between"
-              >
-                <div class="d-flex align-items-center gap-3">
-                  <img src="./assets/img-icons/plate-spoon.svg" alt="icon" />
-                  <p class="align-self-end mt-1">غذای ایرانی</p>
+                  <span class="mt-1"
+                    ><img src="./assets/img-icons/10dis.svg" alt="icon"
+                  /></span>
                 </div>
-                <span class="mt-1"
-                  ><img src="./assets/img-icons/10dis.svg" alt="icon"
-                /></span>
-              </div>
 
-              <!-- content -->
-              <ul class="content d-flex flex-column gap-3 pt-3">
-                <li class="d-flex align-items-center">
-                  <div>
-                    <!-- item div -->
-                    <div class="item-div">
-                      <span class="mb-1"> باقالی پلو با ماهیچه</span>
-                      <div class="dashedDiv mx-1"></div>
+                <!-- content -->
+                <ul class="content d-flex flex-column gap-3 pt-3">
+                  <li class="d-flex align-items-center">
+                    <div>
+                      <!-- item div -->
+                      <div class="item-div">
+                        <span class="mb-1"> باقالی پلو با ماهیچه</span>
+                        <div class="dashedDiv mx-1"></div>
+                      </div>
+                      <!-- price div -->
+                      <div class="price-div">
+                        350T
+                        <div class="dashedDiv"></div>
+                      </div>
                     </div>
-                    <!-- price div -->
-                    <div class="price-div">
-                      350T
-                      <div class="dashedDiv"></div>
+                    <!-- btns -->
+                    <div
+                      style="margin-right: 5px"
+                      class="d-flex align-items-center gap-2"
+                    >
+                      <button class="plusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/plus.svg"
+                          alt="plus"
+                        />
+                      </button>
+                      <span class="menuItemQty">0</span>
+                      <button class="minusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/minus.svg"
+                          alt="minus"
+                        />
+                      </button>
                     </div>
-                  </div>
-                  <!-- btns -->
-                  <div
-                    style="margin-right: 5px"
-                    class="d-flex align-items-center gap-2"
-                  >
-                    <button class="plusBtn">
-                      <img
-                        style="width: 15px; height: 15px"
-                        src="./assets/img-icons/plus.svg"
-                        alt="plus"
-                      />
-                    </button>
-                    <span class="menuItemQty">0</span>
-                    <button class="minusBtn">
-                      <img
-                        style="width: 15px; height: 15px"
-                        src="./assets/img-icons/minus.svg"
-                        alt="minus"
-                      />
-                    </button>
-                  </div>
-                </li>
-                <li class="d-flex align-items-center">
-                  <div>
-                    <!-- item div -->
-                    <div class="item-div">
-                      <span class="mb-1"> زرشک پلو</span>
-                      <div class="dashedDiv mx-1"></div>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <div>
+                      <!-- item div -->
+                      <div class="item-div">
+                        <span class="mb-1"> زرشک پلو</span>
+                        <div class="dashedDiv mx-1"></div>
+                      </div>
+                      <!-- price div -->
+                      <div class="price-div">
+                        350T
+                        <div class="dashedDiv"></div>
+                      </div>
                     </div>
-                    <!-- price div -->
-                    <div class="price-div">
-                      350T
-                      <div class="dashedDiv"></div>
+                    <!-- btns -->
+                    <div
+                      style="margin-right: 5px"
+                      class="d-flex align-items-center gap-2"
+                    >
+                      <button class="plusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/plus.svg"
+                          alt="plus"
+                        />
+                      </button>
+                      <span class="menuItemQty">0</span>
+                      <button class="minusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/minus.svg"
+                          alt="minus"
+                        />
+                      </button>
                     </div>
-                  </div>
-                  <!-- btns -->
-                  <div
-                    style="margin-right: 5px"
-                    class="d-flex align-items-center gap-2"
-                  >
-                    <button class="plusBtn">
-                      <img
-                        style="width: 15px; height: 15px"
-                        src="./assets/img-icons/plus.svg"
-                        alt="plus"
-                      />
-                    </button>
-                    <span class="menuItemQty">0</span>
-                    <button class="minusBtn">
-                      <img
-                        style="width: 15px; height: 15px"
-                        src="./assets/img-icons/minus.svg"
-                        alt="minus"
-                      />
-                    </button>
-                  </div>
-                </li>
-                <li class="d-flex align-items-center">
-                  <div>
-                    <!-- item div -->
-                    <div class="item-div">
-                      <span class="mb-1"> تهچین </span>
-                      <div class="dashedDiv mx-1"></div>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <div>
+                      <!-- item div -->
+                      <div class="item-div">
+                        <span class="mb-1"> تهچین </span>
+                        <div class="dashedDiv mx-1"></div>
+                      </div>
+                      <!-- price div -->
+                      <div class="price-div">
+                        350T
+                        <div class="dashedDiv"></div>
+                      </div>
                     </div>
-                    <!-- price div -->
-                    <div class="price-div">
-                      350T
-                      <div class="dashedDiv"></div>
+                    <!-- btns -->
+                    <div
+                      style="margin-right: 5px"
+                      class="d-flex align-items-center gap-2"
+                    >
+                      <button class="plusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/plus.svg"
+                          alt="plus"
+                        />
+                      </button>
+                      <span class="menuItemQty">0</span>
+                      <button class="minusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/minus.svg"
+                          alt="minus"
+                        />
+                      </button>
                     </div>
-                  </div>
-                  <!-- btns -->
-                  <div
-                    style="margin-right: 5px"
-                    class="d-flex align-items-center gap-2"
-                  >
-                    <button class="plusBtn">
-                      <img
-                        style="width: 15px; height: 15px"
-                        src="./assets/img-icons/plus.svg"
-                        alt="plus"
-                      />
-                    </button>
-                    <span class="menuItemQty">0</span>
-                    <button class="minusBtn">
-                      <img
-                        style="width: 15px; height: 15px"
-                        src="./assets/img-icons/minus.svg"
-                        alt="minus"
-                      />
-                    </button>
-                  </div>
-                </li>
-                <li class="d-flex align-items-center">
-                  <div>
-                    <!-- item div -->
-                    <div class="item-div">
-                      <span class="mb-1"> زرشک پلو </span>
-                      <div class="dashedDiv mx-1"></div>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <div>
+                      <!-- item div -->
+                      <div class="item-div">
+                        <span class="mb-1"> زرشک پلو </span>
+                        <div class="dashedDiv mx-1"></div>
+                      </div>
+                      <!-- price div -->
+                      <div class="price-div">
+                        350T
+                        <div class="dashedDiv"></div>
+                      </div>
                     </div>
-                    <!-- price div -->
-                    <div class="price-div">
-                      350T
-                      <div class="dashedDiv"></div>
+                    <!-- btns -->
+                    <div
+                      style="margin-right: 5px"
+                      class="d-flex align-items-center gap-2"
+                    >
+                      <button class="plusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/plus.svg"
+                          alt="plus"
+                        />
+                      </button>
+                      <span class="menuItemQty">0</span>
+                      <button class="minusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/minus.svg"
+                          alt="minus"
+                        />
+                      </button>
                     </div>
-                  </div>
-                  <!-- btns -->
-                  <div
-                    style="margin-right: 5px"
-                    class="d-flex align-items-center gap-2"
-                  >
-                    <button class="plusBtn">
-                      <img
-                        style="width: 15px; height: 15px"
-                        src="./assets/img-icons/plus.svg"
-                        alt="plus"
-                      />
-                    </button>
-                    <span class="menuItemQty">0</span>
-                    <button class="minusBtn">
-                      <img
-                        style="width: 15px; height: 15px"
-                        src="./assets/img-icons/minus.svg"
-                        alt="minus"
-                      />
-                    </button>
-                  </div>
-                </li>
-                <li class="d-flex align-items-center">
-                  <div>
-                    <!-- item div -->
-                    <div class="item-div">
-                      <span class="mb-1"> زرشک پلو </span>
-                      <div class="dashedDiv mx-1"></div>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <div>
+                      <!-- item div -->
+                      <div class="item-div">
+                        <span class="mb-1"> زرشک پلو </span>
+                        <div class="dashedDiv mx-1"></div>
+                      </div>
+                      <!-- price div -->
+                      <div class="price-div">
+                        350T
+                        <div class="dashedDiv"></div>
+                      </div>
                     </div>
-                    <!-- price div -->
-                    <div class="price-div">
-                      350T
-                      <div class="dashedDiv"></div>
+                    <!-- btns -->
+                    <div
+                      style="margin-right: 5px"
+                      class="d-flex align-items-center gap-2"
+                    >
+                      <button class="plusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/plus.svg"
+                          alt="plus"
+                        />
+                      </button>
+                      <span class="menuItemQty">0</span>
+                      <button class="minusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/minus.svg"
+                          alt="minus"
+                        />
+                      </button>
                     </div>
-                  </div>
-                  <!-- btns -->
-                  <div
-                    style="margin-right: 5px"
-                    class="d-flex align-items-center gap-2"
-                  >
-                    <button class="plusBtn">
-                      <img
-                        style="width: 15px; height: 15px"
-                        src="./assets/img-icons/plus.svg"
-                        alt="plus"
-                      />
-                    </button>
-                    <span class="menuItemQty">0</span>
-                    <button class="minusBtn">
-                      <img
-                        style="width: 15px; height: 15px"
-                        src="./assets/img-icons/minus.svg"
-                        alt="minus"
-                      />
-                    </button>
-                  </div>
-                </li>
-                <li class="d-flex align-items-center">
-                  <div>
-                    <!-- item div -->
-                    <div class="item-div">
-                      <span class="mb-1"> زرشک پلو </span>
-                      <div class="dashedDiv mx-1"></div>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <div>
+                      <!-- item div -->
+                      <div class="item-div">
+                        <span class="mb-1"> زرشک پلو </span>
+                        <div class="dashedDiv mx-1"></div>
+                      </div>
+                      <!-- price div -->
+                      <div class="price-div">
+                        350T
+                        <div class="dashedDiv"></div>
+                      </div>
                     </div>
-                    <!-- price div -->
-                    <div class="price-div">
-                      350T
-                      <div class="dashedDiv"></div>
+                    <!-- btns -->
+                    <div
+                      style="margin-right: 5px"
+                      class="d-flex align-items-center gap-2"
+                    >
+                      <button class="plusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/plus.svg"
+                          alt="plus"
+                        />
+                      </button>
+                      <span class="menuItemQty">0</span>
+                      <button class="minusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/minus.svg"
+                          alt="minus"
+                        />
+                      </button>
                     </div>
-                  </div>
-                  <!-- btns -->
-                  <div
-                    style="margin-right: 5px"
-                    class="d-flex align-items-center gap-2"
-                  >
-                    <button class="plusBtn">
-                      <img
-                        style="width: 15px; height: 15px"
-                        src="./assets/img-icons/plus.svg"
-                        alt="plus"
-                      />
-                    </button>
-                    <span class="menuItemQty">0</span>
-                    <button class="minusBtn">
-                      <img
-                        style="width: 15px; height: 15px"
-                        src="./assets/img-icons/minus.svg"
-                        alt="minus"
-                      />
-                    </button>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <!-- header -->
-              <div
-                class="header d-flex align-items-center justify-content-between"
-              >
-                <div class="d-flex align-items-center gap-3">
-                  <img src="./assets/img-icons/hot-coffe2.svg" alt="icon" />
-                  <p class="align-self-end mt-1">نوشیدنی گرم</p>
-                </div>
-                <span class="mt-1"></span>
+                  </li>
+                </ul>
               </div>
-
-              <!-- content -->
-              <ul class="content d-flex flex-column gap-3 pt-3">
-                <li class="d-flex align-items-center">
-                  <div>
-                    <!-- item div -->
-                    <div class="item-div">
-                      <span class="mb-1"> اسپرسو </span>
-                      <div class="dashedDiv mx-1"></div>
-                    </div>
-                    <!-- price div -->
-                    <div class="price-div">
-                      350T
-                      <div class="dashedDiv"></div>
-                    </div>
+              <div>
+                <!-- header -->
+                <div
+                  class="header d-flex align-items-center justify-content-between"
+                >
+                  <div class="d-flex align-items-center gap-3">
+                    <img src="./assets/img-icons/hot-coffe2.svg" alt="icon" />
+                    <p class="align-self-end mt-1">نوشیدنی گرم</p>
                   </div>
-                  <!-- btns -->
-                  <div
-                    style="margin-right: 5px"
-                    class="d-flex align-items-center gap-2"
-                  >
-                    <button class="plusBtn">
-                      <img
-                        style="width: 15px; height: 15px"
-                        src="./assets/img-icons/plus.svg"
-                        alt="plus"
-                      />
-                    </button>
-                    <span class="menuItemQty">0</span>
-                    <button class="minusBtn">
-                      <img
-                        style="width: 15px; height: 15px"
-                        src="./assets/img-icons/minus.svg"
-                        alt="minus"
-                      />
-                    </button>
-                  </div>
-                </li>
-                <li class="d-flex align-items-center">
-                  <div>
-                    <!-- item div -->
-                    <div class="item-div">
-                      <span class="mb-1"> آمریکانو </span>
-                      <div class="dashedDiv mx-1"></div>
-                    </div>
-                    <!-- price div -->
-                    <div class="price-div">
-                      350T
-                      <div class="dashedDiv"></div>
-                    </div>
-                  </div>
-                  <!-- btns -->
-                  <div
-                    style="margin-right: 5px"
-                    class="d-flex align-items-center gap-2"
-                  >
-                    <button class="plusBtn">
-                      <img
-                        style="width: 15px; height: 15px"
-                        src="./assets/img-icons/plus.svg"
-                        alt="plus"
-                      />
-                    </button>
-                    <span class="menuItemQty">0</span>
-                    <button class="minusBtn">
-                      <img
-                        style="width: 15px; height: 15px"
-                        src="./assets/img-icons/minus.svg"
-                        alt="minus"
-                      />
-                    </button>
-                  </div>
-                </li>
-                <li class="d-flex align-items-center">
-                  <div>
-                    <!-- item div -->
-                    <div class="item-div">
-                      <span class="mb-1"> موکا </span>
-                      <div class="dashedDiv mx-1"></div>
-                    </div>
-                    <!-- price div -->
-                    <div class="price-div">
-                      350T
-                      <div class="dashedDiv"></div>
-                    </div>
-                  </div>
-                  <!-- btns -->
-                  <div
-                    style="margin-right: 5px"
-                    class="d-flex align-items-center gap-2"
-                  >
-                    <button class="plusBtn">
-                      <img
-                        style="width: 15px; height: 15px"
-                        src="./assets/img-icons/plus.svg"
-                        alt="plus"
-                      />
-                    </button>
-                    <span class="menuItemQty">0</span>
-                    <button class="minusBtn">
-                      <img
-                        style="width: 15px; height: 15px"
-                        src="./assets/img-icons/minus.svg"
-                        alt="minus"
-                      />
-                    </button>
-                  </div>
-                </li>
-                <li class="d-flex align-items-center">
-                  <div>
-                    <!-- item div -->
-                    <div class="item-div">
-                      <span class="mb-1"> لاته </span>
-                      <div class="dashedDiv mx-1"></div>
-                    </div>
-                    <!-- price div -->
-                    <div class="price-div">
-                      350T
-                      <div class="dashedDiv"></div>
-                    </div>
-                  </div>
-                  <!-- btns -->
-                  <div
-                    style="margin-right: 5px"
-                    class="d-flex align-items-center gap-2"
-                  >
-                    <button class="plusBtn">
-                      <img
-                        style="width: 15px; height: 15px"
-                        src="./assets/img-icons/plus.svg"
-                        alt="plus"
-                      />
-                    </button>
-                    <span class="menuItemQty">0</span>
-                    <button class="minusBtn">
-                      <img
-                        style="width: 15px; height: 15px"
-                        src="./assets/img-icons/minus.svg"
-                        alt="minus"
-                      />
-                    </button>
-                  </div>
-                </li>
-                <li class="d-flex align-items-center">
-                  <div>
-                    <!-- item div -->
-                    <div class="item-div">
-                      <span class="mb-1"> موکا </span>
-                      <div class="dashedDiv mx-1"></div>
-                    </div>
-                    <!-- price div -->
-                    <div class="price-div">
-                      350T
-                      <div class="dashedDiv"></div>
-                    </div>
-                  </div>
-                  <!-- btns -->
-                  <div
-                    style="margin-right: 5px"
-                    class="d-flex align-items-center gap-2"
-                  >
-                    <button class="plusBtn">
-                      <img
-                        style="width: 15px; height: 15px"
-                        src="./assets/img-icons/plus.svg"
-                        alt="plus"
-                      />
-                    </button>
-                    <span class="menuItemQty">0</span>
-                    <button class="minusBtn">
-                      <img
-                        style="width: 15px; height: 15px"
-                        src="./assets/img-icons/minus.svg"
-                        alt="minus"
-                      />
-                    </button>
-                  </div>
-                </li>
-                <li class="d-flex align-items-center">
-                  <div>
-                    <!-- item div -->
-                    <div class="item-div">
-                      <span class="mb-1"> کاپوچینو </span>
-                      <div class="dashedDiv mx-1"></div>
-                    </div>
-                    <!-- price div -->
-                    <div class="price-div">
-                      350T
-                      <div class="dashedDiv"></div>
-                    </div>
-                  </div>
-                  <!-- btns -->
-                  <div
-                    style="margin-right: 5px"
-                    class="d-flex align-items-center gap-2"
-                  >
-                    <button class="plusBtn">
-                      <img
-                        style="width: 15px; height: 15px"
-                        src="./assets/img-icons/plus.svg"
-                        alt="plus"
-                      />
-                    </button>
-                    <span class="menuItemQty">0</span>
-                    <button class="minusBtn">
-                      <img
-                        style="width: 15px; height: 15px"
-                        src="./assets/img-icons/minus.svg"
-                        alt="minus"
-                      />
-                    </button>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <!-- header -->
-              <div
-                class="header d-flex align-items-center justify-content-between"
-              >
-                <div class="d-flex align-items-center gap-3">
-                  <img src="./assets/img-icons/can.svg" alt="icon" />
-                  <p class="align-self-end mt-1">نوشیدنی</p>
+                  <span class="mt-1"></span>
                 </div>
-                <span></span>
-              </div>
 
-              <!-- content -->
-              <ul class="content d-flex flex-column gap-3 pt-3">
-                <li class="d-flex align-items-center">
-                  <div>
-                    <!-- item div -->
-                    <div class="item-div">
-                      <span class="mb-1"> نوشابه </span>
-                      <div class="dashedDiv mx-1"></div>
+                <!-- content -->
+                <ul class="content d-flex flex-column gap-3 pt-3">
+                  <li class="d-flex align-items-center">
+                    <div>
+                      <!-- item div -->
+                      <div class="item-div">
+                        <span class="mb-1"> اسپرسو </span>
+                        <div class="dashedDiv mx-1"></div>
+                      </div>
+                      <!-- price div -->
+                      <div class="price-div">
+                        350T
+                        <div class="dashedDiv"></div>
+                      </div>
                     </div>
-                    <!-- price div -->
-                    <div class="price-div">
-                      350T
-                      <div class="dashedDiv"></div>
+                    <!-- btns -->
+                    <div
+                      style="margin-right: 5px"
+                      class="d-flex align-items-center gap-2"
+                    >
+                      <button class="plusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/plus.svg"
+                          alt="plus"
+                        />
+                      </button>
+                      <span class="menuItemQty">0</span>
+                      <button class="minusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/minus.svg"
+                          alt="minus"
+                        />
+                      </button>
                     </div>
-                  </div>
-                  <!-- btns -->
-                  <div
-                    style="margin-right: 5px"
-                    class="d-flex align-items-center gap-2"
-                  >
-                    <button class="plusBtn">
-                      <img
-                        style="width: 15px; height: 15px"
-                        src="./assets/img-icons/plus.svg"
-                        alt="plus"
-                      />
-                    </button>
-                    <span class="menuItemQty">0</span>
-                    <button class="minusBtn">
-                      <img
-                        style="width: 15px; height: 15px"
-                        src="./assets/img-icons/minus.svg"
-                        alt="minus"
-                      />
-                    </button>
-                  </div>
-                </li>
-                <li class="d-flex align-items-center">
-                  <div>
-                    <!-- item div -->
-                    <div class="item-div">
-                      <span class="mb-1"> آب </span>
-                      <div class="dashedDiv mx-1"></div>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <div>
+                      <!-- item div -->
+                      <div class="item-div">
+                        <span class="mb-1"> آمریکانو </span>
+                        <div class="dashedDiv mx-1"></div>
+                      </div>
+                      <!-- price div -->
+                      <div class="price-div">
+                        350T
+                        <div class="dashedDiv"></div>
+                      </div>
                     </div>
-                    <!-- price div -->
-                    <div class="price-div">
-                      350T
-                      <div class="dashedDiv"></div>
+                    <!-- btns -->
+                    <div
+                      style="margin-right: 5px"
+                      class="d-flex align-items-center gap-2"
+                    >
+                      <button class="plusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/plus.svg"
+                          alt="plus"
+                        />
+                      </button>
+                      <span class="menuItemQty">0</span>
+                      <button class="minusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/minus.svg"
+                          alt="minus"
+                        />
+                      </button>
                     </div>
-                  </div>
-                  <!-- btns -->
-                  <div
-                    style="margin-right: 5px"
-                    class="d-flex align-items-center gap-2"
-                  >
-                    <button class="plusBtn">
-                      <img
-                        style="width: 15px; height: 15px"
-                        src="./assets/img-icons/plus.svg"
-                        alt="plus"
-                      />
-                    </button>
-                    <span class="menuItemQty">0</span>
-                    <button class="minusBtn">
-                      <img
-                        style="width: 15px; height: 15px"
-                        src="./assets/img-icons/minus.svg"
-                        alt="minus"
-                      />
-                    </button>
-                  </div>
-                </li>
-                <li class="d-flex align-items-center">
-                  <div>
-                    <!-- item div -->
-                    <div class="item-div">
-                      <span class="mb-1"> دوغ </span>
-                      <div class="dashedDiv mx-1"></div>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <div>
+                      <!-- item div -->
+                      <div class="item-div">
+                        <span class="mb-1"> موکا </span>
+                        <div class="dashedDiv mx-1"></div>
+                      </div>
+                      <!-- price div -->
+                      <div class="price-div">
+                        350T
+                        <div class="dashedDiv"></div>
+                      </div>
                     </div>
-                    <!-- price div -->
-                    <div class="price-div">
-                      350T
-                      <div class="dashedDiv"></div>
+                    <!-- btns -->
+                    <div
+                      style="margin-right: 5px"
+                      class="d-flex align-items-center gap-2"
+                    >
+                      <button class="plusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/plus.svg"
+                          alt="plus"
+                        />
+                      </button>
+                      <span class="menuItemQty">0</span>
+                      <button class="minusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/minus.svg"
+                          alt="minus"
+                        />
+                      </button>
                     </div>
-                  </div>
-                  <!-- btns -->
-                  <div
-                    style="margin-right: 5px"
-                    class="d-flex align-items-center gap-2"
-                  >
-                    <button class="plusBtn">
-                      <img
-                        style="width: 15px; height: 15px"
-                        src="./assets/img-icons/plus.svg"
-                        alt="plus"
-                      />
-                    </button>
-                    <span class="menuItemQty">0</span>
-                    <button class="minusBtn">
-                      <img
-                        style="width: 15px; height: 15px"
-                        src="./assets/img-icons/minus.svg"
-                        alt="minus"
-                      />
-                    </button>
-                  </div>
-                </li>
-                <li class="d-flex align-items-center">
-                  <div>
-                    <!-- item div -->
-                    <div class="item-div">
-                      <span class="mb-1"> دلتسر </span>
-                      <div class="dashedDiv mx-1"></div>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <div>
+                      <!-- item div -->
+                      <div class="item-div">
+                        <span class="mb-1"> لاته </span>
+                        <div class="dashedDiv mx-1"></div>
+                      </div>
+                      <!-- price div -->
+                      <div class="price-div">
+                        350T
+                        <div class="dashedDiv"></div>
+                      </div>
                     </div>
-                    <!-- price div -->
-                    <div class="price-div">
-                      350T
-                      <div class="dashedDiv"></div>
+                    <!-- btns -->
+                    <div
+                      style="margin-right: 5px"
+                      class="d-flex align-items-center gap-2"
+                    >
+                      <button class="plusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/plus.svg"
+                          alt="plus"
+                        />
+                      </button>
+                      <span class="menuItemQty">0</span>
+                      <button class="minusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/minus.svg"
+                          alt="minus"
+                        />
+                      </button>
                     </div>
-                  </div>
-                  <!-- btns -->
-                  <div
-                    style="margin-right: 5px"
-                    class="d-flex align-items-center gap-2"
-                  >
-                    <button class="plusBtn">
-                      <img
-                        style="width: 15px; height: 15px"
-                        src="./assets/img-icons/plus.svg"
-                        alt="plus"
-                      />
-                    </button>
-                    <span class="menuItemQty">0</span>
-                    <button class="minusBtn">
-                      <img
-                        style="width: 15px; height: 15px"
-                        src="./assets/img-icons/minus.svg"
-                        alt="minus"
-                      />
-                    </button>
-                  </div>
-                </li>
-                <li class="d-flex align-items-center">
-                  <div>
-                    <!-- item div -->
-                    <div class="item-div">
-                      <span class="mb-1"> دلتسر </span>
-                      <div class="dashedDiv mx-1"></div>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <div>
+                      <!-- item div -->
+                      <div class="item-div">
+                        <span class="mb-1"> موکا </span>
+                        <div class="dashedDiv mx-1"></div>
+                      </div>
+                      <!-- price div -->
+                      <div class="price-div">
+                        350T
+                        <div class="dashedDiv"></div>
+                      </div>
                     </div>
-                    <!-- price div -->
-                    <div class="price-div">
-                      350T
-                      <div class="dashedDiv"></div>
+                    <!-- btns -->
+                    <div
+                      style="margin-right: 5px"
+                      class="d-flex align-items-center gap-2"
+                    >
+                      <button class="plusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/plus.svg"
+                          alt="plus"
+                        />
+                      </button>
+                      <span class="menuItemQty">0</span>
+                      <button class="minusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/minus.svg"
+                          alt="minus"
+                        />
+                      </button>
                     </div>
-                  </div>
-                  <!-- btns -->
-                  <div
-                    style="margin-right: 5px"
-                    class="d-flex align-items-center gap-2"
-                  >
-                    <button class="plusBtn">
-                      <img
-                        style="width: 15px; height: 15px"
-                        src="./assets/img-icons/plus.svg"
-                        alt="plus"
-                      />
-                    </button>
-                    <span class="menuItemQty">0</span>
-                    <button class="minusBtn">
-                      <img
-                        style="width: 15px; height: 15px"
-                        src="./assets/img-icons/minus.svg"
-                        alt="minus"
-                      />
-                    </button>
-                  </div>
-                </li>
-                <li class="d-flex align-items-center">
-                  <div>
-                    <!-- item div -->
-                    <div class="item-div">
-                      <span class="mb-1"> آب </span>
-                      <div class="dashedDiv mx-1"></div>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <div>
+                      <!-- item div -->
+                      <div class="item-div">
+                        <span class="mb-1"> کاپوچینو </span>
+                        <div class="dashedDiv mx-1"></div>
+                      </div>
+                      <!-- price div -->
+                      <div class="price-div">
+                        350T
+                        <div class="dashedDiv"></div>
+                      </div>
                     </div>
-                    <!-- price div -->
-                    <div class="price-div">
-                      350T
-                      <div class="dashedDiv"></div>
+                    <!-- btns -->
+                    <div
+                      style="margin-right: 5px"
+                      class="d-flex align-items-center gap-2"
+                    >
+                      <button class="plusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/plus.svg"
+                          alt="plus"
+                        />
+                      </button>
+                      <span class="menuItemQty">0</span>
+                      <button class="minusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/minus.svg"
+                          alt="minus"
+                        />
+                      </button>
                     </div>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <!-- header -->
+                <div
+                  class="header d-flex align-items-center justify-content-between"
+                >
+                  <div class="d-flex align-items-center gap-3">
+                    <img src="./assets/img-icons/can.svg" alt="icon" />
+                    <p class="align-self-end mt-1">نوشیدنی</p>
                   </div>
-                  <!-- btns -->
-                  <div
-                    style="margin-right: 5px"
-                    class="d-flex align-items-center gap-2"
-                  >
-                    <button class="plusBtn">
-                      <img
-                        style="width: 15px; height: 15px"
-                        src="./assets/img-icons/plus.svg"
-                        alt="plus"
-                      />
-                    </button>
-                    <span class="menuItemQty">0</span>
-                    <button class="minusBtn">
-                      <img
-                        style="width: 15px; height: 15px"
-                        src="./assets/img-icons/minus.svg"
-                        alt="minus"
-                      />
-                    </button>
+                  <span></span>
+                </div>
+
+                <!-- content -->
+                <ul class="content d-flex flex-column gap-3 pt-3">
+                  <li class="d-flex align-items-center">
+                    <div>
+                      <!-- item div -->
+                      <div class="item-div">
+                        <span class="mb-1"> نوشابه </span>
+                        <div class="dashedDiv mx-1"></div>
+                      </div>
+                      <!-- price div -->
+                      <div class="price-div">
+                        350T
+                        <div class="dashedDiv"></div>
+                      </div>
+                    </div>
+                    <!-- btns -->
+                    <div
+                      style="margin-right: 5px"
+                      class="d-flex align-items-center gap-2"
+                    >
+                      <button class="plusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/plus.svg"
+                          alt="plus"
+                        />
+                      </button>
+                      <span class="menuItemQty">0</span>
+                      <button class="minusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/minus.svg"
+                          alt="minus"
+                        />
+                      </button>
+                    </div>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <div>
+                      <!-- item div -->
+                      <div class="item-div">
+                        <span class="mb-1"> آب </span>
+                        <div class="dashedDiv mx-1"></div>
+                      </div>
+                      <!-- price div -->
+                      <div class="price-div">
+                        350T
+                        <div class="dashedDiv"></div>
+                      </div>
+                    </div>
+                    <!-- btns -->
+                    <div
+                      style="margin-right: 5px"
+                      class="d-flex align-items-center gap-2"
+                    >
+                      <button class="plusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/plus.svg"
+                          alt="plus"
+                        />
+                      </button>
+                      <span class="menuItemQty">0</span>
+                      <button class="minusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/minus.svg"
+                          alt="minus"
+                        />
+                      </button>
+                    </div>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <div>
+                      <!-- item div -->
+                      <div class="item-div">
+                        <span class="mb-1"> دوغ </span>
+                        <div class="dashedDiv mx-1"></div>
+                      </div>
+                      <!-- price div -->
+                      <div class="price-div">
+                        350T
+                        <div class="dashedDiv"></div>
+                      </div>
+                    </div>
+                    <!-- btns -->
+                    <div
+                      style="margin-right: 5px"
+                      class="d-flex align-items-center gap-2"
+                    >
+                      <button class="plusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/plus.svg"
+                          alt="plus"
+                        />
+                      </button>
+                      <span class="menuItemQty">0</span>
+                      <button class="minusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/minus.svg"
+                          alt="minus"
+                        />
+                      </button>
+                    </div>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <div>
+                      <!-- item div -->
+                      <div class="item-div">
+                        <span class="mb-1"> دلتسر </span>
+                        <div class="dashedDiv mx-1"></div>
+                      </div>
+                      <!-- price div -->
+                      <div class="price-div">
+                        350T
+                        <div class="dashedDiv"></div>
+                      </div>
+                    </div>
+                    <!-- btns -->
+                    <div
+                      style="margin-right: 5px"
+                      class="d-flex align-items-center gap-2"
+                    >
+                      <button class="plusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/plus.svg"
+                          alt="plus"
+                        />
+                      </button>
+                      <span class="menuItemQty">0</span>
+                      <button class="minusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/minus.svg"
+                          alt="minus"
+                        />
+                      </button>
+                    </div>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <div>
+                      <!-- item div -->
+                      <div class="item-div">
+                        <span class="mb-1"> دلتسر </span>
+                        <div class="dashedDiv mx-1"></div>
+                      </div>
+                      <!-- price div -->
+                      <div class="price-div">
+                        350T
+                        <div class="dashedDiv"></div>
+                      </div>
+                    </div>
+                    <!-- btns -->
+                    <div
+                      style="margin-right: 5px"
+                      class="d-flex align-items-center gap-2"
+                    >
+                      <button class="plusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/plus.svg"
+                          alt="plus"
+                        />
+                      </button>
+                      <span class="menuItemQty">0</span>
+                      <button class="minusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/minus.svg"
+                          alt="minus"
+                        />
+                      </button>
+                    </div>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <div>
+                      <!-- item div -->
+                      <div class="item-div">
+                        <span class="mb-1"> آب </span>
+                        <div class="dashedDiv mx-1"></div>
+                      </div>
+                      <!-- price div -->
+                      <div class="price-div">
+                        350T
+                        <div class="dashedDiv"></div>
+                      </div>
+                    </div>
+                    <!-- btns -->
+                    <div
+                      style="margin-right: 5px"
+                      class="d-flex align-items-center gap-2"
+                    >
+                      <button class="plusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/plus.svg"
+                          alt="plus"
+                        />
+                      </button>
+                      <span class="menuItemQty">0</span>
+                      <button class="minusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/minus.svg"
+                          alt="minus"
+                        />
+                      </button>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </div>
+          <div
+            data-content="online"
+            class="tab-container d-flex justify-content-center align-items-center show"
+          >
+            <section class="MenuListsSec">
+              <div>
+                <!-- header -->
+                <div
+                  class="header d-flex align-items-center justify-content-between"
+                >
+                  <div class="d-flex align-items-center gap-3">
+                    <img src="./assets/img-icons/drink-burger.svg" alt="icon" />
+                    <p class="align-self-end mt-1">فست فود</p>
                   </div>
-                </li>
-              </ul>
-            </div>
-          </section>
+                  <span>
+                    <img src="./assets/img-icons/20dis.svg" alt="icon" />
+                  </span>
+                </div>
+                <!-- content -->
+                <ul class="content d-flex flex-column gap-3 pt-3">
+                  <li class="d-flex align-items-center">
+                    <div>
+                      <!-- item div -->
+                      <div class="item-div">
+                        <span class="mb-1"> پیتزا پپرونی </span>
+                        <div class="dashedDiv mx-1"></div>
+                      </div>
+                      <!-- price div -->
+                      <div class="price-div">
+                        350T
+                        <div class="dashedDiv"></div>
+                      </div>
+                    </div>
+                    <!-- btns -->
+                    <div
+                      style="margin-right: 5px"
+                      class="d-flex align-items-center gap-2"
+                    >
+                      <button class="plusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/plus.svg"
+                          alt="plus"
+                        />
+                      </button>
+                      <span class="menuItemQty">0</span>
+                      <button class="minusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/minus.svg"
+                          alt="minus"
+                        />
+                      </button>
+                    </div>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <div>
+                      <!-- item div -->
+                      <div class="item-div">
+                        <span class="mb-1"> پیتزا آمریکانو </span>
+                        <div class="dashedDiv mx-1"></div>
+                      </div>
+                      <!-- price div -->
+                      <div class="price-div">
+                        350T
+                        <div class="dashedDiv"></div>
+                      </div>
+                    </div>
+                    <!-- btns -->
+                    <div
+                      style="margin-right: 5px"
+                      class="d-flex align-items-center gap-2"
+                    >
+                      <button class="plusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/plus.svg"
+                          alt="plus"
+                        />
+                      </button>
+                      <span class="menuItemQty">0</span>
+                      <button class="minusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/minus.svg"
+                          alt="minus"
+                        />
+                      </button>
+                    </div>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <div>
+                      <!-- item div -->
+                      <div class="item-div">
+                        <span class="mb-1"> پیتزا پپرونی </span>
+                        <div class="dashedDiv mx-1"></div>
+                      </div>
+                      <!-- price div -->
+                      <div class="price-div">
+                        350T
+                        <div class="dashedDiv"></div>
+                      </div>
+                    </div>
+                    <!-- btns -->
+                    <div
+                      style="margin-right: 5px"
+                      class="d-flex align-items-center gap-2"
+                    >
+                      <button class="plusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/plus.svg"
+                          alt="plus"
+                        />
+                      </button>
+                      <span class="menuItemQty">0</span>
+                      <button class="minusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/minus.svg"
+                          alt="minus"
+                        />
+                      </button>
+                    </div>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <div>
+                      <!-- item div -->
+                      <div class="item-div">
+                        <span class="mb-1"> پیتزا پپرونی </span>
+                        <div class="dashedDiv mx-1"></div>
+                      </div>
+                      <!-- price div -->
+                      <div class="price-div">
+                        350T
+                        <div class="dashedDiv"></div>
+                      </div>
+                    </div>
+                    <!-- btns -->
+                    <div
+                      style="margin-right: 5px"
+                      class="d-flex align-items-center gap-2"
+                    >
+                      <button class="plusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/plus.svg"
+                          alt="plus"
+                        />
+                      </button>
+                      <span class="menuItemQty">0</span>
+                      <button class="minusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/minus.svg"
+                          alt="minus"
+                        />
+                      </button>
+                    </div>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <div>
+                      <!-- item div -->
+                      <div class="item-div">
+                        <span class="mb-1"> پیتزا پپرونی </span>
+                        <div class="dashedDiv mx-1"></div>
+                      </div>
+                      <!-- price div -->
+                      <div class="price-div">
+                        350T
+                        <div class="dashedDiv"></div>
+                      </div>
+                    </div>
+                    <!-- btns -->
+                    <div
+                      style="margin-right: 5px"
+                      class="d-flex align-items-center gap-2"
+                    >
+                      <button class="plusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/plus.svg"
+                          alt="plus"
+                        />
+                      </button>
+                      <span class="menuItemQty">0</span>
+                      <button class="minusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/minus.svg"
+                          alt="minus"
+                        />
+                      </button>
+                    </div>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <div>
+                      <!-- item div -->
+                      <div class="item-div">
+                        <span class="mb-1"> پیتزا پپرونی </span>
+                        <div class="dashedDiv mx-1"></div>
+                      </div>
+                      <!-- price div -->
+                      <div class="price-div">
+                        350T
+                        <div class="dashedDiv"></div>
+                      </div>
+                    </div>
+                    <!-- btns -->
+                    <div
+                      style="margin-right: 5px"
+                      class="d-flex align-items-center gap-2"
+                    >
+                      <button class="plusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/plus.svg"
+                          alt="plus"
+                        />
+                      </button>
+                      <span class="menuItemQty">0</span>
+                      <button class="minusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/minus.svg"
+                          alt="minus"
+                        />
+                      </button>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <!-- header -->
+                <div
+                  class="header d-flex align-items-center justify-content-between"
+                >
+                  <div class="d-flex align-items-center gap-3">
+                    <img src="./assets/img-icons/plate-spoon.svg" alt="icon" />
+                    <p class="align-self-end mt-1">غذای ایرانی</p>
+                  </div>
+                  <span class="mt-1"
+                    ><img src="./assets/img-icons/10dis.svg" alt="icon"
+                  /></span>
+                </div>
+
+                <!-- content -->
+                <ul class="content d-flex flex-column gap-3 pt-3">
+                  <li class="d-flex align-items-center">
+                    <div>
+                      <!-- item div -->
+                      <div class="item-div">
+                        <span class="mb-1"> باقالی پلو با ماهیچه</span>
+                        <div class="dashedDiv mx-1"></div>
+                      </div>
+                      <!-- price div -->
+                      <div class="price-div">
+                        350T
+                        <div class="dashedDiv"></div>
+                      </div>
+                    </div>
+                    <!-- btns -->
+                    <div
+                      style="margin-right: 5px"
+                      class="d-flex align-items-center gap-2"
+                    >
+                      <button class="plusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/plus.svg"
+                          alt="plus"
+                        />
+                      </button>
+                      <span class="menuItemQty">0</span>
+                      <button class="minusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/minus.svg"
+                          alt="minus"
+                        />
+                      </button>
+                    </div>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <div>
+                      <!-- item div -->
+                      <div class="item-div">
+                        <span class="mb-1"> زرشک پلو</span>
+                        <div class="dashedDiv mx-1"></div>
+                      </div>
+                      <!-- price div -->
+                      <div class="price-div">
+                        350T
+                        <div class="dashedDiv"></div>
+                      </div>
+                    </div>
+                    <!-- btns -->
+                    <div
+                      style="margin-right: 5px"
+                      class="d-flex align-items-center gap-2"
+                    >
+                      <button class="plusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/plus.svg"
+                          alt="plus"
+                        />
+                      </button>
+                      <span class="menuItemQty">0</span>
+                      <button class="minusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/minus.svg"
+                          alt="minus"
+                        />
+                      </button>
+                    </div>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <div>
+                      <!-- item div -->
+                      <div class="item-div">
+                        <span class="mb-1"> تهچین </span>
+                        <div class="dashedDiv mx-1"></div>
+                      </div>
+                      <!-- price div -->
+                      <div class="price-div">
+                        350T
+                        <div class="dashedDiv"></div>
+                      </div>
+                    </div>
+                    <!-- btns -->
+                    <div
+                      style="margin-right: 5px"
+                      class="d-flex align-items-center gap-2"
+                    >
+                      <button class="plusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/plus.svg"
+                          alt="plus"
+                        />
+                      </button>
+                      <span class="menuItemQty">0</span>
+                      <button class="minusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/minus.svg"
+                          alt="minus"
+                        />
+                      </button>
+                    </div>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <div>
+                      <!-- item div -->
+                      <div class="item-div">
+                        <span class="mb-1"> زرشک پلو </span>
+                        <div class="dashedDiv mx-1"></div>
+                      </div>
+                      <!-- price div -->
+                      <div class="price-div">
+                        350T
+                        <div class="dashedDiv"></div>
+                      </div>
+                    </div>
+                    <!-- btns -->
+                    <div
+                      style="margin-right: 5px"
+                      class="d-flex align-items-center gap-2"
+                    >
+                      <button class="plusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/plus.svg"
+                          alt="plus"
+                        />
+                      </button>
+                      <span class="menuItemQty">0</span>
+                      <button class="minusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/minus.svg"
+                          alt="minus"
+                        />
+                      </button>
+                    </div>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <div>
+                      <!-- item div -->
+                      <div class="item-div">
+                        <span class="mb-1"> زرشک پلو </span>
+                        <div class="dashedDiv mx-1"></div>
+                      </div>
+                      <!-- price div -->
+                      <div class="price-div">
+                        350T
+                        <div class="dashedDiv"></div>
+                      </div>
+                    </div>
+                    <!-- btns -->
+                    <div
+                      style="margin-right: 5px"
+                      class="d-flex align-items-center gap-2"
+                    >
+                      <button class="plusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/plus.svg"
+                          alt="plus"
+                        />
+                      </button>
+                      <span class="menuItemQty">0</span>
+                      <button class="minusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/minus.svg"
+                          alt="minus"
+                        />
+                      </button>
+                    </div>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <div>
+                      <!-- item div -->
+                      <div class="item-div">
+                        <span class="mb-1"> زرشک پلو </span>
+                        <div class="dashedDiv mx-1"></div>
+                      </div>
+                      <!-- price div -->
+                      <div class="price-div">
+                        350T
+                        <div class="dashedDiv"></div>
+                      </div>
+                    </div>
+                    <!-- btns -->
+                    <div
+                      style="margin-right: 5px"
+                      class="d-flex align-items-center gap-2"
+                    >
+                      <button class="plusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/plus.svg"
+                          alt="plus"
+                        />
+                      </button>
+                      <span class="menuItemQty">0</span>
+                      <button class="minusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/minus.svg"
+                          alt="minus"
+                        />
+                      </button>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <!-- header -->
+                <div
+                  class="header d-flex align-items-center justify-content-between"
+                >
+                  <div class="d-flex align-items-center gap-3">
+                    <img src="./assets/img-icons/hot-coffe2.svg" alt="icon" />
+                    <p class="align-self-end mt-1">نوشیدنی گرم</p>
+                  </div>
+                  <span class="mt-1"></span>
+                </div>
+
+                <!-- content -->
+                <ul class="content d-flex flex-column gap-3 pt-3">
+                  <li class="d-flex align-items-center">
+                    <div>
+                      <!-- item div -->
+                      <div class="item-div">
+                        <span class="mb-1"> اسپرسو </span>
+                        <div class="dashedDiv mx-1"></div>
+                      </div>
+                      <!-- price div -->
+                      <div class="price-div">
+                        350T
+                        <div class="dashedDiv"></div>
+                      </div>
+                    </div>
+                    <!-- btns -->
+                    <div
+                      style="margin-right: 5px"
+                      class="d-flex align-items-center gap-2"
+                    >
+                      <button class="plusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/plus.svg"
+                          alt="plus"
+                        />
+                      </button>
+                      <span class="menuItemQty">0</span>
+                      <button class="minusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/minus.svg"
+                          alt="minus"
+                        />
+                      </button>
+                    </div>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <div>
+                      <!-- item div -->
+                      <div class="item-div">
+                        <span class="mb-1"> آمریکانو </span>
+                        <div class="dashedDiv mx-1"></div>
+                      </div>
+                      <!-- price div -->
+                      <div class="price-div">
+                        350T
+                        <div class="dashedDiv"></div>
+                      </div>
+                    </div>
+                    <!-- btns -->
+                    <div
+                      style="margin-right: 5px"
+                      class="d-flex align-items-center gap-2"
+                    >
+                      <button class="plusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/plus.svg"
+                          alt="plus"
+                        />
+                      </button>
+                      <span class="menuItemQty">0</span>
+                      <button class="minusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/minus.svg"
+                          alt="minus"
+                        />
+                      </button>
+                    </div>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <div>
+                      <!-- item div -->
+                      <div class="item-div">
+                        <span class="mb-1"> موکا </span>
+                        <div class="dashedDiv mx-1"></div>
+                      </div>
+                      <!-- price div -->
+                      <div class="price-div">
+                        350T
+                        <div class="dashedDiv"></div>
+                      </div>
+                    </div>
+                    <!-- btns -->
+                    <div
+                      style="margin-right: 5px"
+                      class="d-flex align-items-center gap-2"
+                    >
+                      <button class="plusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/plus.svg"
+                          alt="plus"
+                        />
+                      </button>
+                      <span class="menuItemQty">0</span>
+                      <button class="minusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/minus.svg"
+                          alt="minus"
+                        />
+                      </button>
+                    </div>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <div>
+                      <!-- item div -->
+                      <div class="item-div">
+                        <span class="mb-1"> لاته </span>
+                        <div class="dashedDiv mx-1"></div>
+                      </div>
+                      <!-- price div -->
+                      <div class="price-div">
+                        350T
+                        <div class="dashedDiv"></div>
+                      </div>
+                    </div>
+                    <!-- btns -->
+                    <div
+                      style="margin-right: 5px"
+                      class="d-flex align-items-center gap-2"
+                    >
+                      <button class="plusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/plus.svg"
+                          alt="plus"
+                        />
+                      </button>
+                      <span class="menuItemQty">0</span>
+                      <button class="minusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/minus.svg"
+                          alt="minus"
+                        />
+                      </button>
+                    </div>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <div>
+                      <!-- item div -->
+                      <div class="item-div">
+                        <span class="mb-1"> موکا </span>
+                        <div class="dashedDiv mx-1"></div>
+                      </div>
+                      <!-- price div -->
+                      <div class="price-div">
+                        350T
+                        <div class="dashedDiv"></div>
+                      </div>
+                    </div>
+                    <!-- btns -->
+                    <div
+                      style="margin-right: 5px"
+                      class="d-flex align-items-center gap-2"
+                    >
+                      <button class="plusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/plus.svg"
+                          alt="plus"
+                        />
+                      </button>
+                      <span class="menuItemQty">0</span>
+                      <button class="minusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/minus.svg"
+                          alt="minus"
+                        />
+                      </button>
+                    </div>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <div>
+                      <!-- item div -->
+                      <div class="item-div">
+                        <span class="mb-1"> کاپوچینو </span>
+                        <div class="dashedDiv mx-1"></div>
+                      </div>
+                      <!-- price div -->
+                      <div class="price-div">
+                        350T
+                        <div class="dashedDiv"></div>
+                      </div>
+                    </div>
+                    <!-- btns -->
+                    <div
+                      style="margin-right: 5px"
+                      class="d-flex align-items-center gap-2"
+                    >
+                      <button class="plusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/plus.svg"
+                          alt="plus"
+                        />
+                      </button>
+                      <span class="menuItemQty">0</span>
+                      <button class="minusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/minus.svg"
+                          alt="minus"
+                        />
+                      </button>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <!-- header -->
+                <div
+                  class="header d-flex align-items-center justify-content-between"
+                >
+                  <div class="d-flex align-items-center gap-3">
+                    <img src="./assets/img-icons/can.svg" alt="icon" />
+                    <p class="align-self-end mt-1">نوشیدنی</p>
+                  </div>
+                  <span></span>
+                </div>
+
+                <!-- content -->
+                <ul class="content d-flex flex-column gap-3 pt-3">
+                  <li class="d-flex align-items-center">
+                    <div>
+                      <!-- item div -->
+                      <div class="item-div">
+                        <span class="mb-1"> نوشابه </span>
+                        <div class="dashedDiv mx-1"></div>
+                      </div>
+                      <!-- price div -->
+                      <div class="price-div">
+                        350T
+                        <div class="dashedDiv"></div>
+                      </div>
+                    </div>
+                    <!-- btns -->
+                    <div
+                      style="margin-right: 5px"
+                      class="d-flex align-items-center gap-2"
+                    >
+                      <button class="plusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/plus.svg"
+                          alt="plus"
+                        />
+                      </button>
+                      <span class="menuItemQty">0</span>
+                      <button class="minusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/minus.svg"
+                          alt="minus"
+                        />
+                      </button>
+                    </div>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <div>
+                      <!-- item div -->
+                      <div class="item-div">
+                        <span class="mb-1"> آب </span>
+                        <div class="dashedDiv mx-1"></div>
+                      </div>
+                      <!-- price div -->
+                      <div class="price-div">
+                        350T
+                        <div class="dashedDiv"></div>
+                      </div>
+                    </div>
+                    <!-- btns -->
+                    <div
+                      style="margin-right: 5px"
+                      class="d-flex align-items-center gap-2"
+                    >
+                      <button class="plusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/plus.svg"
+                          alt="plus"
+                        />
+                      </button>
+                      <span class="menuItemQty">0</span>
+                      <button class="minusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/minus.svg"
+                          alt="minus"
+                        />
+                      </button>
+                    </div>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <div>
+                      <!-- item div -->
+                      <div class="item-div">
+                        <span class="mb-1"> دوغ </span>
+                        <div class="dashedDiv mx-1"></div>
+                      </div>
+                      <!-- price div -->
+                      <div class="price-div">
+                        350T
+                        <div class="dashedDiv"></div>
+                      </div>
+                    </div>
+                    <!-- btns -->
+                    <div
+                      style="margin-right: 5px"
+                      class="d-flex align-items-center gap-2"
+                    >
+                      <button class="plusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/plus.svg"
+                          alt="plus"
+                        />
+                      </button>
+                      <span class="menuItemQty">0</span>
+                      <button class="minusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/minus.svg"
+                          alt="minus"
+                        />
+                      </button>
+                    </div>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <div>
+                      <!-- item div -->
+                      <div class="item-div">
+                        <span class="mb-1"> دلتسر </span>
+                        <div class="dashedDiv mx-1"></div>
+                      </div>
+                      <!-- price div -->
+                      <div class="price-div">
+                        350T
+                        <div class="dashedDiv"></div>
+                      </div>
+                    </div>
+                    <!-- btns -->
+                    <div
+                      style="margin-right: 5px"
+                      class="d-flex align-items-center gap-2"
+                    >
+                      <button class="plusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/plus.svg"
+                          alt="plus"
+                        />
+                      </button>
+                      <span class="menuItemQty">0</span>
+                      <button class="minusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/minus.svg"
+                          alt="minus"
+                        />
+                      </button>
+                    </div>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <div>
+                      <!-- item div -->
+                      <div class="item-div">
+                        <span class="mb-1"> دلتسر </span>
+                        <div class="dashedDiv mx-1"></div>
+                      </div>
+                      <!-- price div -->
+                      <div class="price-div">
+                        350T
+                        <div class="dashedDiv"></div>
+                      </div>
+                    </div>
+                    <!-- btns -->
+                    <div
+                      style="margin-right: 5px"
+                      class="d-flex align-items-center gap-2"
+                    >
+                      <button class="plusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/plus.svg"
+                          alt="plus"
+                        />
+                      </button>
+                      <span class="menuItemQty">0</span>
+                      <button class="minusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/minus.svg"
+                          alt="minus"
+                        />
+                      </button>
+                    </div>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <div>
+                      <!-- item div -->
+                      <div class="item-div">
+                        <span class="mb-1"> آب </span>
+                        <div class="dashedDiv mx-1"></div>
+                      </div>
+                      <!-- price div -->
+                      <div class="price-div">
+                        350T
+                        <div class="dashedDiv"></div>
+                      </div>
+                    </div>
+                    <!-- btns -->
+                    <div
+                      style="margin-right: 5px"
+                      class="d-flex align-items-center gap-2"
+                    >
+                      <button class="plusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/plus.svg"
+                          alt="plus"
+                        />
+                      </button>
+                      <span class="menuItemQty">0</span>
+                      <button class="minusBtn">
+                        <img
+                          style="width: 15px; height: 15px"
+                          src="./assets/img-icons/minus.svg"
+                          alt="minus"
+                        />
+                      </button>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </div>
+
           <!-- MENU LISTS END -->
         </section>
         <!-- MAIN MENU CONTAINER END -->
@@ -1248,7 +2172,11 @@
           </form>
         </div>
 
-        <img class="mt-5 w-100" src="./assets/img-icons/coffe-leaf.svg" alt="image" />
+        <img
+          class="mt-5 w-100"
+          src="./assets/img-icons/coffe-leaf.svg"
+          alt="image"
+        />
       </section>
       <!-- Reserve sec end -->
     </main>
@@ -1272,13 +2200,13 @@
           <a href="./home-page.html">صفحه اصلی</a>
         </li>
         <li>
-          <a href="./">کافه رستوران ها</a>
+          <a href="./cafe-restuarant.html">کافه رستوران ها</a>
         </li>
         <li>
-          <a href="./">تماس با ما</a>
+          <a href="./contact-us.html">تماس با ما</a>
         </li>
         <li>
-          <a href="./">درباره ما</a>
+          <a href="./about-us.html">درباره ما</a>
         </li>
       </ul>
     </section>

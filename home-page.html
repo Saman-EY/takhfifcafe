@@ -56,10 +56,10 @@
               <a href="./cafe-restuarant.html">کافه، رستوران ها</a>
             </li>
             <li>
-              <a href="#">تماس با ما</a>
+              <a href="./contact-us.html">تماس با ما</a>
             </li>
             <li>
-              <a href="#">درباره ما</a>
+              <a href="./about-us.html">درباره ما</a>
             </li>
           </ul>
         </div>
@@ -157,206 +157,759 @@
 
         <!-- tabs -->
         <div class="HomeSec2Tabs mt-4 mb-5">
-          <button>کافه</button>
-          <button class="">رستوران</button>
-          <button class="active">کافه، رستوران</button>
+          <button data-tab="cafe" class="tab">کافه</button>
+          <button data-tab="restuarant" class="tab">رستوران</button>
+          <button data-tab="cafe-restuarant" class="tab active">
+            کافه، رستوران
+          </button>
         </div>
 
-        <section class="CardContainer mt-4">
-          <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
+        <section class="tabsContainer position-relative  overflow-hidden">
+          <div data-content="cafe" class="tab-container ">
+            <section class="CardContainer mt-4">
+              <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
 
-              <div class="swiper-slide">
-                <div class="MiniCard">
-                  <!-- DISCOUNT ICON -->
-                  <img src="./assets/img-icons/20dis.svg" alt="" />
+                  <div class="swiper-slide">
+                    <div class="MiniCard">
+                      <!-- DISCOUNT ICON -->
+                      <img src="./assets/img-icons/20dis.svg" alt="" />
 
-                  <!-- CARD COVER -->
-                  <div>
-                    <img
-                      class="w-100"
-                      src="./assets/img-icons/cardimg1.png"
-                      alt="card-img"
-                    />
+                      <!-- CARD COVER -->
+                      <div>
+                        <img
+                          class="w-100"
+                          src="./assets/img-icons/cardimg2.png"
+                          alt="card-img"
+                        />
+                      </div>
+
+                      <!-- CARD DESCRIPTION -->
+                      <div class="MiniCardDescription">
+                        <h4 class="py-1">کافه، رستوران شماره ۱</h4>
+
+                        <section class="">
+                          <div>
+                            <img
+                              src="./assets/img-icons/food2.svg"
+                              alt="icon"
+                            />
+                            <p>سلف سرویس</p>
+                          </div>
+                          <div>
+                            <img
+                              src="./assets/img-icons/tower.svg"
+                              alt="icon"
+                            />
+                            <p>فرانسوری</p>
+                          </div>
+                          <div>
+                            <img
+                              src="./assets/img-icons/smoke.svg"
+                              alt="icon"
+                            />
+                            <p>قلیان</p>
+                          </div>
+                          <div>
+                            <img
+                              src="./assets/img-icons/pizza.svg"
+                              alt="icon"
+                            />
+                            <p>فست فود</p>
+                          </div>
+                        </section>
+                        <!-- CARD BTN -->
+                        <button>مشاهده و رزرو</button>
+                      </div>
+                    </div>
                   </div>
+                  <div class="swiper-slide">
+                    <div class="MiniCard">
+                      <!-- DISCOUNT ICON -->
+                      <img src="./assets/img-icons/20dis.svg" alt="" />
 
-                  <!-- CARD DESCRIPTION -->
-                  <div class="MiniCardDescription">
-                    <h4 class="py-1">کافه، رستوران شماره ۱</h4>
+                      <!-- CARD COVER -->
+                      <div>
+                        <img
+                          class="w-100"
+                          src="./assets/img-icons/cardimg2.png"
+                          alt="card-img"
+                        />
+                      </div>
 
-                    <section class="">
-                      <div>
-                        <img src="./assets/img-icons/food2.svg" alt="icon" />
-                        <p>سلف سرویس</p>
+                      <!-- CARD DESCRIPTION -->
+                      <div class="MiniCardDescription">
+                        <h4 class="py-1">کافه، رستوران شماره ۱</h4>
+
+                        <section class="">
+                          <div>
+                            <img
+                              src="./assets/img-icons/food2.svg"
+                              alt="icon"
+                            />
+                            <p>سلف سرویس</p>
+                          </div>
+                          <div>
+                            <img
+                              src="./assets/img-icons/tower.svg"
+                              alt="icon"
+                            />
+                            <p>فرانسوری</p>
+                          </div>
+                          <div>
+                            <img
+                              src="./assets/img-icons/smoke.svg"
+                              alt="icon"
+                            />
+                            <p>قلیان</p>
+                          </div>
+                          <div>
+                            <img
+                              src="./assets/img-icons/pizza.svg"
+                              alt="icon"
+                            />
+                            <p>فست فود</p>
+                          </div>
+                        </section>
+                        <!-- CARD BTN -->
+                        <button>مشاهده و رزرو</button>
                       </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="MiniCard">
+                      <!-- DISCOUNT ICON -->
+                      <img src="./assets/img-icons/20dis.svg" alt="" />
+
+                      <!-- CARD COVER -->
                       <div>
-                        <img src="./assets/img-icons/tower.svg" alt="icon" />
-                        <p>فرانسوری</p>
+                        <img
+                          class="w-100"
+                          src="./assets/img-icons/cardimg2.png"
+                          alt="card-img"
+                        />
                       </div>
+
+                      <!-- CARD DESCRIPTION -->
+                      <div class="MiniCardDescription">
+                        <h4 class="py-1">کافه، رستوران شماره ۱</h4>
+
+                        <section class="">
+                          <div>
+                            <img
+                              src="./assets/img-icons/food2.svg"
+                              alt="icon"
+                            />
+                            <p>سلف سرویس</p>
+                          </div>
+                          <div>
+                            <img
+                              src="./assets/img-icons/tower.svg"
+                              alt="icon"
+                            />
+                            <p>فرانسوری</p>
+                          </div>
+                          <div>
+                            <img
+                              src="./assets/img-icons/smoke.svg"
+                              alt="icon"
+                            />
+                            <p>قلیان</p>
+                          </div>
+                          <div>
+                            <img
+                              src="./assets/img-icons/pizza.svg"
+                              alt="icon"
+                            />
+                            <p>فست فود</p>
+                          </div>
+                        </section>
+                        <!-- CARD BTN -->
+                        <button>مشاهده و رزرو</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="MiniCard">
+                      <!-- DISCOUNT ICON -->
+                      <img src="./assets/img-icons/20dis.svg" alt="" />
+
+                      <!-- CARD COVER -->
                       <div>
-                        <img src="./assets/img-icons/smoke.svg" alt="icon" />
-                        <p>قلیان</p>
+                        <img
+                          class="w-100"
+                          src="./assets/img-icons/cardimg2.png"
+                          alt="card-img"
+                        />
                       </div>
-                      <div>
-                        <img src="./assets/img-icons/pizza.svg" alt="icon" />
-                        <p>فست فود</p>
+
+                      <!-- CARD DESCRIPTION -->
+                      <div class="MiniCardDescription">
+                        <h4 class="py-1">کافه، رستوران شماره ۱</h4>
+
+                        <section class="">
+                          <div>
+                            <img
+                              src="./assets/img-icons/food2.svg"
+                              alt="icon"
+                            />
+                            <p>سلف سرویس</p>
+                          </div>
+                          <div>
+                            <img
+                              src="./assets/img-icons/tower.svg"
+                              alt="icon"
+                            />
+                            <p>فرانسوری</p>
+                          </div>
+                          <div>
+                            <img
+                              src="./assets/img-icons/smoke.svg"
+                              alt="icon"
+                            />
+                            <p>قلیان</p>
+                          </div>
+                          <div>
+                            <img
+                              src="./assets/img-icons/pizza.svg"
+                              alt="icon"
+                            />
+                            <p>فست فود</p>
+                          </div>
+                        </section>
+                        <!-- CARD BTN -->
+                        <button>مشاهده و رزرو</button>
                       </div>
-                    </section>
-                    <!-- CARD BTN -->
-                    <button>مشاهده و رزرو</button>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="MiniCard">
-                  <!-- DISCOUNT ICON -->
-                  <img src="./assets/img-icons/20dis.svg" alt="" />
 
-                  <!-- CARD COVER -->
-                  <div>
+                <div
+                  class="swiperUtilContainer d-flex align-items-center justify-content-center gap-3"
+                >
+                  <button id="homeslidernext" class="custom-next-btn">
                     <img
-                      class="w-100"
-                      src="./assets/img-icons/cardimg1.png"
-                      alt="card-img"
+                      src="./assets/img-icons/right-arrow-orange.svg"
+                      alt="svg"
                     />
-                  </div>
-
-                  <!-- CARD DESCRIPTION -->
-                  <div class="MiniCardDescription">
-                    <h4 class="py-1">کافه، رستوران شماره ۱</h4>
-
-                    <section class="">
-                      <div>
-                        <img src="./assets/img-icons/food2.svg" alt="icon" />
-                        <p>سلف سرویس</p>
-                      </div>
-                      <div>
-                        <img src="./assets/img-icons/tower.svg" alt="icon" />
-                        <p>فرانسوری</p>
-                      </div>
-                      <div>
-                        <img src="./assets/img-icons/smoke.svg" alt="icon" />
-                        <p>قلیان</p>
-                      </div>
-                      <div>
-                        <img src="./assets/img-icons/pizza.svg" alt="icon" />
-                        <p>فست فود</p>
-                      </div>
-                    </section>
-                    <!-- CARD BTN -->
-                    <button>مشاهده و رزرو</button>
-                  </div>
+                  </button>
+                  <div class="swiper-pagination"></div>
+                  <button id="homesliderprev" class="custom-prev-btn">
+                    <img
+                      src="./assets/img-icons/left-arrow-orange.svg"
+                      alt="svg"
+                    />
+                  </button>
                 </div>
               </div>
-              <div class="swiper-slide">
-                <div class="MiniCard">
-                  <!-- DISCOUNT ICON -->
-                  <img src="./assets/img-icons/20dis.svg" alt="" />
+            </section>
 
-                  <!-- CARD COVER -->
-                  <div>
-                    <img
-                      class="w-100"
-                      src="./assets/img-icons/cardimg1.png"
-                      alt="card-img"
-                    />
+            <a href="#" class="btn-under-slider">
+              دیدن همه
+              <span>
+                <img src="./assets/img-icons/long-arrow.svg" alt="icon" />
+              </span>
+            </a>
+          </div>
+          <div data-content="restuarant" class="tab-container">
+            <section class="CardContainer mt-4">
+              <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+
+                  <div class="swiper-slide">
+                    <div class="MiniCard">
+                      <!-- DISCOUNT ICON -->
+                      <img src="./assets/img-icons/20dis.svg" alt="" />
+
+                      <!-- CARD COVER -->
+                      <div>
+                        <img
+                          class="w-100"
+                          src="./assets/img-icons/cardimg3.png"
+                          alt="card-img"
+                        />
+                      </div>
+
+                      <!-- CARD DESCRIPTION -->
+                      <div class="MiniCardDescription">
+                        <h4 class="py-1">کافه، رستوران شماره ۱</h4>
+
+                        <section class="">
+                          <div>
+                            <img
+                              src="./assets/img-icons/food2.svg"
+                              alt="icon"
+                            />
+                            <p>سلف سرویس</p>
+                          </div>
+                          <div>
+                            <img
+                              src="./assets/img-icons/tower.svg"
+                              alt="icon"
+                            />
+                            <p>فرانسوری</p>
+                          </div>
+                          <div>
+                            <img
+                              src="./assets/img-icons/smoke.svg"
+                              alt="icon"
+                            />
+                            <p>قلیان</p>
+                          </div>
+                          <div>
+                            <img
+                              src="./assets/img-icons/pizza.svg"
+                              alt="icon"
+                            />
+                            <p>فست فود</p>
+                          </div>
+                        </section>
+                        <!-- CARD BTN -->
+                        <button>مشاهده و رزرو</button>
+                      </div>
+                    </div>
                   </div>
+                  <div class="swiper-slide">
+                    <div class="MiniCard">
+                      <!-- DISCOUNT ICON -->
+                      <img src="./assets/img-icons/20dis.svg" alt="" />
 
-                  <!-- CARD DESCRIPTION -->
-                  <div class="MiniCardDescription">
-                    <h4 class="py-1">کافه، رستوران شماره ۱</h4>
+                      <!-- CARD COVER -->
+                      <div>
+                        <img
+                          class="w-100"
+                          src="./assets/img-icons/cardimg3.png"
+                          alt="card-img"
+                        />
+                      </div>
 
-                    <section class="">
-                      <div>
-                        <img src="./assets/img-icons/food2.svg" alt="icon" />
-                        <p>سلف سرویس</p>
+                      <!-- CARD DESCRIPTION -->
+                      <div class="MiniCardDescription">
+                        <h4 class="py-1">کافه، رستوران شماره ۱</h4>
+
+                        <section class="">
+                          <div>
+                            <img
+                              src="./assets/img-icons/food2.svg"
+                              alt="icon"
+                            />
+                            <p>سلف سرویس</p>
+                          </div>
+                          <div>
+                            <img
+                              src="./assets/img-icons/tower.svg"
+                              alt="icon"
+                            />
+                            <p>فرانسوری</p>
+                          </div>
+                          <div>
+                            <img
+                              src="./assets/img-icons/smoke.svg"
+                              alt="icon"
+                            />
+                            <p>قلیان</p>
+                          </div>
+                          <div>
+                            <img
+                              src="./assets/img-icons/pizza.svg"
+                              alt="icon"
+                            />
+                            <p>فست فود</p>
+                          </div>
+                        </section>
+                        <!-- CARD BTN -->
+                        <button>مشاهده و رزرو</button>
                       </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="MiniCard">
+                      <!-- DISCOUNT ICON -->
+                      <img src="./assets/img-icons/20dis.svg" alt="" />
+
+                      <!-- CARD COVER -->
                       <div>
-                        <img src="./assets/img-icons/tower.svg" alt="icon" />
-                        <p>فرانسوری</p>
+                        <img
+                          class="w-100"
+                          src="./assets/img-icons/cardimg3.png"
+                          alt="card-img"
+                        />
                       </div>
+
+                      <!-- CARD DESCRIPTION -->
+                      <div class="MiniCardDescription">
+                        <h4 class="py-1">کافه، رستوران شماره ۱</h4>
+
+                        <section class="">
+                          <div>
+                            <img
+                              src="./assets/img-icons/food2.svg"
+                              alt="icon"
+                            />
+                            <p>سلف سرویس</p>
+                          </div>
+                          <div>
+                            <img
+                              src="./assets/img-icons/tower.svg"
+                              alt="icon"
+                            />
+                            <p>فرانسوری</p>
+                          </div>
+                          <div>
+                            <img
+                              src="./assets/img-icons/smoke.svg"
+                              alt="icon"
+                            />
+                            <p>قلیان</p>
+                          </div>
+                          <div>
+                            <img
+                              src="./assets/img-icons/pizza.svg"
+                              alt="icon"
+                            />
+                            <p>فست فود</p>
+                          </div>
+                        </section>
+                        <!-- CARD BTN -->
+                        <button>مشاهده و رزرو</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="MiniCard">
+                      <!-- DISCOUNT ICON -->
+                      <img src="./assets/img-icons/20dis.svg" alt="" />
+
+                      <!-- CARD COVER -->
                       <div>
-                        <img src="./assets/img-icons/smoke.svg" alt="icon" />
-                        <p>قلیان</p>
+                        <img
+                          class="w-100"
+                          src="./assets/img-icons/cardimg3.png"
+                          alt="card-img"
+                        />
                       </div>
-                      <div>
-                        <img src="./assets/img-icons/pizza.svg" alt="icon" />
-                        <p>فست فود</p>
+
+                      <!-- CARD DESCRIPTION -->
+                      <div class="MiniCardDescription">
+                        <h4 class="py-1">کافه، رستوران شماره ۱</h4>
+
+                        <section class="">
+                          <div>
+                            <img
+                              src="./assets/img-icons/food2.svg"
+                              alt="icon"
+                            />
+                            <p>سلف سرویس</p>
+                          </div>
+                          <div>
+                            <img
+                              src="./assets/img-icons/tower.svg"
+                              alt="icon"
+                            />
+                            <p>فرانسوری</p>
+                          </div>
+                          <div>
+                            <img
+                              src="./assets/img-icons/smoke.svg"
+                              alt="icon"
+                            />
+                            <p>قلیان</p>
+                          </div>
+                          <div>
+                            <img
+                              src="./assets/img-icons/pizza.svg"
+                              alt="icon"
+                            />
+                            <p>فست فود</p>
+                          </div>
+                        </section>
+                        <!-- CARD BTN -->
+                        <button>مشاهده و رزرو</button>
                       </div>
-                    </section>
-                    <!-- CARD BTN -->
-                    <button>مشاهده و رزرو</button>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="MiniCard">
-                  <!-- DISCOUNT ICON -->
-                  <img src="./assets/img-icons/20dis.svg" alt="" />
 
-                  <!-- CARD COVER -->
-                  <div>
+                <div
+                  class="swiperUtilContainer d-flex align-items-center justify-content-center gap-3"
+                >
+                  <button id="homeslidernext" class="custom-next-btn">
                     <img
-                      class="w-100"
-                      src="./assets/img-icons/cardimg1.png"
-                      alt="card-img"
+                      src="./assets/img-icons/right-arrow-orange.svg"
+                      alt="svg"
                     />
-                  </div>
-
-                  <!-- CARD DESCRIPTION -->
-                  <div class="MiniCardDescription">
-                    <h4 class="py-1">کافه، رستوران شماره ۱</h4>
-
-                    <section class="">
-                      <div>
-                        <img src="./assets/img-icons/food2.svg" alt="icon" />
-                        <p>سلف سرویس</p>
-                      </div>
-                      <div>
-                        <img src="./assets/img-icons/tower.svg" alt="icon" />
-                        <p>فرانسوری</p>
-                      </div>
-                      <div>
-                        <img src="./assets/img-icons/smoke.svg" alt="icon" />
-                        <p>قلیان</p>
-                      </div>
-                      <div>
-                        <img src="./assets/img-icons/pizza.svg" alt="icon" />
-                        <p>فست فود</p>
-                      </div>
-                    </section>
-                    <!-- CARD BTN -->
-                    <button>مشاهده و رزرو</button>
-                  </div>
+                  </button>
+                  <div class="swiper-pagination"></div>
+                  <button id="homesliderprev" class="custom-prev-btn">
+                    <img
+                      src="./assets/img-icons/left-arrow-orange.svg"
+                      alt="svg"
+                    />
+                  </button>
                 </div>
               </div>
-            </div>
+            </section>
 
-            <div
-              class="swiperUtilContainer d-flex align-items-center justify-content-center gap-3"
-            >
-              <button id="homeslidernext" class="custom-next-btn">
-                <img
-                  src="./assets/img-icons/right-arrow-orange.svg"
-                  alt="svg"
-                />
-              </button>
-              <div class="swiper-pagination"></div>
-              <button id="homesliderprev" class="custom-prev-btn">
-                <img src="./assets/img-icons/left-arrow-orange.svg" alt="svg" />
-              </button>
-            </div>
+            <a href="#" class="btn-under-slider">
+              دیدن همه
+              <span>
+                <img src="./assets/img-icons/long-arrow.svg" alt="icon" />
+              </span>
+            </a>
+          </div>
+          <div data-content="cafe-restuarant" class="tab-container show">
+            <section class="CardContainer mt-4">
+              <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+
+                  <div class="swiper-slide">
+                    <div class="MiniCard">
+                      <!-- DISCOUNT ICON -->
+                      <img src="./assets/img-icons/20dis.svg" alt="" />
+
+                      <!-- CARD COVER -->
+                      <div>
+                        <img
+                          class="w-100"
+                          src="./assets/img-icons/cardimg1.png"
+                          alt="card-img"
+                        />
+                      </div>
+
+                      <!-- CARD DESCRIPTION -->
+                      <div class="MiniCardDescription">
+                        <h4 class="py-1">کافه، رستوران شماره ۱</h4>
+
+                        <section class="">
+                          <div>
+                            <img
+                              src="./assets/img-icons/food2.svg"
+                              alt="icon"
+                            />
+                            <p>سلف سرویس</p>
+                          </div>
+                          <div>
+                            <img
+                              src="./assets/img-icons/tower.svg"
+                              alt="icon"
+                            />
+                            <p>فرانسوری</p>
+                          </div>
+                          <div>
+                            <img
+                              src="./assets/img-icons/smoke.svg"
+                              alt="icon"
+                            />
+                            <p>قلیان</p>
+                          </div>
+                          <div>
+                            <img
+                              src="./assets/img-icons/pizza.svg"
+                              alt="icon"
+                            />
+                            <p>فست فود</p>
+                          </div>
+                        </section>
+                        <!-- CARD BTN -->
+                        <button>مشاهده و رزرو</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="MiniCard">
+                      <!-- DISCOUNT ICON -->
+                      <img src="./assets/img-icons/20dis.svg" alt="" />
+
+                      <!-- CARD COVER -->
+                      <div>
+                        <img
+                          class="w-100"
+                          src="./assets/img-icons/cardimg1.png"
+                          alt="card-img"
+                        />
+                      </div>
+
+                      <!-- CARD DESCRIPTION -->
+                      <div class="MiniCardDescription">
+                        <h4 class="py-1">کافه، رستوران شماره ۱</h4>
+
+                        <section class="">
+                          <div>
+                            <img
+                              src="./assets/img-icons/food2.svg"
+                              alt="icon"
+                            />
+                            <p>سلف سرویس</p>
+                          </div>
+                          <div>
+                            <img
+                              src="./assets/img-icons/tower.svg"
+                              alt="icon"
+                            />
+                            <p>فرانسوری</p>
+                          </div>
+                          <div>
+                            <img
+                              src="./assets/img-icons/smoke.svg"
+                              alt="icon"
+                            />
+                            <p>قلیان</p>
+                          </div>
+                          <div>
+                            <img
+                              src="./assets/img-icons/pizza.svg"
+                              alt="icon"
+                            />
+                            <p>فست فود</p>
+                          </div>
+                        </section>
+                        <!-- CARD BTN -->
+                        <button>مشاهده و رزرو</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="MiniCard">
+                      <!-- DISCOUNT ICON -->
+                      <img src="./assets/img-icons/20dis.svg" alt="" />
+
+                      <!-- CARD COVER -->
+                      <div>
+                        <img
+                          class="w-100"
+                          src="./assets/img-icons/cardimg1.png"
+                          alt="card-img"
+                        />
+                      </div>
+
+                      <!-- CARD DESCRIPTION -->
+                      <div class="MiniCardDescription">
+                        <h4 class="py-1">کافه، رستوران شماره ۱</h4>
+
+                        <section class="">
+                          <div>
+                            <img
+                              src="./assets/img-icons/food2.svg"
+                              alt="icon"
+                            />
+                            <p>سلف سرویس</p>
+                          </div>
+                          <div>
+                            <img
+                              src="./assets/img-icons/tower.svg"
+                              alt="icon"
+                            />
+                            <p>فرانسوری</p>
+                          </div>
+                          <div>
+                            <img
+                              src="./assets/img-icons/smoke.svg"
+                              alt="icon"
+                            />
+                            <p>قلیان</p>
+                          </div>
+                          <div>
+                            <img
+                              src="./assets/img-icons/pizza.svg"
+                              alt="icon"
+                            />
+                            <p>فست فود</p>
+                          </div>
+                        </section>
+                        <!-- CARD BTN -->
+                        <button>مشاهده و رزرو</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="MiniCard">
+                      <!-- DISCOUNT ICON -->
+                      <img src="./assets/img-icons/20dis.svg" alt="" />
+
+                      <!-- CARD COVER -->
+                      <div>
+                        <img
+                          class="w-100"
+                          src="./assets/img-icons/cardimg1.png"
+                          alt="card-img"
+                        />
+                      </div>
+
+                      <!-- CARD DESCRIPTION -->
+                      <div class="MiniCardDescription">
+                        <h4 class="py-1">کافه، رستوران شماره ۱</h4>
+
+                        <section class="">
+                          <div>
+                            <img
+                              src="./assets/img-icons/food2.svg"
+                              alt="icon"
+                            />
+                            <p>سلف سرویس</p>
+                          </div>
+                          <div>
+                            <img
+                              src="./assets/img-icons/tower.svg"
+                              alt="icon"
+                            />
+                            <p>فرانسوری</p>
+                          </div>
+                          <div>
+                            <img
+                              src="./assets/img-icons/smoke.svg"
+                              alt="icon"
+                            />
+                            <p>قلیان</p>
+                          </div>
+                          <div>
+                            <img
+                              src="./assets/img-icons/pizza.svg"
+                              alt="icon"
+                            />
+                            <p>فست فود</p>
+                          </div>
+                        </section>
+                        <!-- CARD BTN -->
+                        <button>مشاهده و رزرو</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="swiperUtilContainer d-flex align-items-center justify-content-center gap-3"
+                >
+                  <button id="homeslidernext" class="custom-next-btn">
+                    <img
+                      src="./assets/img-icons/right-arrow-orange.svg"
+                      alt="svg"
+                    />
+                  </button>
+                  <div class="swiper-pagination"></div>
+                  <button id="homesliderprev" class="custom-prev-btn">
+                    <img
+                      src="./assets/img-icons/left-arrow-orange.svg"
+                      alt="svg"
+                    />
+                  </button>
+                </div>
+              </div>
+            </section>
+
+            <a href="#" class="btn-under-slider">
+              دیدن همه
+              <span>
+                <img src="./assets/img-icons/long-arrow.svg" alt="icon" />
+              </span>
+            </a>
           </div>
         </section>
-
-        <a href="#" class="btn-under-slider">
-          دیدن همه
-          <span>
-            <img src="./assets/img-icons/long-arrow.svg" alt="icon">
-          </span>
-        </a>
       </section>
       <!-- home sec2 end -->
 
@@ -503,13 +1056,13 @@
           <a href="./home-page.html">صفحه اصلی</a>
         </li>
         <li>
-          <a href="./">کافه رستوران ها</a>
+          <a href="./cafe-restuarant.html">کافه رستوران ها</a>
         </li>
         <li>
-          <a href="./">تماس با ما</a>
+          <a href="./contact-us.html">تماس با ما</a>
         </li>
         <li>
-          <a href="./">درباره ما</a>
+          <a href="./about-us.html">درباره ما</a>
         </li>
       </ul>
     </section>

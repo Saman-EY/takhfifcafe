@@ -54,7 +54,7 @@
               <a href="./cafe-restuarant.html">کافه، رستوران ها</a>
             </li>
             <li>
-              <a href="#">تماس با ما</a>
+              <a href="./contact-us.html">تماس با ما</a>
             </li>
             <li>
               <a href="#">درباره ما</a>
@@ -112,962 +112,2879 @@
       >
         <!-- tabs -->
         <div class="HomeSec2Tabs mt-3 mb-5">
-          <button>کافه</button>
-          <button class="">رستوران</button>
-          <button class="active">کافه، رستوران</button>
+          <button data-tab="cafe" class="tab">کافه</button>
+          <button data-tab="restuarant" class="tab">رستوران</button>
+          <button data-tab="cafe-restuarant" class="tab active">
+            کافه، رستوران
+          </button>
         </div>
       </section>
       <!-- first sec end -->
 
-      <!-- Categories filter -->
-      <section
-        class="CategoriesFilterSec d-flex flex-column flex-lg-row align-items-center justify-content-between gap-0 mb-3"
-      >
-        <!-- titles -->
-        <div class="titles text-center text-lg-end">
-          <h5>دسته بندی کافه و رستوران ها</h5>
-          <p>نتایج رو متناسب با نیازت بچین دوست من</p>
+      <section class="position-relative w-100 overflow-hidden">
+        <!-- tab 1 -->
+        <div data-content="cafe" class="cafeRestuarant-tab-container">
+          <!-- Categories filter -->
+          <section
+            class="CategoriesFilterSec d-flex flex-column flex-lg-row align-items-center justify-content-between gap-0 mb-3"
+          >
+            <!-- titles -->
+            <div class="titles text-center text-lg-end">
+              <h5>دسته بندی کافه</h5>
+              <p>نتایج رو متناسب با نیازت بچین دوست من</p>
+            </div>
+
+            <!-- filters -->
+            <section class="ListFiltersContainer">
+              <button class="dropdownButton">
+                <span>نوع</span>
+                <span class="OptionGBadge"></span>
+                <img
+                  class="OptionGIcon"
+                  src="./assets/img-icons/rounded-arrow-down.svg"
+                  alt="icon"
+                />
+
+                <ul class="ListFilterDropDown">
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">همه</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">دارای آفر</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">اقتصادی</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">شگفت انگیز</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">لاکچری</span>
+                    </label>
+                  </li>
+                </ul>
+              </button>
+              <button class="dropdownButton">
+                <span>هزینه</span>
+                <span class="OptionGBadge"></span>
+                <img
+                  class="OptionGIcon"
+                  src="./assets/img-icons/rounded-arrow-down.svg"
+                  alt="icon"
+                />
+
+                <ul class="ListFilterDropDown">
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">همه</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">دارای آفر</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">اقتصادی</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">شگفت انگیز</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">لاکچری</span>
+                    </label>
+                  </li>
+                </ul>
+              </button>
+
+              <button class="dropdownButton">
+                <span>شهر</span>
+                <span class="OptionGBadge"></span>
+                <img
+                  class="OptionGIcon"
+                  src="./assets/img-icons/rounded-arrow-down.svg"
+                  alt="icon"
+                />
+
+                <ul class="ListFilterDropDown">
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">همه</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">دارای آفر</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">اقتصادی</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">شگفت انگیز</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">لاکچری</span>
+                    </label>
+                  </li>
+                </ul>
+              </button>
+              <button class="dropdownButton">
+                <span>امکانات</span>
+                <span class="OptionGBadge"></span>
+                <img
+                  class="OptionGIcon"
+                  src="./assets/img-icons/rounded-arrow-down.svg"
+                  alt="icon"
+                />
+
+                <ul class="ListFilterDropDown">
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">همه</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">دارای آفر</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">اقتصادی</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">شگفت انگیز</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">لاکچری</span>
+                    </label>
+                  </li>
+                </ul>
+              </button>
+              <button class="dropdownButton">
+                <span>ترتیب</span>
+                <span class="OptionGBadge"></span>
+                <img
+                  class="OptionGIcon"
+                  src="./assets/img-icons/rounded-arrow-down.svg"
+                  alt="icon"
+                />
+
+                <ul class="ListFilterDropDown">
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">همه</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">دارای آفر</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">اقتصادی</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">شگفت انگیز</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">لاکچری</span>
+                    </label>
+                  </li>
+                </ul>
+              </button>
+            </section>
+          </section>
+          <!-- Categories filter end -->
+
+          <!-- LIST OF CARDS -->
+          <section class="CardListContainer">
+            <div class="MiniCard">
+              <!-- DISCOUNT ICON -->
+              <img src="./assets/img-icons/20dis.svg" alt="" />
+
+              <!-- CARD COVER -->
+              <div class="CardCover">
+                <img
+                  class="w-100"
+                  src="./assets/img-icons/cardimg1.png"
+                  alt="card-img"
+                />
+              </div>
+
+              <!-- CARD DESCRIPTION -->
+              <div class="MiniCardDescription">
+                <h4 class="py-1">کافه، رستوران شماره ۱</h4>
+
+                <section class="">
+                  <div>
+                    <img src="./assets/img-icons/pipe.svg" alt="icon" />
+                    <p>اسموک روم</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/tower.svg" alt="icon" />
+                    <p>فرانسوری</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/guitar.svg" alt="icon" />
+                    <p>موسیقی زنده</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/pizza.svg" alt="icon" />
+                    <p>فست فود</p>
+                  </div>
+                </section>
+                <!-- CARD BTN -->
+                <button>مشاهده و رزرو</button>
+              </div>
+            </div>
+            <div class="MiniCard">
+              <!-- DISCOUNT ICON -->
+              <img src="./assets/img-icons/20dis.svg" alt="" />
+
+              <!-- CARD COVER -->
+              <div class="CardCover">
+                <img
+                  class="w-100"
+                  src="./assets/img-icons/cardimg2.png"
+                  alt="card-img"
+                />
+              </div>
+
+              <!-- CARD DESCRIPTION -->
+              <div class="MiniCardDescription">
+                <h4 class="py-1">کافه، رستوران شماره ۱</h4>
+
+                <section class="">
+                  <div>
+                    <img src="./assets/img-icons/pipe.svg" alt="icon" />
+                    <p>اسموک روم</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/tower.svg" alt="icon" />
+                    <p>فرانسوری</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/guitar.svg" alt="icon" />
+                    <p>موسیقی زنده</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/pizza.svg" alt="icon" />
+                    <p>فست فود</p>
+                  </div>
+                </section>
+                <!-- CARD BTN -->
+                <button>مشاهده و رزرو</button>
+              </div>
+            </div>
+            <div class="MiniCard">
+              <!-- DISCOUNT ICON -->
+              <img src="./assets/img-icons/20dis.svg" alt="" />
+
+              <!-- CARD COVER -->
+              <div class="CardCover">
+                <img
+                  class="w-100"
+                  src="./assets/img-icons/cardimg3.png"
+                  alt="card-img"
+                />
+              </div>
+
+              <!-- CARD DESCRIPTION -->
+              <div class="MiniCardDescription">
+                <h4 class="py-1">کافه، رستوران شماره ۱</h4>
+
+                <section class="">
+                  <div>
+                    <img src="./assets/img-icons/pipe.svg" alt="icon" />
+                    <p>اسموک روم</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/tower.svg" alt="icon" />
+                    <p>فرانسوری</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/guitar.svg" alt="icon" />
+                    <p>موسیقی زنده</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/pizza.svg" alt="icon" />
+                    <p>فست فود</p>
+                  </div>
+                </section>
+                <!-- CARD BTN -->
+                <button>مشاهده و رزرو</button>
+              </div>
+            </div>
+            <div class="MiniCard">
+              <!-- DISCOUNT ICON -->
+              <img src="./assets/img-icons/20dis.svg" alt="" />
+
+              <!-- CARD COVER -->
+              <div class="CardCover">
+                <img
+                  class="w-100"
+                  src="./assets/img-icons/cardimg1.png"
+                  alt="card-img"
+                />
+              </div>
+
+              <!-- CARD DESCRIPTION -->
+              <div class="MiniCardDescription">
+                <h4 class="py-1">کافه، رستوران شماره ۱</h4>
+
+                <section class="">
+                  <div>
+                    <img src="./assets/img-icons/pipe.svg" alt="icon" />
+                    <p>اسموک روم</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/tower.svg" alt="icon" />
+                    <p>فرانسوری</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/guitar.svg" alt="icon" />
+                    <p>موسیقی زنده</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/pizza.svg" alt="icon" />
+                    <p>فست فود</p>
+                  </div>
+                </section>
+                <!-- CARD BTN -->
+                <button>مشاهده و رزرو</button>
+              </div>
+            </div>
+            <div class="MiniCard">
+              <!-- DISCOUNT ICON -->
+              <img src="./assets/img-icons/20dis.svg" alt="" />
+
+              <!-- CARD COVER -->
+              <div class="CardCover">
+                <img
+                  class="w-100"
+                  src="./assets/img-icons/cardimg2.png"
+                  alt="card-img"
+                />
+              </div>
+
+              <!-- CARD DESCRIPTION -->
+              <div class="MiniCardDescription">
+                <h4 class="py-1">کافه، رستوران شماره ۱</h4>
+
+                <section class="">
+                  <div>
+                    <img src="./assets/img-icons/pipe.svg" alt="icon" />
+                    <p>اسموک روم</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/tower.svg" alt="icon" />
+                    <p>فرانسوری</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/guitar.svg" alt="icon" />
+                    <p>موسیقی زنده</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/pizza.svg" alt="icon" />
+                    <p>فست فود</p>
+                  </div>
+                </section>
+                <!-- CARD BTN -->
+                <button>مشاهده و رزرو</button>
+              </div>
+            </div>
+            <div class="MiniCard">
+              <!-- DISCOUNT ICON -->
+              <img src="./assets/img-icons/20dis.svg" alt="" />
+
+              <!-- CARD COVER -->
+              <div class="CardCover">
+                <img
+                  class="w-100"
+                  src="./assets/img-icons/cardimg3.png"
+                  alt="card-img"
+                />
+              </div>
+
+              <!-- CARD DESCRIPTION -->
+              <div class="MiniCardDescription">
+                <h4 class="py-1">کافه، رستوران شماره ۱</h4>
+
+                <section class="">
+                  <div>
+                    <img src="./assets/img-icons/pipe.svg" alt="icon" />
+                    <p>اسموک روم</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/tower.svg" alt="icon" />
+                    <p>فرانسوری</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/guitar.svg" alt="icon" />
+                    <p>موسیقی زنده</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/pizza.svg" alt="icon" />
+                    <p>فست فود</p>
+                  </div>
+                </section>
+                <!-- CARD BTN -->
+                <button>مشاهده و رزرو</button>
+              </div>
+            </div>
+            <div class="MiniCard">
+              <!-- DISCOUNT ICON -->
+              <img src="./assets/img-icons/20dis.svg" alt="" />
+
+              <!-- CARD COVER -->
+              <div class="CardCover">
+                <img
+                  class="w-100"
+                  src="./assets/img-icons/cardimg1.png"
+                  alt="card-img"
+                />
+              </div>
+
+              <!-- CARD DESCRIPTION -->
+              <div class="MiniCardDescription">
+                <h4 class="py-1">کافه، رستوران شماره ۱</h4>
+
+                <section class="">
+                  <div>
+                    <img src="./assets/img-icons/pipe.svg" alt="icon" />
+                    <p>اسموک روم</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/tower.svg" alt="icon" />
+                    <p>فرانسوری</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/guitar.svg" alt="icon" />
+                    <p>موسیقی زنده</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/pizza.svg" alt="icon" />
+                    <p>فست فود</p>
+                  </div>
+                </section>
+                <!-- CARD BTN -->
+                <button>مشاهده و رزرو</button>
+              </div>
+            </div>
+            <div class="MiniCard">
+              <!-- DISCOUNT ICON -->
+              <img src="./assets/img-icons/20dis.svg" alt="" />
+
+              <!-- CARD COVER -->
+              <div class="CardCover">
+                <img
+                  class="w-100"
+                  src="./assets/img-icons/cardimg2.png"
+                  alt="card-img"
+                />
+              </div>
+
+              <!-- CARD DESCRIPTION -->
+              <div class="MiniCardDescription">
+                <h4 class="py-1">کافه، رستوران شماره ۱</h4>
+
+                <section class="">
+                  <div>
+                    <img src="./assets/img-icons/pipe.svg" alt="icon" />
+                    <p>اسموک روم</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/tower.svg" alt="icon" />
+                    <p>فرانسوری</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/guitar.svg" alt="icon" />
+                    <p>موسیقی زنده</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/pizza.svg" alt="icon" />
+                    <p>فست فود</p>
+                  </div>
+                </section>
+                <!-- CARD BTN -->
+                <button>مشاهده و رزرو</button>
+              </div>
+            </div>
+            <div class="MiniCard">
+              <!-- DISCOUNT ICON -->
+              <img src="./assets/img-icons/20dis.svg" alt="" />
+
+              <!-- CARD COVER -->
+              <div class="CardCover">
+                <img
+                  class="w-100"
+                  src="./assets/img-icons/cardimg3.png"
+                  alt="card-img"
+                />
+              </div>
+
+              <!-- CARD DESCRIPTION -->
+              <div class="MiniCardDescription">
+                <h4 class="py-1">کافه، رستوران شماره ۱</h4>
+
+                <section class="">
+                  <div>
+                    <img src="./assets/img-icons/pipe.svg" alt="icon" />
+                    <p>اسموک روم</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/tower.svg" alt="icon" />
+                    <p>فرانسوری</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/guitar.svg" alt="icon" />
+                    <p>موسیقی زنده</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/pizza.svg" alt="icon" />
+                    <p>فست فود</p>
+                  </div>
+                </section>
+                <!-- CARD BTN -->
+                <button>مشاهده و رزرو</button>
+              </div>
+            </div>
+            <div class="MiniCard">
+              <!-- DISCOUNT ICON -->
+              <img src="./assets/img-icons/20dis.svg" alt="" />
+
+              <!-- CARD COVER -->
+              <div class="CardCover">
+                <img
+                  class="w-100"
+                  src="./assets/img-icons/cardimg1.png"
+                  alt="card-img"
+                />
+              </div>
+
+              <!-- CARD DESCRIPTION -->
+              <div class="MiniCardDescription">
+                <h4 class="py-1">کافه، رستوران شماره ۱</h4>
+
+                <section class="">
+                  <div>
+                    <img src="./assets/img-icons/pipe.svg" alt="icon" />
+                    <p>اسموک روم</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/tower.svg" alt="icon" />
+                    <p>فرانسوری</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/guitar.svg" alt="icon" />
+                    <p>موسیقی زنده</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/pizza.svg" alt="icon" />
+                    <p>فست فود</p>
+                  </div>
+                </section>
+                <!-- CARD BTN -->
+                <button>مشاهده و رزرو</button>
+              </div>
+            </div>
+            <div class="MiniCard">
+              <!-- DISCOUNT ICON -->
+              <img src="./assets/img-icons/20dis.svg" alt="" />
+
+              <!-- CARD COVER -->
+              <div class="CardCover">
+                <img
+                  class="w-100"
+                  src="./assets/img-icons/cardimg2.png"
+                  alt="card-img"
+                />
+              </div>
+
+              <!-- CARD DESCRIPTION -->
+              <div class="MiniCardDescription">
+                <h4 class="py-1">کافه، رستوران شماره ۱</h4>
+
+                <section class="">
+                  <div>
+                    <img src="./assets/img-icons/pipe.svg" alt="icon" />
+                    <p>اسموک روم</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/tower.svg" alt="icon" />
+                    <p>فرانسوری</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/guitar.svg" alt="icon" />
+                    <p>موسیقی زنده</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/pizza.svg" alt="icon" />
+                    <p>فست فود</p>
+                  </div>
+                </section>
+                <!-- CARD BTN -->
+                <button>مشاهده و رزرو</button>
+              </div>
+            </div>
+            <div class="MiniCard">
+              <!-- DISCOUNT ICON -->
+              <img src="./assets/img-icons/20dis.svg" alt="" />
+
+              <!-- CARD COVER -->
+              <div class="CardCover">
+                <img
+                  class="w-100"
+                  src="./assets/img-icons/cardimg3.png"
+                  alt="card-img"
+                />
+              </div>
+
+              <!-- CARD DESCRIPTION -->
+              <div class="MiniCardDescription">
+                <h4 class="py-1">کافه، رستوران شماره ۱</h4>
+
+                <section class="">
+                  <div>
+                    <img src="./assets/img-icons/pipe.svg" alt="icon" />
+                    <p>اسموک روم</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/tower.svg" alt="icon" />
+                    <p>فرانسوری</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/guitar.svg" alt="icon" />
+                    <p>موسیقی زنده</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/pizza.svg" alt="icon" />
+                    <p>فست فود</p>
+                  </div>
+                </section>
+                <!-- CARD BTN -->
+                <button>مشاهده و رزرو</button>
+              </div>
+            </div>
+          </section>
+          <!-- LIST OF CARDS END -->
         </div>
+        <!-- tab 1 end -->
+        <!-- tab 2 -->
+        <div data-content="restuarant" class="cafeRestuarant-tab-container">
+          <!-- Categories filter -->
+          <section
+            class="CategoriesFilterSec d-flex flex-column flex-lg-row align-items-center justify-content-between gap-0 mb-3"
+          >
+            <!-- titles -->
+            <div class="titles text-center text-lg-end">
+              <h5>دسته بندی رستوران</h5>
+              <p>نتایج رو متناسب با نیازت بچین دوست من</p>
+            </div>
 
-        <!-- filters -->
-        <section class="ListFiltersContainer">
-          <button class="dropdownButton">
-            <span>نوع</span>
-            <span class="OptionGBadge"></span>
-            <img
-              class="OptionGIcon"
-              src="./assets/img-icons/rounded-arrow-down.svg"
-              alt="icon"
-            />
+            <!-- filters -->
+            <section class="ListFiltersContainer">
+              <button class="dropdownButton">
+                <span>نوع</span>
+                <span class="OptionGBadge"></span>
+                <img
+                  class="OptionGIcon"
+                  src="./assets/img-icons/rounded-arrow-down.svg"
+                  alt="icon"
+                />
 
-            <ul class="ListFilterDropDown">
-              <li>
-                <label>
-                  <img
-                    class="checkImg"
-                    src="./assets/img-icons/square-check.svg"
-                    alt="checked icon"
-                  />
-                  <img
-                    class="uncheckImg"
-                    src="./assets/img-icons/square-uncheck.svg"
-                    alt="unchecked icon"
-                  />
-                  <input type="checkbox" class="filterCheckbox" />
-                  <span class="CheckboxSpan">همه</span>
-                </label>
-              </li>
-              <li>
-                <label>
-                  <img
-                    class="checkImg"
-                    src="./assets/img-icons/square-check.svg"
-                    alt="checked icon"
-                  />
-                  <img
-                    class="uncheckImg"
-                    src="./assets/img-icons/square-uncheck.svg"
-                    alt="unchecked icon"
-                  />
-                  <input type="checkbox" class="filterCheckbox" />
-                  <span class="CheckboxSpan">دارای آفر</span>
-                </label>
-              </li>
-              <li>
-                <label>
-                  <img
-                    class="checkImg"
-                    src="./assets/img-icons/square-check.svg"
-                    alt="checked icon"
-                  />
-                  <img
-                    class="uncheckImg"
-                    src="./assets/img-icons/square-uncheck.svg"
-                    alt="unchecked icon"
-                  />
-                  <input type="checkbox" class="filterCheckbox" />
-                  <span class="CheckboxSpan">اقتصادی</span>
-                </label>
-              </li>
-              <li>
-                <label>
-                  <img
-                    class="checkImg"
-                    src="./assets/img-icons/square-check.svg"
-                    alt="checked icon"
-                  />
-                  <img
-                    class="uncheckImg"
-                    src="./assets/img-icons/square-uncheck.svg"
-                    alt="unchecked icon"
-                  />
-                  <input type="checkbox" class="filterCheckbox" />
-                  <span class="CheckboxSpan">شگفت انگیز</span>
-                </label>
-              </li>
-              <li>
-                <label>
-                  <img
-                    class="checkImg"
-                    src="./assets/img-icons/square-check.svg"
-                    alt="checked icon"
-                  />
-                  <img
-                    class="uncheckImg"
-                    src="./assets/img-icons/square-uncheck.svg"
-                    alt="unchecked icon"
-                  />
-                  <input type="checkbox" class="filterCheckbox" />
-                  <span class="CheckboxSpan">لاکچری</span>
-                </label>
-              </li>
-            </ul>
-          </button>
-          <button class="dropdownButton">
-            <span>هزینه</span>
-            <span class="OptionGBadge"></span>
-            <img
-              class="OptionGIcon"
-              src="./assets/img-icons/rounded-arrow-down.svg"
-              alt="icon"
-            />
+                <ul class="ListFilterDropDown">
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">همه</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">دارای آفر</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">اقتصادی</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">شگفت انگیز</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">لاکچری</span>
+                    </label>
+                  </li>
+                </ul>
+              </button>
+              <button class="dropdownButton">
+                <span>هزینه</span>
+                <span class="OptionGBadge"></span>
+                <img
+                  class="OptionGIcon"
+                  src="./assets/img-icons/rounded-arrow-down.svg"
+                  alt="icon"
+                />
 
-            <ul class="ListFilterDropDown">
-              <li>
-                <label>
-                  <img
-                    class="checkImg"
-                    src="./assets/img-icons/square-check.svg"
-                    alt="checked icon"
-                  />
-                  <img
-                    class="uncheckImg"
-                    src="./assets/img-icons/square-uncheck.svg"
-                    alt="unchecked icon"
-                  />
-                  <input type="checkbox" class="filterCheckbox" />
-                  <span class="CheckboxSpan">همه</span>
-                </label>
-              </li>
-              <li>
-                <label>
-                  <img
-                    class="checkImg"
-                    src="./assets/img-icons/square-check.svg"
-                    alt="checked icon"
-                  />
-                  <img
-                    class="uncheckImg"
-                    src="./assets/img-icons/square-uncheck.svg"
-                    alt="unchecked icon"
-                  />
-                  <input type="checkbox" class="filterCheckbox" />
-                  <span class="CheckboxSpan">دارای آفر</span>
-                </label>
-              </li>
-              <li>
-                <label>
-                  <img
-                    class="checkImg"
-                    src="./assets/img-icons/square-check.svg"
-                    alt="checked icon"
-                  />
-                  <img
-                    class="uncheckImg"
-                    src="./assets/img-icons/square-uncheck.svg"
-                    alt="unchecked icon"
-                  />
-                  <input type="checkbox" class="filterCheckbox" />
-                  <span class="CheckboxSpan">اقتصادی</span>
-                </label>
-              </li>
-              <li>
-                <label>
-                  <img
-                    class="checkImg"
-                    src="./assets/img-icons/square-check.svg"
-                    alt="checked icon"
-                  />
-                  <img
-                    class="uncheckImg"
-                    src="./assets/img-icons/square-uncheck.svg"
-                    alt="unchecked icon"
-                  />
-                  <input type="checkbox" class="filterCheckbox" />
-                  <span class="CheckboxSpan">شگفت انگیز</span>
-                </label>
-              </li>
-              <li>
-                <label>
-                  <img
-                    class="checkImg"
-                    src="./assets/img-icons/square-check.svg"
-                    alt="checked icon"
-                  />
-                  <img
-                    class="uncheckImg"
-                    src="./assets/img-icons/square-uncheck.svg"
-                    alt="unchecked icon"
-                  />
-                  <input type="checkbox" class="filterCheckbox" />
-                  <span class="CheckboxSpan">لاکچری</span>
-                </label>
-              </li>
-            </ul>
-          </button>
+                <ul class="ListFilterDropDown">
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">همه</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">دارای آفر</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">اقتصادی</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">شگفت انگیز</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">لاکچری</span>
+                    </label>
+                  </li>
+                </ul>
+              </button>
 
-          <button class="dropdownButton">
-            <span>شهر</span>
-            <span class="OptionGBadge"></span>
-            <img
-              class="OptionGIcon"
-              src="./assets/img-icons/rounded-arrow-down.svg"
-              alt="icon"
-            />
+              <button class="dropdownButton">
+                <span>شهر</span>
+                <span class="OptionGBadge"></span>
+                <img
+                  class="OptionGIcon"
+                  src="./assets/img-icons/rounded-arrow-down.svg"
+                  alt="icon"
+                />
 
-            <ul class="ListFilterDropDown">
-              <li>
-                <label>
-                  <img
-                    class="checkImg"
-                    src="./assets/img-icons/square-check.svg"
-                    alt="checked icon"
-                  />
-                  <img
-                    class="uncheckImg"
-                    src="./assets/img-icons/square-uncheck.svg"
-                    alt="unchecked icon"
-                  />
-                  <input type="checkbox" class="filterCheckbox" />
-                  <span class="CheckboxSpan">همه</span>
-                </label>
-              </li>
-              <li>
-                <label>
-                  <img
-                    class="checkImg"
-                    src="./assets/img-icons/square-check.svg"
-                    alt="checked icon"
-                  />
-                  <img
-                    class="uncheckImg"
-                    src="./assets/img-icons/square-uncheck.svg"
-                    alt="unchecked icon"
-                  />
-                  <input type="checkbox" class="filterCheckbox" />
-                  <span class="CheckboxSpan">دارای آفر</span>
-                </label>
-              </li>
-              <li>
-                <label>
-                  <img
-                    class="checkImg"
-                    src="./assets/img-icons/square-check.svg"
-                    alt="checked icon"
-                  />
-                  <img
-                    class="uncheckImg"
-                    src="./assets/img-icons/square-uncheck.svg"
-                    alt="unchecked icon"
-                  />
-                  <input type="checkbox" class="filterCheckbox" />
-                  <span class="CheckboxSpan">اقتصادی</span>
-                </label>
-              </li>
-              <li>
-                <label>
-                  <img
-                    class="checkImg"
-                    src="./assets/img-icons/square-check.svg"
-                    alt="checked icon"
-                  />
-                  <img
-                    class="uncheckImg"
-                    src="./assets/img-icons/square-uncheck.svg"
-                    alt="unchecked icon"
-                  />
-                  <input type="checkbox" class="filterCheckbox" />
-                  <span class="CheckboxSpan">شگفت انگیز</span>
-                </label>
-              </li>
-              <li>
-                <label>
-                  <img
-                    class="checkImg"
-                    src="./assets/img-icons/square-check.svg"
-                    alt="checked icon"
-                  />
-                  <img
-                    class="uncheckImg"
-                    src="./assets/img-icons/square-uncheck.svg"
-                    alt="unchecked icon"
-                  />
-                  <input type="checkbox" class="filterCheckbox" />
-                  <span class="CheckboxSpan">لاکچری</span>
-                </label>
-              </li>
-            </ul>
-          </button>
-          <button class="dropdownButton">
-            <span>امکانات</span>
-            <span class="OptionGBadge"></span>
-            <img
-              class="OptionGIcon"
-              src="./assets/img-icons/rounded-arrow-down.svg"
-              alt="icon"
-            />
+                <ul class="ListFilterDropDown">
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">همه</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">دارای آفر</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">اقتصادی</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">شگفت انگیز</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">لاکچری</span>
+                    </label>
+                  </li>
+                </ul>
+              </button>
+              <button class="dropdownButton">
+                <span>امکانات</span>
+                <span class="OptionGBadge"></span>
+                <img
+                  class="OptionGIcon"
+                  src="./assets/img-icons/rounded-arrow-down.svg"
+                  alt="icon"
+                />
 
-            <ul class="ListFilterDropDown">
-              <li>
-                <label>
-                  <img
-                    class="checkImg"
-                    src="./assets/img-icons/square-check.svg"
-                    alt="checked icon"
-                  />
-                  <img
-                    class="uncheckImg"
-                    src="./assets/img-icons/square-uncheck.svg"
-                    alt="unchecked icon"
-                  />
-                  <input type="checkbox" class="filterCheckbox" />
-                  <span class="CheckboxSpan">همه</span>
-                </label>
-              </li>
-              <li>
-                <label>
-                  <img
-                    class="checkImg"
-                    src="./assets/img-icons/square-check.svg"
-                    alt="checked icon"
-                  />
-                  <img
-                    class="uncheckImg"
-                    src="./assets/img-icons/square-uncheck.svg"
-                    alt="unchecked icon"
-                  />
-                  <input type="checkbox" class="filterCheckbox" />
-                  <span class="CheckboxSpan">دارای آفر</span>
-                </label>
-              </li>
-              <li>
-                <label>
-                  <img
-                    class="checkImg"
-                    src="./assets/img-icons/square-check.svg"
-                    alt="checked icon"
-                  />
-                  <img
-                    class="uncheckImg"
-                    src="./assets/img-icons/square-uncheck.svg"
-                    alt="unchecked icon"
-                  />
-                  <input type="checkbox" class="filterCheckbox" />
-                  <span class="CheckboxSpan">اقتصادی</span>
-                </label>
-              </li>
-              <li>
-                <label>
-                  <img
-                    class="checkImg"
-                    src="./assets/img-icons/square-check.svg"
-                    alt="checked icon"
-                  />
-                  <img
-                    class="uncheckImg"
-                    src="./assets/img-icons/square-uncheck.svg"
-                    alt="unchecked icon"
-                  />
-                  <input type="checkbox" class="filterCheckbox" />
-                  <span class="CheckboxSpan">شگفت انگیز</span>
-                </label>
-              </li>
-              <li>
-                <label>
-                  <img
-                    class="checkImg"
-                    src="./assets/img-icons/square-check.svg"
-                    alt="checked icon"
-                  />
-                  <img
-                    class="uncheckImg"
-                    src="./assets/img-icons/square-uncheck.svg"
-                    alt="unchecked icon"
-                  />
-                  <input type="checkbox" class="filterCheckbox" />
-                  <span class="CheckboxSpan">لاکچری</span>
-                </label>
-              </li>
-            </ul>
-          </button>
-          <button class="dropdownButton">
-            <span>ترتیب</span>
-            <span class="OptionGBadge"></span>
-            <img
-              class="OptionGIcon"
-              src="./assets/img-icons/rounded-arrow-down.svg"
-              alt="icon"
-            />
+                <ul class="ListFilterDropDown">
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">همه</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">دارای آفر</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">اقتصادی</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">شگفت انگیز</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">لاکچری</span>
+                    </label>
+                  </li>
+                </ul>
+              </button>
+              <button class="dropdownButton">
+                <span>ترتیب</span>
+                <span class="OptionGBadge"></span>
+                <img
+                  class="OptionGIcon"
+                  src="./assets/img-icons/rounded-arrow-down.svg"
+                  alt="icon"
+                />
 
-            <ul class="ListFilterDropDown">
-              <li>
-                <label>
-                  <img
-                    class="checkImg"
-                    src="./assets/img-icons/square-check.svg"
-                    alt="checked icon"
-                  />
-                  <img
-                    class="uncheckImg"
-                    src="./assets/img-icons/square-uncheck.svg"
-                    alt="unchecked icon"
-                  />
-                  <input type="checkbox" class="filterCheckbox" />
-                  <span class="CheckboxSpan">همه</span>
-                </label>
-              </li>
-              <li>
-                <label>
-                  <img
-                    class="checkImg"
-                    src="./assets/img-icons/square-check.svg"
-                    alt="checked icon"
-                  />
-                  <img
-                    class="uncheckImg"
-                    src="./assets/img-icons/square-uncheck.svg"
-                    alt="unchecked icon"
-                  />
-                  <input type="checkbox" class="filterCheckbox" />
-                  <span class="CheckboxSpan">دارای آفر</span>
-                </label>
-              </li>
-              <li>
-                <label>
-                  <img
-                    class="checkImg"
-                    src="./assets/img-icons/square-check.svg"
-                    alt="checked icon"
-                  />
-                  <img
-                    class="uncheckImg"
-                    src="./assets/img-icons/square-uncheck.svg"
-                    alt="unchecked icon"
-                  />
-                  <input type="checkbox" class="filterCheckbox" />
-                  <span class="CheckboxSpan">اقتصادی</span>
-                </label>
-              </li>
-              <li>
-                <label>
-                  <img
-                    class="checkImg"
-                    src="./assets/img-icons/square-check.svg"
-                    alt="checked icon"
-                  />
-                  <img
-                    class="uncheckImg"
-                    src="./assets/img-icons/square-uncheck.svg"
-                    alt="unchecked icon"
-                  />
-                  <input type="checkbox" class="filterCheckbox" />
-                  <span class="CheckboxSpan">شگفت انگیز</span>
-                </label>
-              </li>
-              <li>
-                <label>
-                  <img
-                    class="checkImg"
-                    src="./assets/img-icons/square-check.svg"
-                    alt="checked icon"
-                  />
-                  <img
-                    class="uncheckImg"
-                    src="./assets/img-icons/square-uncheck.svg"
-                    alt="unchecked icon"
-                  />
-                  <input type="checkbox" class="filterCheckbox" />
-                  <span class="CheckboxSpan">لاکچری</span>
-                </label>
-              </li>
-            </ul>
-          </button>
-        </section>
+                <ul class="ListFilterDropDown">
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">همه</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">دارای آفر</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">اقتصادی</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">شگفت انگیز</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">لاکچری</span>
+                    </label>
+                  </li>
+                </ul>
+              </button>
+            </section>
+          </section>
+          <!-- Categories filter end -->
+
+          <!-- LIST OF CARDS -->
+          <section class="CardListContainer">
+            <div class="MiniCard">
+              <!-- DISCOUNT ICON -->
+              <img src="./assets/img-icons/20dis.svg" alt="" />
+
+              <!-- CARD COVER -->
+              <div class="CardCover">
+                <img
+                  class="w-100"
+                  src="./assets/img-icons/cardimg1.png"
+                  alt="card-img"
+                />
+              </div>
+
+              <!-- CARD DESCRIPTION -->
+              <div class="MiniCardDescription">
+                <h4 class="py-1">کافه، رستوران شماره ۱</h4>
+
+                <section class="">
+                  <div>
+                    <img src="./assets/img-icons/pipe.svg" alt="icon" />
+                    <p>اسموک روم</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/tower.svg" alt="icon" />
+                    <p>فرانسوری</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/guitar.svg" alt="icon" />
+                    <p>موسیقی زنده</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/pizza.svg" alt="icon" />
+                    <p>فست فود</p>
+                  </div>
+                </section>
+                <!-- CARD BTN -->
+                <button>مشاهده و رزرو</button>
+              </div>
+            </div>
+            <div class="MiniCard">
+              <!-- DISCOUNT ICON -->
+              <img src="./assets/img-icons/20dis.svg" alt="" />
+
+              <!-- CARD COVER -->
+              <div class="CardCover">
+                <img
+                  class="w-100"
+                  src="./assets/img-icons/cardimg2.png"
+                  alt="card-img"
+                />
+              </div>
+
+              <!-- CARD DESCRIPTION -->
+              <div class="MiniCardDescription">
+                <h4 class="py-1">کافه، رستوران شماره ۱</h4>
+
+                <section class="">
+                  <div>
+                    <img src="./assets/img-icons/pipe.svg" alt="icon" />
+                    <p>اسموک روم</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/tower.svg" alt="icon" />
+                    <p>فرانسوری</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/guitar.svg" alt="icon" />
+                    <p>موسیقی زنده</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/pizza.svg" alt="icon" />
+                    <p>فست فود</p>
+                  </div>
+                </section>
+                <!-- CARD BTN -->
+                <button>مشاهده و رزرو</button>
+              </div>
+            </div>
+            <div class="MiniCard">
+              <!-- DISCOUNT ICON -->
+              <img src="./assets/img-icons/20dis.svg" alt="" />
+
+              <!-- CARD COVER -->
+              <div class="CardCover">
+                <img
+                  class="w-100"
+                  src="./assets/img-icons/cardimg3.png"
+                  alt="card-img"
+                />
+              </div>
+
+              <!-- CARD DESCRIPTION -->
+              <div class="MiniCardDescription">
+                <h4 class="py-1">کافه، رستوران شماره ۱</h4>
+
+                <section class="">
+                  <div>
+                    <img src="./assets/img-icons/pipe.svg" alt="icon" />
+                    <p>اسموک روم</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/tower.svg" alt="icon" />
+                    <p>فرانسوری</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/guitar.svg" alt="icon" />
+                    <p>موسیقی زنده</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/pizza.svg" alt="icon" />
+                    <p>فست فود</p>
+                  </div>
+                </section>
+                <!-- CARD BTN -->
+                <button>مشاهده و رزرو</button>
+              </div>
+            </div>
+            <div class="MiniCard">
+              <!-- DISCOUNT ICON -->
+              <img src="./assets/img-icons/20dis.svg" alt="" />
+
+              <!-- CARD COVER -->
+              <div class="CardCover">
+                <img
+                  class="w-100"
+                  src="./assets/img-icons/cardimg1.png"
+                  alt="card-img"
+                />
+              </div>
+
+              <!-- CARD DESCRIPTION -->
+              <div class="MiniCardDescription">
+                <h4 class="py-1">کافه، رستوران شماره ۱</h4>
+
+                <section class="">
+                  <div>
+                    <img src="./assets/img-icons/pipe.svg" alt="icon" />
+                    <p>اسموک روم</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/tower.svg" alt="icon" />
+                    <p>فرانسوری</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/guitar.svg" alt="icon" />
+                    <p>موسیقی زنده</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/pizza.svg" alt="icon" />
+                    <p>فست فود</p>
+                  </div>
+                </section>
+                <!-- CARD BTN -->
+                <button>مشاهده و رزرو</button>
+              </div>
+            </div>
+            <div class="MiniCard">
+              <!-- DISCOUNT ICON -->
+              <img src="./assets/img-icons/20dis.svg" alt="" />
+
+              <!-- CARD COVER -->
+              <div class="CardCover">
+                <img
+                  class="w-100"
+                  src="./assets/img-icons/cardimg2.png"
+                  alt="card-img"
+                />
+              </div>
+
+              <!-- CARD DESCRIPTION -->
+              <div class="MiniCardDescription">
+                <h4 class="py-1">کافه، رستوران شماره ۱</h4>
+
+                <section class="">
+                  <div>
+                    <img src="./assets/img-icons/pipe.svg" alt="icon" />
+                    <p>اسموک روم</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/tower.svg" alt="icon" />
+                    <p>فرانسوری</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/guitar.svg" alt="icon" />
+                    <p>موسیقی زنده</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/pizza.svg" alt="icon" />
+                    <p>فست فود</p>
+                  </div>
+                </section>
+                <!-- CARD BTN -->
+                <button>مشاهده و رزرو</button>
+              </div>
+            </div>
+            <div class="MiniCard">
+              <!-- DISCOUNT ICON -->
+              <img src="./assets/img-icons/20dis.svg" alt="" />
+
+              <!-- CARD COVER -->
+              <div class="CardCover">
+                <img
+                  class="w-100"
+                  src="./assets/img-icons/cardimg3.png"
+                  alt="card-img"
+                />
+              </div>
+
+              <!-- CARD DESCRIPTION -->
+              <div class="MiniCardDescription">
+                <h4 class="py-1">کافه، رستوران شماره ۱</h4>
+
+                <section class="">
+                  <div>
+                    <img src="./assets/img-icons/pipe.svg" alt="icon" />
+                    <p>اسموک روم</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/tower.svg" alt="icon" />
+                    <p>فرانسوری</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/guitar.svg" alt="icon" />
+                    <p>موسیقی زنده</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/pizza.svg" alt="icon" />
+                    <p>فست فود</p>
+                  </div>
+                </section>
+                <!-- CARD BTN -->
+                <button>مشاهده و رزرو</button>
+              </div>
+            </div>
+            <div class="MiniCard">
+              <!-- DISCOUNT ICON -->
+              <img src="./assets/img-icons/20dis.svg" alt="" />
+
+              <!-- CARD COVER -->
+              <div class="CardCover">
+                <img
+                  class="w-100"
+                  src="./assets/img-icons/cardimg1.png"
+                  alt="card-img"
+                />
+              </div>
+
+              <!-- CARD DESCRIPTION -->
+              <div class="MiniCardDescription">
+                <h4 class="py-1">کافه، رستوران شماره ۱</h4>
+
+                <section class="">
+                  <div>
+                    <img src="./assets/img-icons/pipe.svg" alt="icon" />
+                    <p>اسموک روم</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/tower.svg" alt="icon" />
+                    <p>فرانسوری</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/guitar.svg" alt="icon" />
+                    <p>موسیقی زنده</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/pizza.svg" alt="icon" />
+                    <p>فست فود</p>
+                  </div>
+                </section>
+                <!-- CARD BTN -->
+                <button>مشاهده و رزرو</button>
+              </div>
+            </div>
+            <div class="MiniCard">
+              <!-- DISCOUNT ICON -->
+              <img src="./assets/img-icons/20dis.svg" alt="" />
+
+              <!-- CARD COVER -->
+              <div class="CardCover">
+                <img
+                  class="w-100"
+                  src="./assets/img-icons/cardimg2.png"
+                  alt="card-img"
+                />
+              </div>
+
+              <!-- CARD DESCRIPTION -->
+              <div class="MiniCardDescription">
+                <h4 class="py-1">کافه، رستوران شماره ۱</h4>
+
+                <section class="">
+                  <div>
+                    <img src="./assets/img-icons/pipe.svg" alt="icon" />
+                    <p>اسموک روم</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/tower.svg" alt="icon" />
+                    <p>فرانسوری</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/guitar.svg" alt="icon" />
+                    <p>موسیقی زنده</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/pizza.svg" alt="icon" />
+                    <p>فست فود</p>
+                  </div>
+                </section>
+                <!-- CARD BTN -->
+                <button>مشاهده و رزرو</button>
+              </div>
+            </div>
+            <div class="MiniCard">
+              <!-- DISCOUNT ICON -->
+              <img src="./assets/img-icons/20dis.svg" alt="" />
+
+              <!-- CARD COVER -->
+              <div class="CardCover">
+                <img
+                  class="w-100"
+                  src="./assets/img-icons/cardimg3.png"
+                  alt="card-img"
+                />
+              </div>
+
+              <!-- CARD DESCRIPTION -->
+              <div class="MiniCardDescription">
+                <h4 class="py-1">کافه، رستوران شماره ۱</h4>
+
+                <section class="">
+                  <div>
+                    <img src="./assets/img-icons/pipe.svg" alt="icon" />
+                    <p>اسموک روم</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/tower.svg" alt="icon" />
+                    <p>فرانسوری</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/guitar.svg" alt="icon" />
+                    <p>موسیقی زنده</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/pizza.svg" alt="icon" />
+                    <p>فست فود</p>
+                  </div>
+                </section>
+                <!-- CARD BTN -->
+                <button>مشاهده و رزرو</button>
+              </div>
+            </div>
+            <div class="MiniCard">
+              <!-- DISCOUNT ICON -->
+              <img src="./assets/img-icons/20dis.svg" alt="" />
+
+              <!-- CARD COVER -->
+              <div class="CardCover">
+                <img
+                  class="w-100"
+                  src="./assets/img-icons/cardimg1.png"
+                  alt="card-img"
+                />
+              </div>
+
+              <!-- CARD DESCRIPTION -->
+              <div class="MiniCardDescription">
+                <h4 class="py-1">کافه، رستوران شماره ۱</h4>
+
+                <section class="">
+                  <div>
+                    <img src="./assets/img-icons/pipe.svg" alt="icon" />
+                    <p>اسموک روم</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/tower.svg" alt="icon" />
+                    <p>فرانسوری</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/guitar.svg" alt="icon" />
+                    <p>موسیقی زنده</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/pizza.svg" alt="icon" />
+                    <p>فست فود</p>
+                  </div>
+                </section>
+                <!-- CARD BTN -->
+                <button>مشاهده و رزرو</button>
+              </div>
+            </div>
+            <div class="MiniCard">
+              <!-- DISCOUNT ICON -->
+              <img src="./assets/img-icons/20dis.svg" alt="" />
+
+              <!-- CARD COVER -->
+              <div class="CardCover">
+                <img
+                  class="w-100"
+                  src="./assets/img-icons/cardimg2.png"
+                  alt="card-img"
+                />
+              </div>
+
+              <!-- CARD DESCRIPTION -->
+              <div class="MiniCardDescription">
+                <h4 class="py-1">کافه، رستوران شماره ۱</h4>
+
+                <section class="">
+                  <div>
+                    <img src="./assets/img-icons/pipe.svg" alt="icon" />
+                    <p>اسموک روم</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/tower.svg" alt="icon" />
+                    <p>فرانسوری</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/guitar.svg" alt="icon" />
+                    <p>موسیقی زنده</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/pizza.svg" alt="icon" />
+                    <p>فست فود</p>
+                  </div>
+                </section>
+                <!-- CARD BTN -->
+                <button>مشاهده و رزرو</button>
+              </div>
+            </div>
+            <div class="MiniCard">
+              <!-- DISCOUNT ICON -->
+              <img src="./assets/img-icons/20dis.svg" alt="" />
+
+              <!-- CARD COVER -->
+              <div class="CardCover">
+                <img
+                  class="w-100"
+                  src="./assets/img-icons/cardimg3.png"
+                  alt="card-img"
+                />
+              </div>
+
+              <!-- CARD DESCRIPTION -->
+              <div class="MiniCardDescription">
+                <h4 class="py-1">کافه، رستوران شماره ۱</h4>
+
+                <section class="">
+                  <div>
+                    <img src="./assets/img-icons/pipe.svg" alt="icon" />
+                    <p>اسموک روم</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/tower.svg" alt="icon" />
+                    <p>فرانسوری</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/guitar.svg" alt="icon" />
+                    <p>موسیقی زنده</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/pizza.svg" alt="icon" />
+                    <p>فست فود</p>
+                  </div>
+                </section>
+                <!-- CARD BTN -->
+                <button>مشاهده و رزرو</button>
+              </div>
+            </div>
+          </section>
+          <!-- LIST OF CARDS END -->
+        </div>
+        <!-- tab 2 end -->
+        <!-- tab 3 -->
+        <div
+          data-content="cafe-restuarant"
+          class="cafeRestuarant-tab-container show"
+        >
+          <!-- Categories filter -->
+          <section
+            class="CategoriesFilterSec d-flex flex-column flex-lg-row align-items-center justify-content-between gap-0 mb-3"
+          >
+            <!-- titles -->
+            <div class="titles text-center text-lg-end">
+              <h5>دسته بندی کافه و رستوران ها</h5>
+              <p>نتایج رو متناسب با نیازت بچین دوست من</p>
+            </div>
+
+            <!-- filters -->
+            <section class="ListFiltersContainer">
+              <button class="dropdownButton">
+                <span>نوع</span>
+                <span class="OptionGBadge"></span>
+                <img
+                  class="OptionGIcon"
+                  src="./assets/img-icons/rounded-arrow-down.svg"
+                  alt="icon"
+                />
+
+                <ul class="ListFilterDropDown">
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">همه</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">دارای آفر</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">اقتصادی</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">شگفت انگیز</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">لاکچری</span>
+                    </label>
+                  </li>
+                </ul>
+              </button>
+              <button class="dropdownButton">
+                <span>هزینه</span>
+                <span class="OptionGBadge"></span>
+                <img
+                  class="OptionGIcon"
+                  src="./assets/img-icons/rounded-arrow-down.svg"
+                  alt="icon"
+                />
+
+                <ul class="ListFilterDropDown">
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">همه</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">دارای آفر</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">اقتصادی</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">شگفت انگیز</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">لاکچری</span>
+                    </label>
+                  </li>
+                </ul>
+              </button>
+
+              <button class="dropdownButton">
+                <span>شهر</span>
+                <span class="OptionGBadge"></span>
+                <img
+                  class="OptionGIcon"
+                  src="./assets/img-icons/rounded-arrow-down.svg"
+                  alt="icon"
+                />
+
+                <ul class="ListFilterDropDown">
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">همه</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">دارای آفر</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">اقتصادی</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">شگفت انگیز</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">لاکچری</span>
+                    </label>
+                  </li>
+                </ul>
+              </button>
+              <button class="dropdownButton">
+                <span>امکانات</span>
+                <span class="OptionGBadge"></span>
+                <img
+                  class="OptionGIcon"
+                  src="./assets/img-icons/rounded-arrow-down.svg"
+                  alt="icon"
+                />
+
+                <ul class="ListFilterDropDown">
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">همه</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">دارای آفر</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">اقتصادی</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">شگفت انگیز</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">لاکچری</span>
+                    </label>
+                  </li>
+                </ul>
+              </button>
+              <button class="dropdownButton">
+                <span>ترتیب</span>
+                <span class="OptionGBadge"></span>
+                <img
+                  class="OptionGIcon"
+                  src="./assets/img-icons/rounded-arrow-down.svg"
+                  alt="icon"
+                />
+
+                <ul class="ListFilterDropDown">
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">همه</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">دارای آفر</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">اقتصادی</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">شگفت انگیز</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <img
+                        class="checkImg"
+                        src="./assets/img-icons/square-check.svg"
+                        alt="checked icon"
+                      />
+                      <img
+                        class="uncheckImg"
+                        src="./assets/img-icons/square-uncheck.svg"
+                        alt="unchecked icon"
+                      />
+                      <input type="checkbox" class="filterCheckbox" />
+                      <span class="CheckboxSpan">لاکچری</span>
+                    </label>
+                  </li>
+                </ul>
+              </button>
+            </section>
+          </section>
+          <!-- Categories filter end -->
+
+          <!-- LIST OF CARDS -->
+          <section class="CardListContainer">
+            <div class="MiniCard">
+              <!-- DISCOUNT ICON -->
+              <img src="./assets/img-icons/20dis.svg" alt="" />
+
+              <!-- CARD COVER -->
+              <div class="CardCover">
+                <img
+                  class="w-100"
+                  src="./assets/img-icons/cardimg1.png"
+                  alt="card-img"
+                />
+              </div>
+
+              <!-- CARD DESCRIPTION -->
+              <div class="MiniCardDescription">
+                <h4 class="py-1">کافه، رستوران شماره ۱</h4>
+
+                <section class="">
+                  <div>
+                    <img src="./assets/img-icons/pipe.svg" alt="icon" />
+                    <p>اسموک روم</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/tower.svg" alt="icon" />
+                    <p>فرانسوری</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/guitar.svg" alt="icon" />
+                    <p>موسیقی زنده</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/pizza.svg" alt="icon" />
+                    <p>فست فود</p>
+                  </div>
+                </section>
+                <!-- CARD BTN -->
+                <button>مشاهده و رزرو</button>
+              </div>
+            </div>
+            <div class="MiniCard">
+              <!-- DISCOUNT ICON -->
+              <img src="./assets/img-icons/20dis.svg" alt="" />
+
+              <!-- CARD COVER -->
+              <div class="CardCover">
+                <img
+                  class="w-100"
+                  src="./assets/img-icons/cardimg2.png"
+                  alt="card-img"
+                />
+              </div>
+
+              <!-- CARD DESCRIPTION -->
+              <div class="MiniCardDescription">
+                <h4 class="py-1">کافه، رستوران شماره ۱</h4>
+
+                <section class="">
+                  <div>
+                    <img src="./assets/img-icons/pipe.svg" alt="icon" />
+                    <p>اسموک روم</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/tower.svg" alt="icon" />
+                    <p>فرانسوری</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/guitar.svg" alt="icon" />
+                    <p>موسیقی زنده</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/pizza.svg" alt="icon" />
+                    <p>فست فود</p>
+                  </div>
+                </section>
+                <!-- CARD BTN -->
+                <button>مشاهده و رزرو</button>
+              </div>
+            </div>
+            <div class="MiniCard">
+              <!-- DISCOUNT ICON -->
+              <img src="./assets/img-icons/20dis.svg" alt="" />
+
+              <!-- CARD COVER -->
+              <div class="CardCover">
+                <img
+                  class="w-100"
+                  src="./assets/img-icons/cardimg3.png"
+                  alt="card-img"
+                />
+              </div>
+
+              <!-- CARD DESCRIPTION -->
+              <div class="MiniCardDescription">
+                <h4 class="py-1">کافه، رستوران شماره ۱</h4>
+
+                <section class="">
+                  <div>
+                    <img src="./assets/img-icons/pipe.svg" alt="icon" />
+                    <p>اسموک روم</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/tower.svg" alt="icon" />
+                    <p>فرانسوری</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/guitar.svg" alt="icon" />
+                    <p>موسیقی زنده</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/pizza.svg" alt="icon" />
+                    <p>فست فود</p>
+                  </div>
+                </section>
+                <!-- CARD BTN -->
+                <button>مشاهده و رزرو</button>
+              </div>
+            </div>
+            <div class="MiniCard">
+              <!-- DISCOUNT ICON -->
+              <img src="./assets/img-icons/20dis.svg" alt="" />
+
+              <!-- CARD COVER -->
+              <div class="CardCover">
+                <img
+                  class="w-100"
+                  src="./assets/img-icons/cardimg1.png"
+                  alt="card-img"
+                />
+              </div>
+
+              <!-- CARD DESCRIPTION -->
+              <div class="MiniCardDescription">
+                <h4 class="py-1">کافه، رستوران شماره ۱</h4>
+
+                <section class="">
+                  <div>
+                    <img src="./assets/img-icons/pipe.svg" alt="icon" />
+                    <p>اسموک روم</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/tower.svg" alt="icon" />
+                    <p>فرانسوری</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/guitar.svg" alt="icon" />
+                    <p>موسیقی زنده</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/pizza.svg" alt="icon" />
+                    <p>فست فود</p>
+                  </div>
+                </section>
+                <!-- CARD BTN -->
+                <button>مشاهده و رزرو</button>
+              </div>
+            </div>
+            <div class="MiniCard">
+              <!-- DISCOUNT ICON -->
+              <img src="./assets/img-icons/20dis.svg" alt="" />
+
+              <!-- CARD COVER -->
+              <div class="CardCover">
+                <img
+                  class="w-100"
+                  src="./assets/img-icons/cardimg2.png"
+                  alt="card-img"
+                />
+              </div>
+
+              <!-- CARD DESCRIPTION -->
+              <div class="MiniCardDescription">
+                <h4 class="py-1">کافه، رستوران شماره ۱</h4>
+
+                <section class="">
+                  <div>
+                    <img src="./assets/img-icons/pipe.svg" alt="icon" />
+                    <p>اسموک روم</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/tower.svg" alt="icon" />
+                    <p>فرانسوری</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/guitar.svg" alt="icon" />
+                    <p>موسیقی زنده</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/pizza.svg" alt="icon" />
+                    <p>فست فود</p>
+                  </div>
+                </section>
+                <!-- CARD BTN -->
+                <button>مشاهده و رزرو</button>
+              </div>
+            </div>
+            <div class="MiniCard">
+              <!-- DISCOUNT ICON -->
+              <img src="./assets/img-icons/20dis.svg" alt="" />
+
+              <!-- CARD COVER -->
+              <div class="CardCover">
+                <img
+                  class="w-100"
+                  src="./assets/img-icons/cardimg3.png"
+                  alt="card-img"
+                />
+              </div>
+
+              <!-- CARD DESCRIPTION -->
+              <div class="MiniCardDescription">
+                <h4 class="py-1">کافه، رستوران شماره ۱</h4>
+
+                <section class="">
+                  <div>
+                    <img src="./assets/img-icons/pipe.svg" alt="icon" />
+                    <p>اسموک روم</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/tower.svg" alt="icon" />
+                    <p>فرانسوری</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/guitar.svg" alt="icon" />
+                    <p>موسیقی زنده</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/pizza.svg" alt="icon" />
+                    <p>فست فود</p>
+                  </div>
+                </section>
+                <!-- CARD BTN -->
+                <button>مشاهده و رزرو</button>
+              </div>
+            </div>
+            <div class="MiniCard">
+              <!-- DISCOUNT ICON -->
+              <img src="./assets/img-icons/20dis.svg" alt="" />
+
+              <!-- CARD COVER -->
+              <div class="CardCover">
+                <img
+                  class="w-100"
+                  src="./assets/img-icons/cardimg1.png"
+                  alt="card-img"
+                />
+              </div>
+
+              <!-- CARD DESCRIPTION -->
+              <div class="MiniCardDescription">
+                <h4 class="py-1">کافه، رستوران شماره ۱</h4>
+
+                <section class="">
+                  <div>
+                    <img src="./assets/img-icons/pipe.svg" alt="icon" />
+                    <p>اسموک روم</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/tower.svg" alt="icon" />
+                    <p>فرانسوری</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/guitar.svg" alt="icon" />
+                    <p>موسیقی زنده</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/pizza.svg" alt="icon" />
+                    <p>فست فود</p>
+                  </div>
+                </section>
+                <!-- CARD BTN -->
+                <button>مشاهده و رزرو</button>
+              </div>
+            </div>
+            <div class="MiniCard">
+              <!-- DISCOUNT ICON -->
+              <img src="./assets/img-icons/20dis.svg" alt="" />
+
+              <!-- CARD COVER -->
+              <div class="CardCover">
+                <img
+                  class="w-100"
+                  src="./assets/img-icons/cardimg2.png"
+                  alt="card-img"
+                />
+              </div>
+
+              <!-- CARD DESCRIPTION -->
+              <div class="MiniCardDescription">
+                <h4 class="py-1">کافه، رستوران شماره ۱</h4>
+
+                <section class="">
+                  <div>
+                    <img src="./assets/img-icons/pipe.svg" alt="icon" />
+                    <p>اسموک روم</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/tower.svg" alt="icon" />
+                    <p>فرانسوری</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/guitar.svg" alt="icon" />
+                    <p>موسیقی زنده</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/pizza.svg" alt="icon" />
+                    <p>فست فود</p>
+                  </div>
+                </section>
+                <!-- CARD BTN -->
+                <button>مشاهده و رزرو</button>
+              </div>
+            </div>
+            <div class="MiniCard">
+              <!-- DISCOUNT ICON -->
+              <img src="./assets/img-icons/20dis.svg" alt="" />
+
+              <!-- CARD COVER -->
+              <div class="CardCover">
+                <img
+                  class="w-100"
+                  src="./assets/img-icons/cardimg3.png"
+                  alt="card-img"
+                />
+              </div>
+
+              <!-- CARD DESCRIPTION -->
+              <div class="MiniCardDescription">
+                <h4 class="py-1">کافه، رستوران شماره ۱</h4>
+
+                <section class="">
+                  <div>
+                    <img src="./assets/img-icons/pipe.svg" alt="icon" />
+                    <p>اسموک روم</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/tower.svg" alt="icon" />
+                    <p>فرانسوری</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/guitar.svg" alt="icon" />
+                    <p>موسیقی زنده</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/pizza.svg" alt="icon" />
+                    <p>فست فود</p>
+                  </div>
+                </section>
+                <!-- CARD BTN -->
+                <button>مشاهده و رزرو</button>
+              </div>
+            </div>
+            <div class="MiniCard">
+              <!-- DISCOUNT ICON -->
+              <img src="./assets/img-icons/20dis.svg" alt="" />
+
+              <!-- CARD COVER -->
+              <div class="CardCover">
+                <img
+                  class="w-100"
+                  src="./assets/img-icons/cardimg1.png"
+                  alt="card-img"
+                />
+              </div>
+
+              <!-- CARD DESCRIPTION -->
+              <div class="MiniCardDescription">
+                <h4 class="py-1">کافه، رستوران شماره ۱</h4>
+
+                <section class="">
+                  <div>
+                    <img src="./assets/img-icons/pipe.svg" alt="icon" />
+                    <p>اسموک روم</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/tower.svg" alt="icon" />
+                    <p>فرانسوری</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/guitar.svg" alt="icon" />
+                    <p>موسیقی زنده</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/pizza.svg" alt="icon" />
+                    <p>فست فود</p>
+                  </div>
+                </section>
+                <!-- CARD BTN -->
+                <button>مشاهده و رزرو</button>
+              </div>
+            </div>
+            <div class="MiniCard">
+              <!-- DISCOUNT ICON -->
+              <img src="./assets/img-icons/20dis.svg" alt="" />
+
+              <!-- CARD COVER -->
+              <div class="CardCover">
+                <img
+                  class="w-100"
+                  src="./assets/img-icons/cardimg2.png"
+                  alt="card-img"
+                />
+              </div>
+
+              <!-- CARD DESCRIPTION -->
+              <div class="MiniCardDescription">
+                <h4 class="py-1">کافه، رستوران شماره ۱</h4>
+
+                <section class="">
+                  <div>
+                    <img src="./assets/img-icons/pipe.svg" alt="icon" />
+                    <p>اسموک روم</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/tower.svg" alt="icon" />
+                    <p>فرانسوری</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/guitar.svg" alt="icon" />
+                    <p>موسیقی زنده</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/pizza.svg" alt="icon" />
+                    <p>فست فود</p>
+                  </div>
+                </section>
+                <!-- CARD BTN -->
+                <button>مشاهده و رزرو</button>
+              </div>
+            </div>
+            <div class="MiniCard">
+              <!-- DISCOUNT ICON -->
+              <img src="./assets/img-icons/20dis.svg" alt="" />
+
+              <!-- CARD COVER -->
+              <div class="CardCover">
+                <img
+                  class="w-100"
+                  src="./assets/img-icons/cardimg3.png"
+                  alt="card-img"
+                />
+              </div>
+
+              <!-- CARD DESCRIPTION -->
+              <div class="MiniCardDescription">
+                <h4 class="py-1">کافه، رستوران شماره ۱</h4>
+
+                <section class="">
+                  <div>
+                    <img src="./assets/img-icons/pipe.svg" alt="icon" />
+                    <p>اسموک روم</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/tower.svg" alt="icon" />
+                    <p>فرانسوری</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/guitar.svg" alt="icon" />
+                    <p>موسیقی زنده</p>
+                  </div>
+                  <div>
+                    <img src="./assets/img-icons/pizza.svg" alt="icon" />
+                    <p>فست فود</p>
+                  </div>
+                </section>
+                <!-- CARD BTN -->
+                <button>مشاهده و رزرو</button>
+              </div>
+            </div>
+          </section>
+          <!-- LIST OF CARDS END -->
+        </div>
+        <!-- tab 3 end -->
       </section>
-      <!-- Categories filter end -->
-
-      <!-- LIST OF CARDS -->
-      <section class="CardListContainer">
-        <div class="MiniCard">
-          <!-- DISCOUNT ICON -->
-          <img src="./assets/img-icons/20dis.svg" alt="" />
-
-          <!-- CARD COVER -->
-          <div class="CardCover">
-            <img
-              class="w-100"
-              src="./assets/img-icons/cardimg1.png"
-              alt="card-img"
-            />
-          </div>
-
-          <!-- CARD DESCRIPTION -->
-          <div class="MiniCardDescription">
-            <h4 class="py-1">کافه، رستوران شماره ۱</h4>
-
-            <section class="">
-              <div>
-                <img src="./assets/img-icons/pipe.svg" alt="icon" />
-                <p>اسموک روم</p>
-              </div>
-              <div>
-                <img src="./assets/img-icons/tower.svg" alt="icon" />
-                <p>فرانسوری</p>
-              </div>
-              <div>
-                <img src="./assets/img-icons/guitar.svg" alt="icon" />
-                <p>موسیقی زنده</p>
-              </div>
-              <div>
-                <img src="./assets/img-icons/pizza.svg" alt="icon" />
-                <p>فست فود</p>
-              </div>
-            </section>
-            <!-- CARD BTN -->
-            <button>مشاهده و رزرو</button>
-          </div>
-        </div>
-        <div class="MiniCard">
-          <!-- DISCOUNT ICON -->
-          <img src="./assets/img-icons/20dis.svg" alt="" />
-
-          <!-- CARD COVER -->
-          <div class="CardCover">
-            <img
-              class="w-100"
-              src="./assets/img-icons/cardimg2.png"
-              alt="card-img"
-            />
-          </div>
-
-          <!-- CARD DESCRIPTION -->
-          <div class="MiniCardDescription">
-            <h4 class="py-1">کافه، رستوران شماره ۱</h4>
-
-            <section class="">
-              <div>
-                <img src="./assets/img-icons/pipe.svg" alt="icon" />
-                <p>اسموک روم</p>
-              </div>
-              <div>
-                <img src="./assets/img-icons/tower.svg" alt="icon" />
-                <p>فرانسوری</p>
-              </div>
-              <div>
-                <img src="./assets/img-icons/guitar.svg" alt="icon" />
-                <p>موسیقی زنده</p>
-              </div>
-              <div>
-                <img src="./assets/img-icons/pizza.svg" alt="icon" />
-                <p>فست فود</p>
-              </div>
-            </section>
-            <!-- CARD BTN -->
-            <button>مشاهده و رزرو</button>
-          </div>
-        </div>
-        <div class="MiniCard">
-          <!-- DISCOUNT ICON -->
-          <img src="./assets/img-icons/20dis.svg" alt="" />
-
-          <!-- CARD COVER -->
-          <div class="CardCover">
-            <img
-              class="w-100"
-              src="./assets/img-icons/cardimg3.png"
-              alt="card-img"
-            />
-          </div>
-
-          <!-- CARD DESCRIPTION -->
-          <div class="MiniCardDescription">
-            <h4 class="py-1">کافه، رستوران شماره ۱</h4>
-
-            <section class="">
-              <div>
-                <img src="./assets/img-icons/pipe.svg" alt="icon" />
-                <p>اسموک روم</p>
-              </div>
-              <div>
-                <img src="./assets/img-icons/tower.svg" alt="icon" />
-                <p>فرانسوری</p>
-              </div>
-              <div>
-                <img src="./assets/img-icons/guitar.svg" alt="icon" />
-                <p>موسیقی زنده</p>
-              </div>
-              <div>
-                <img src="./assets/img-icons/pizza.svg" alt="icon" />
-                <p>فست فود</p>
-              </div>
-            </section>
-            <!-- CARD BTN -->
-            <button>مشاهده و رزرو</button>
-          </div>
-        </div>
-        <div class="MiniCard">
-          <!-- DISCOUNT ICON -->
-          <img src="./assets/img-icons/20dis.svg" alt="" />
-
-          <!-- CARD COVER -->
-          <div class="CardCover">
-            <img
-              class="w-100"
-              src="./assets/img-icons/cardimg1.png"
-              alt="card-img"
-            />
-          </div>
-
-          <!-- CARD DESCRIPTION -->
-          <div class="MiniCardDescription">
-            <h4 class="py-1">کافه، رستوران شماره ۱</h4>
-
-            <section class="">
-              <div>
-                <img src="./assets/img-icons/pipe.svg" alt="icon" />
-                <p>اسموک روم</p>
-              </div>
-              <div>
-                <img src="./assets/img-icons/tower.svg" alt="icon" />
-                <p>فرانسوری</p>
-              </div>
-              <div>
-                <img src="./assets/img-icons/guitar.svg" alt="icon" />
-                <p>موسیقی زنده</p>
-              </div>
-              <div>
-                <img src="./assets/img-icons/pizza.svg" alt="icon" />
-                <p>فست فود</p>
-              </div>
-            </section>
-            <!-- CARD BTN -->
-            <button>مشاهده و رزرو</button>
-          </div>
-        </div>
-        <div class="MiniCard">
-          <!-- DISCOUNT ICON -->
-          <img src="./assets/img-icons/20dis.svg" alt="" />
-
-          <!-- CARD COVER -->
-          <div class="CardCover">
-            <img
-              class="w-100"
-              src="./assets/img-icons/cardimg2.png"
-              alt="card-img"
-            />
-          </div>
-
-          <!-- CARD DESCRIPTION -->
-          <div class="MiniCardDescription">
-            <h4 class="py-1">کافه، رستوران شماره ۱</h4>
-
-            <section class="">
-              <div>
-                <img src="./assets/img-icons/pipe.svg" alt="icon" />
-                <p>اسموک روم</p>
-              </div>
-              <div>
-                <img src="./assets/img-icons/tower.svg" alt="icon" />
-                <p>فرانسوری</p>
-              </div>
-              <div>
-                <img src="./assets/img-icons/guitar.svg" alt="icon" />
-                <p>موسیقی زنده</p>
-              </div>
-              <div>
-                <img src="./assets/img-icons/pizza.svg" alt="icon" />
-                <p>فست فود</p>
-              </div>
-            </section>
-            <!-- CARD BTN -->
-            <button>مشاهده و رزرو</button>
-          </div>
-        </div>
-        <div class="MiniCard">
-          <!-- DISCOUNT ICON -->
-          <img src="./assets/img-icons/20dis.svg" alt="" />
-
-          <!-- CARD COVER -->
-          <div class="CardCover">
-            <img
-              class="w-100"
-              src="./assets/img-icons/cardimg3.png"
-              alt="card-img"
-            />
-          </div>
-
-          <!-- CARD DESCRIPTION -->
-          <div class="MiniCardDescription">
-            <h4 class="py-1">کافه، رستوران شماره ۱</h4>
-
-            <section class="">
-              <div>
-                <img src="./assets/img-icons/pipe.svg" alt="icon" />
-                <p>اسموک روم</p>
-              </div>
-              <div>
-                <img src="./assets/img-icons/tower.svg" alt="icon" />
-                <p>فرانسوری</p>
-              </div>
-              <div>
-                <img src="./assets/img-icons/guitar.svg" alt="icon" />
-                <p>موسیقی زنده</p>
-              </div>
-              <div>
-                <img src="./assets/img-icons/pizza.svg" alt="icon" />
-                <p>فست فود</p>
-              </div>
-            </section>
-            <!-- CARD BTN -->
-            <button>مشاهده و رزرو</button>
-          </div>
-        </div>
-        <div class="MiniCard">
-          <!-- DISCOUNT ICON -->
-          <img src="./assets/img-icons/20dis.svg" alt="" />
-
-          <!-- CARD COVER -->
-          <div class="CardCover">
-            <img
-              class="w-100"
-              src="./assets/img-icons/cardimg1.png"
-              alt="card-img"
-            />
-          </div>
-
-          <!-- CARD DESCRIPTION -->
-          <div class="MiniCardDescription">
-            <h4 class="py-1">کافه، رستوران شماره ۱</h4>
-
-            <section class="">
-              <div>
-                <img src="./assets/img-icons/pipe.svg" alt="icon" />
-                <p>اسموک روم</p>
-              </div>
-              <div>
-                <img src="./assets/img-icons/tower.svg" alt="icon" />
-                <p>فرانسوری</p>
-              </div>
-              <div>
-                <img src="./assets/img-icons/guitar.svg" alt="icon" />
-                <p>موسیقی زنده</p>
-              </div>
-              <div>
-                <img src="./assets/img-icons/pizza.svg" alt="icon" />
-                <p>فست فود</p>
-              </div>
-            </section>
-            <!-- CARD BTN -->
-            <button>مشاهده و رزرو</button>
-          </div>
-        </div>
-        <div class="MiniCard">
-          <!-- DISCOUNT ICON -->
-          <img src="./assets/img-icons/20dis.svg" alt="" />
-
-          <!-- CARD COVER -->
-          <div class="CardCover">
-            <img
-              class="w-100"
-              src="./assets/img-icons/cardimg2.png"
-              alt="card-img"
-            />
-          </div>
-
-          <!-- CARD DESCRIPTION -->
-          <div class="MiniCardDescription">
-            <h4 class="py-1">کافه، رستوران شماره ۱</h4>
-
-            <section class="">
-              <div>
-                <img src="./assets/img-icons/pipe.svg" alt="icon" />
-                <p>اسموک روم</p>
-              </div>
-              <div>
-                <img src="./assets/img-icons/tower.svg" alt="icon" />
-                <p>فرانسوری</p>
-              </div>
-              <div>
-                <img src="./assets/img-icons/guitar.svg" alt="icon" />
-                <p>موسیقی زنده</p>
-              </div>
-              <div>
-                <img src="./assets/img-icons/pizza.svg" alt="icon" />
-                <p>فست فود</p>
-              </div>
-            </section>
-            <!-- CARD BTN -->
-            <button>مشاهده و رزرو</button>
-          </div>
-        </div>
-        <div class="MiniCard">
-          <!-- DISCOUNT ICON -->
-          <img src="./assets/img-icons/20dis.svg" alt="" />
-
-          <!-- CARD COVER -->
-          <div class="CardCover">
-            <img
-              class="w-100"
-              src="./assets/img-icons/cardimg3.png"
-              alt="card-img"
-            />
-          </div>
-
-          <!-- CARD DESCRIPTION -->
-          <div class="MiniCardDescription">
-            <h4 class="py-1">کافه، رستوران شماره ۱</h4>
-
-            <section class="">
-              <div>
-                <img src="./assets/img-icons/pipe.svg" alt="icon" />
-                <p>اسموک روم</p>
-              </div>
-              <div>
-                <img src="./assets/img-icons/tower.svg" alt="icon" />
-                <p>فرانسوری</p>
-              </div>
-              <div>
-                <img src="./assets/img-icons/guitar.svg" alt="icon" />
-                <p>موسیقی زنده</p>
-              </div>
-              <div>
-                <img src="./assets/img-icons/pizza.svg" alt="icon" />
-                <p>فست فود</p>
-              </div>
-            </section>
-            <!-- CARD BTN -->
-            <button>مشاهده و رزرو</button>
-          </div>
-        </div>
-        <div class="MiniCard">
-          <!-- DISCOUNT ICON -->
-          <img src="./assets/img-icons/20dis.svg" alt="" />
-
-          <!-- CARD COVER -->
-          <div class="CardCover">
-            <img
-              class="w-100"
-              src="./assets/img-icons/cardimg1.png"
-              alt="card-img"
-            />
-          </div>
-
-          <!-- CARD DESCRIPTION -->
-          <div class="MiniCardDescription">
-            <h4 class="py-1">کافه، رستوران شماره ۱</h4>
-
-            <section class="">
-              <div>
-                <img src="./assets/img-icons/pipe.svg" alt="icon" />
-                <p>اسموک روم</p>
-              </div>
-              <div>
-                <img src="./assets/img-icons/tower.svg" alt="icon" />
-                <p>فرانسوری</p>
-              </div>
-              <div>
-                <img src="./assets/img-icons/guitar.svg" alt="icon" />
-                <p>موسیقی زنده</p>
-              </div>
-              <div>
-                <img src="./assets/img-icons/pizza.svg" alt="icon" />
-                <p>فست فود</p>
-              </div>
-            </section>
-            <!-- CARD BTN -->
-            <button>مشاهده و رزرو</button>
-          </div>
-        </div>
-        <div class="MiniCard">
-          <!-- DISCOUNT ICON -->
-          <img src="./assets/img-icons/20dis.svg" alt="" />
-
-          <!-- CARD COVER -->
-          <div class="CardCover">
-            <img
-              class="w-100"
-              src="./assets/img-icons/cardimg2.png"
-              alt="card-img"
-            />
-          </div>
-
-          <!-- CARD DESCRIPTION -->
-          <div class="MiniCardDescription">
-            <h4 class="py-1">کافه، رستوران شماره ۱</h4>
-
-            <section class="">
-              <div>
-                <img src="./assets/img-icons/pipe.svg" alt="icon" />
-                <p>اسموک روم</p>
-              </div>
-              <div>
-                <img src="./assets/img-icons/tower.svg" alt="icon" />
-                <p>فرانسوری</p>
-              </div>
-              <div>
-                <img src="./assets/img-icons/guitar.svg" alt="icon" />
-                <p>موسیقی زنده</p>
-              </div>
-              <div>
-                <img src="./assets/img-icons/pizza.svg" alt="icon" />
-                <p>فست فود</p>
-              </div>
-            </section>
-            <!-- CARD BTN -->
-            <button>مشاهده و رزرو</button>
-          </div>
-        </div>
-        <div class="MiniCard">
-          <!-- DISCOUNT ICON -->
-          <img src="./assets/img-icons/20dis.svg" alt="" />
-
-          <!-- CARD COVER -->
-          <div class="CardCover">
-            <img
-              class="w-100"
-              src="./assets/img-icons/cardimg3.png"
-              alt="card-img"
-            />
-          </div>
-
-          <!-- CARD DESCRIPTION -->
-          <div class="MiniCardDescription">
-            <h4 class="py-1">کافه، رستوران شماره ۱</h4>
-
-            <section class="">
-              <div>
-                <img src="./assets/img-icons/pipe.svg" alt="icon" />
-                <p>اسموک روم</p>
-              </div>
-              <div>
-                <img src="./assets/img-icons/tower.svg" alt="icon" />
-                <p>فرانسوری</p>
-              </div>
-              <div>
-                <img src="./assets/img-icons/guitar.svg" alt="icon" />
-                <p>موسیقی زنده</p>
-              </div>
-              <div>
-                <img src="./assets/img-icons/pizza.svg" alt="icon" />
-                <p>فست فود</p>
-              </div>
-            </section>
-            <!-- CARD BTN -->
-            <button>مشاهده و رزرو</button>
-          </div>
-        </div>
-      </section>
-      <!-- LIST OF CARDS END -->
     </main>
 
     <!-- mobile offcanvas -->
@@ -1092,7 +3009,7 @@
           <a href="./">کافه رستوران ها</a>
         </li>
         <li>
-          <a href="./">تماس با ما</a>
+          <a href="./contact-us.html">تماس با ما</a>
         </li>
         <li>
           <a href="./">درباره ما</a>

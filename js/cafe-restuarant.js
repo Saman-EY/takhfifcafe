@@ -15,9 +15,6 @@ function toggleDropdown(button) {
     }
   });
 
-
-
-
   // Toggle the current dropdown
   if (dropdownMenu.style.display === "flex") {
     dropdownMenu.style.display = "none";
@@ -74,3 +71,28 @@ document.addEventListener("click", (e) => {
 });
 
 /////////////////// LIST FILTER END
+
+// Tabs
+
+const tabs = document.querySelectorAll(".tab");
+const contents = document.querySelectorAll(".cafeRestuarant-tab-container");
+
+tabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    // Remove the 'active' class from all tabs
+    tabs.forEach((t) => t.classList.remove("active"));
+    // Add the 'active' class to the clicked tab
+    tab.classList.add("active");
+
+    // Hide all content sections
+    contents.forEach((content) => content.classList.remove("show"));
+
+    // Show the content section corresponding to the clicked tab
+    const targetContent = document.querySelector(
+      `[data-content="${tab.getAttribute("data-tab")}"]`
+    );
+    targetContent.classList.add("show");
+  });
+});
+
+// Tabs end
